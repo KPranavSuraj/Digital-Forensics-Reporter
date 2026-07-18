@@ -1,0 +1,1162 @@
+{
+  "job_id": "db3588bd-5827-4fc3-890c-e2c736135c4a",
+  "generated_at": "2026-05-28T11:04:27.933155",
+  "case_info": {
+    "case_name": "Operation Dark Web",
+    "analyst_name": "Agent K. Patel",
+    "case_number": "CY-2024-0090",
+    "department": "Digital Forensics Lab",
+    "created_at": "2026-05-28T11:04:27.875330"
+  },
+  "executive_summary": "This report presents findings of a digital forensic examination of Operation Dark Web (Case No. CY-2024-0090), conducted by Agent K. Patel of the Digital Forensics Lab.\n\nThe examination yielded 15 digital artifacts including 4 web history entries, 2 email records, 1 USB device connections, and 2 recovered deleted files. High-confidence events: 0. Suspicious events: 3.\n\nAll evidence has been handled per chain of custody protocols to maintain admissibility.",
+  "methodology": "The digital forensic examination was conducted in accordance with NIST SP 800-86 and ACPO Good Practice Guide for Digital Evidence.\n\n1. Evidence Acquisition: Subject digital media was forensically processed using write-blocking procedures. MD5 hash values recorded to verify integrity.\n\n2. Evidence Verification: Forensic image verified for accuracy. File hash recorded in chain of custody documentation.\n\n3. Artifact Extraction: Evidence processed through automated parsing pipeline covering web history, email, USB devices, user accounts, deleted files, registry entries, installed programs, and search queries.\n\n4. Normalization: All artifacts normalized into unified schema with full traceability: source file, row/line reference, timestamp, artifact ID, and confidence rating (High/Medium/Low).\n\n5. RAG Indexing: All artifacts indexed for cross-referencing and AI-assisted analysis. Each AI finding cites the exact source artifact(s) it is based on.\n\n6. Documentation: All findings documented with evidence references in format: 'Finding: [X] | Evidence: [filename] (Row [N]) | Time: [T] | Artifact: [ID]'.",
+  "findings": {
+    "web_activity": {
+      "title": "3.1 Web Activity",
+      "narrative": "Examination revealed 4 web browsing history entries providing a chronological record of websites visited, indicating user intent relevant to the investigation.",
+      "count": 4,
+      "evidence_refs": [
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 5,
+          "record_ref": "operation_dark_web_sample.csv (Row 5)",
+          "timestamp": "2024-04-01 22:44:10",
+          "artifact_id": "web_5",
+          "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://bitcointalk.org/', 'Date/Time': '2024-04-01 22:44:10', 'Description': 'Bitcoin Dark Web Forum', 'User': 'alex_r', '_row': 5}",
+          "confidence": "High"
+        },
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 3,
+          "record_ref": "operation_dark_web_sample.csv (Row 3)",
+          "timestamp": "2024-04-01 23:58:01",
+          "artifact_id": "web_3",
+          "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://www.torproject.org/download/', 'Date/Time': '2024-04-01 23:58:01', 'Description': 'Tor Browser Download', 'User': 'alex_r', '_row': 3}",
+          "confidence": "High"
+        },
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 4,
+          "record_ref": "operation_dark_web_sample.csv (Row 4)",
+          "timestamp": "2024-04-02 01:30:22",
+          "artifact_id": "web_4",
+          "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://darknetlive.com/', 'Date/Time': '2024-04-02 01:30:22', 'Description': 'Darknet Live Portal', 'User': 'alex_r', '_row': 4}",
+          "confidence": "High"
+        },
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 2,
+          "record_ref": "operation_dark_web_sample.csv (Row 2)",
+          "timestamp": "2024-04-02 02:15:44",
+          "artifact_id": "web_2",
+          "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://zqktlwi4fecvo6ri.onion/', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'The Hidden Wiki - Dark Web', 'User': 'alex_r', '_row': 2}",
+          "confidence": "High"
+        }
+      ],
+      "sample_events": [
+        {
+          "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://bitcointalk.org/', 'Date/Time': '2024-04-01 22:44:10', 'Description': 'Bitcoin Dark Web Forum', 'User': 'alex_r', '_row': 5}",
+          "timestamp": "2024-04-01 22:44:10",
+          "source": "operation_dark_web_sample.csv",
+          "row": 5,
+          "record_ref": "operation_dark_web_sample.csv (Row 5)",
+          "artifact_id": "web_5",
+          "confidence": "High"
+        },
+        {
+          "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://www.torproject.org/download/', 'Date/Time': '2024-04-01 23:58:01', 'Description': 'Tor Browser Download', 'User': 'alex_r', '_row': 3}",
+          "timestamp": "2024-04-01 23:58:01",
+          "source": "operation_dark_web_sample.csv",
+          "row": 3,
+          "record_ref": "operation_dark_web_sample.csv (Row 3)",
+          "artifact_id": "web_3",
+          "confidence": "High"
+        },
+        {
+          "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://darknetlive.com/', 'Date/Time': '2024-04-02 01:30:22', 'Description': 'Darknet Live Portal', 'User': 'alex_r', '_row': 4}",
+          "timestamp": "2024-04-02 01:30:22",
+          "source": "operation_dark_web_sample.csv",
+          "row": 4,
+          "record_ref": "operation_dark_web_sample.csv (Row 4)",
+          "artifact_id": "web_4",
+          "confidence": "High"
+        },
+        {
+          "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://zqktlwi4fecvo6ri.onion/', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'The Hidden Wiki - Dark Web', 'User': 'alex_r', '_row': 2}",
+          "timestamp": "2024-04-02 02:15:44",
+          "source": "operation_dark_web_sample.csv",
+          "row": 2,
+          "record_ref": "operation_dark_web_sample.csv (Row 2)",
+          "artifact_id": "web_2",
+          "confidence": "High"
+        }
+      ]
+    },
+    "email_analysis": {
+      "title": "3.2 Email Analysis",
+      "narrative": "Analysis revealed 2 email message(s) containing relevant correspondence and metadata.",
+      "count": 2,
+      "evidence_refs": [
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 7,
+          "record_ref": "operation_dark_web_sample.csv (Row 7)",
+          "timestamp": "2024-04-01 22:30:00",
+          "artifact_id": "email_7",
+          "description": "Email: {'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-01 22:30:00', 'Description': 'From: vendor_elite@protonmail.com Subject: Shipment tracking WT7823DE', 'User': 'alex_r', '_row': 7}",
+          "confidence": "High"
+        },
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 6,
+          "record_ref": "operation_dark_web_sample.csv (Row 6)",
+          "timestamp": "2024-04-02 03:05:18",
+          "artifact_id": "email_6",
+          "description": "Email: {'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-02 03:05:18', 'Description': 'From: anon@protonmail.com To: buyer123@tutanota.com Subject: XMR payment received', 'User': 'alex_r', '_row':",
+          "confidence": "High"
+        }
+      ],
+      "sample_events": [
+        {
+          "description": "Email: {'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-01 22:30:00', 'Description': 'From: vendor_elite@protonmail.com Subject: Shipment tracking WT7823DE', 'User': 'alex_r', '_row': 7}",
+          "timestamp": "2024-04-01 22:30:00",
+          "source": "operation_dark_web_sample.csv",
+          "row": 7,
+          "record_ref": "operation_dark_web_sample.csv (Row 7)",
+          "artifact_id": "email_7",
+          "confidence": "High"
+        },
+        {
+          "description": "Email: {'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-02 03:05:18', 'Description': 'From: anon@protonmail.com To: buyer123@tutanota.com Subject: XMR payment received', 'User': 'alex_r', '_row':",
+          "timestamp": "2024-04-02 03:05:18",
+          "source": "operation_dark_web_sample.csv",
+          "row": 6,
+          "record_ref": "operation_dark_web_sample.csv (Row 6)",
+          "artifact_id": "email_6",
+          "confidence": "High"
+        }
+      ]
+    },
+    "device_connections": {
+      "title": "3.3 Device Connections",
+      "narrative": "1 external storage device(s) identified with connection timestamps and device identifiers.",
+      "count": 1,
+      "evidence_refs": [
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 8,
+          "record_ref": "operation_dark_web_sample.csv (Row 8)",
+          "timestamp": "2024-04-02 01:00:00",
+          "artifact_id": "usb_8",
+          "description": "USB device: {'Artifact Type': 'TSK_DEVICE_ATTACHED', 'Path': 'E:', 'Date/Time': '2024-04-02 01:00:00', 'Description': 'Kingston DataTraveler 32GB - Serial: 0018F3A92B11', 'User': 'alex_r', '_row': 8}",
+          "confidence": "High"
+        }
+      ],
+      "sample_events": [
+        {
+          "description": "USB device: {'Artifact Type': 'TSK_DEVICE_ATTACHED', 'Path': 'E:', 'Date/Time': '2024-04-02 01:00:00', 'Description': 'Kingston DataTraveler 32GB - Serial: 0018F3A92B11', 'User': 'alex_r', '_row': 8}",
+          "timestamp": "2024-04-02 01:00:00",
+          "source": "operation_dark_web_sample.csv",
+          "row": 8,
+          "record_ref": "operation_dark_web_sample.csv (Row 8)",
+          "artifact_id": "usb_8",
+          "confidence": "High"
+        }
+      ]
+    },
+    "deleted_files": {
+      "title": "3.4 Deleted Files",
+      "narrative": "File system analysis recovered 2 deleted file(s). Recovery indicates possible deliberate destruction of evidence.",
+      "count": 2,
+      "evidence_refs": [
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 13,
+          "record_ref": "operation_dark_web_sample.csv (Row 13)",
+          "timestamp": "2024-04-02 03:30:00",
+          "artifact_id": "del_13",
+          "description": "Deleted: transaction_history_xmr.csv",
+          "confidence": "High"
+        },
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 14,
+          "record_ref": "operation_dark_web_sample.csv (Row 14)",
+          "timestamp": "2024-04-02 03:31:00",
+          "artifact_id": "del_14",
+          "description": "Deleted: vendor_contacts_darkweb.txt",
+          "confidence": "High"
+        }
+      ],
+      "sample_events": [
+        {
+          "description": "Deleted: transaction_history_xmr.csv",
+          "timestamp": "2024-04-02 03:30:00",
+          "source": "operation_dark_web_sample.csv",
+          "row": 13,
+          "record_ref": "operation_dark_web_sample.csv (Row 13)",
+          "artifact_id": "del_13",
+          "confidence": "High"
+        },
+        {
+          "description": "Deleted: vendor_contacts_darkweb.txt",
+          "timestamp": "2024-04-02 03:31:00",
+          "source": "operation_dark_web_sample.csv",
+          "row": 14,
+          "record_ref": "operation_dark_web_sample.csv (Row 14)",
+          "artifact_id": "del_14",
+          "confidence": "High"
+        }
+      ]
+    },
+    "user_accounts": {
+      "title": "3.5 User Accounts",
+      "narrative": "1 user account(s) identified providing insight into access patterns.",
+      "count": 1,
+      "evidence_refs": [
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 12,
+          "record_ref": "operation_dark_web_sample.csv (Row 12)",
+          "timestamp": "2024-04-02 00:50:00",
+          "artifact_id": "usr_12",
+          "description": "Account: {'Artifact Type': 'TSK_OS_ACCOUNT', 'Path': 'C:\\\\Users\\\\alex_r', 'Date/Time': '2024-04-02 00:50:00', 'Description': 'Username: alex_r | Last Login: 2024-04-02', 'User': 'alex_r', '_row': 12}",
+          "confidence": "Medium"
+        }
+      ],
+      "sample_events": [
+        {
+          "description": "Account: {'Artifact Type': 'TSK_OS_ACCOUNT', 'Path': 'C:\\\\Users\\\\alex_r', 'Date/Time': '2024-04-02 00:50:00', 'Description': 'Username: alex_r | Last Login: 2024-04-02', 'User': 'alex_r', '_row': 12}",
+          "timestamp": "2024-04-02 00:50:00",
+          "source": "operation_dark_web_sample.csv",
+          "row": 12,
+          "record_ref": "operation_dark_web_sample.csv (Row 12)",
+          "artifact_id": "usr_12",
+          "confidence": "Medium"
+        }
+      ]
+    },
+    "search_queries": {
+      "title": "3.6 Search Queries",
+      "narrative": "2 search query record(s) recovered revealing information-seeking behavior.",
+      "count": 2,
+      "evidence_refs": [
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 16,
+          "record_ref": "operation_dark_web_sample.csv (Row 16)",
+          "timestamp": "2024-04-01 23:00:00",
+          "artifact_id": "srch_16",
+          "description": "Searched: {'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-01 23:00:00', 'Description': 'Search: monero untraceable cryptocurrency [HIGH]', 'User': 'alex_r', '_row': 16}",
+          "confidence": "Medium"
+        },
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 15,
+          "record_ref": "operation_dark_web_sample.csv (Row 15)",
+          "timestamp": "2024-04-02 02:15:44",
+          "artifact_id": "srch_15",
+          "description": "Searched: {'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'Search: buy substances dark web [CRITICAL]', 'User': 'alex_r', '_row': 15}",
+          "confidence": "Medium"
+        }
+      ],
+      "sample_events": [
+        {
+          "description": "Searched: {'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-01 23:00:00', 'Description': 'Search: monero untraceable cryptocurrency [HIGH]', 'User': 'alex_r', '_row': 16}",
+          "timestamp": "2024-04-01 23:00:00",
+          "source": "operation_dark_web_sample.csv",
+          "row": 16,
+          "record_ref": "operation_dark_web_sample.csv (Row 16)",
+          "artifact_id": "srch_16",
+          "confidence": "Medium"
+        },
+        {
+          "description": "Searched: {'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'Search: buy substances dark web [CRITICAL]', 'User': 'alex_r', '_row': 15}",
+          "timestamp": "2024-04-02 02:15:44",
+          "source": "operation_dark_web_sample.csv",
+          "row": 15,
+          "record_ref": "operation_dark_web_sample.csv (Row 15)",
+          "artifact_id": "srch_15",
+          "confidence": "Medium"
+        }
+      ]
+    },
+    "installed_programs": {
+      "title": "3.7 Installed Programs",
+      "narrative": "3 installed program(s) identified. May reveal tools used for data exfiltration.",
+      "count": 3,
+      "evidence_refs": [
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 11,
+          "record_ref": "operation_dark_web_sample.csv (Row 11)",
+          "timestamp": "2024-03-15 09:00:00",
+          "artifact_id": "prog_11",
+          "description": "Program: Electrum Wallet",
+          "confidence": "Medium"
+        },
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 10,
+          "record_ref": "operation_dark_web_sample.csv (Row 10)",
+          "timestamp": "2024-03-20 11:00:00",
+          "artifact_id": "prog_10",
+          "description": "Program: VeraCrypt 1.25",
+          "confidence": "Medium"
+        },
+        {
+          "source": "operation_dark_web_sample.csv",
+          "row": 9,
+          "record_ref": "operation_dark_web_sample.csv (Row 9)",
+          "timestamp": "2024-03-28 20:00:00",
+          "artifact_id": "prog_9",
+          "description": "Program: Tor Browser 13.0",
+          "confidence": "Medium"
+        }
+      ],
+      "sample_events": [
+        {
+          "description": "Program: Electrum Wallet",
+          "timestamp": "2024-03-15 09:00:00",
+          "source": "operation_dark_web_sample.csv",
+          "row": 11,
+          "record_ref": "operation_dark_web_sample.csv (Row 11)",
+          "artifact_id": "prog_11",
+          "confidence": "Medium"
+        },
+        {
+          "description": "Program: VeraCrypt 1.25",
+          "timestamp": "2024-03-20 11:00:00",
+          "source": "operation_dark_web_sample.csv",
+          "row": 10,
+          "record_ref": "operation_dark_web_sample.csv (Row 10)",
+          "artifact_id": "prog_10",
+          "confidence": "Medium"
+        },
+        {
+          "description": "Program: Tor Browser 13.0",
+          "timestamp": "2024-03-28 20:00:00",
+          "source": "operation_dark_web_sample.csv",
+          "row": 9,
+          "record_ref": "operation_dark_web_sample.csv (Row 9)",
+          "artifact_id": "prog_9",
+          "confidence": "Medium"
+        }
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "timestamp": "2024-03-15 09:00:00",
+      "event_type": "PROGRAM_INSTALLED",
+      "description": "Program: Electrum Wallet",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 11,
+      "record_ref": "operation_dark_web_sample.csv (Row 11)",
+      "artifact_id": "prog_11",
+      "confidence": "Medium",
+      "category": "program"
+    },
+    {
+      "timestamp": "2024-03-15 09:00:00",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_INSTALLED_PROG', 'Program Name': 'Electrum Wallet', 'Path': 'C:\\\\Users\\\\alex_r\\\\AppData\\\\Roaming\\\\Electrum', 'Date/Time': '2024-03-15 09:00:00', 'Description': 'Cryptocurrency W",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 11,
+      "record_ref": "operation_dark_web_sample.csv (Row 11)",
+      "artifact_id": "tl_11",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-03-20 11:00:00",
+      "event_type": "PROGRAM_INSTALLED",
+      "description": "Program: VeraCrypt 1.25",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 10,
+      "record_ref": "operation_dark_web_sample.csv (Row 10)",
+      "artifact_id": "prog_10",
+      "confidence": "Medium",
+      "category": "program"
+    },
+    {
+      "timestamp": "2024-03-20 11:00:00",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_INSTALLED_PROG', 'Program Name': 'VeraCrypt 1.25', 'Path': 'C:\\\\Program Files\\\\VeraCrypt', 'Date/Time': '2024-03-20 11:00:00', 'Description': 'Disk Encryption', 'User': 'alex_r'",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 10,
+      "record_ref": "operation_dark_web_sample.csv (Row 10)",
+      "artifact_id": "tl_10",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-03-28 20:00:00",
+      "event_type": "PROGRAM_INSTALLED",
+      "description": "Program: Tor Browser 13.0",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 9,
+      "record_ref": "operation_dark_web_sample.csv (Row 9)",
+      "artifact_id": "prog_9",
+      "confidence": "Medium",
+      "category": "program"
+    },
+    {
+      "timestamp": "2024-03-28 20:00:00",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_INSTALLED_PROG', 'Program Name': 'Tor Browser 13.0', 'Path': 'C:\\\\Users\\\\alex_r\\\\Desktop\\\\Tor', 'Date/Time': '2024-03-28 20:00:00', 'Description': 'Anonymous Browsing Tool', 'Us",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 9,
+      "record_ref": "operation_dark_web_sample.csv (Row 9)",
+      "artifact_id": "tl_9",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-01 22:30:00",
+      "event_type": "EMAIL",
+      "description": "Email: {'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-01 22:30:00', 'Description': 'From: vendor_elite@protonmail.com Subject: Shipment tracking WT7823DE', 'User': 'alex_r', '_row': 7}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 7,
+      "record_ref": "operation_dark_web_sample.csv (Row 7)",
+      "artifact_id": "email_7",
+      "confidence": "High",
+      "category": "email"
+    },
+    {
+      "timestamp": "2024-04-01 22:30:00",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-01 22:30:00', 'Description': 'From: vendor_elite@protonmail.com Subject: Shipment tracking WT7823DE', 'User': 'alex_r', '_row': 7}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 7,
+      "record_ref": "operation_dark_web_sample.csv (Row 7)",
+      "artifact_id": "tl_7",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-01 22:44:10",
+      "event_type": "WEB_ACCESS",
+      "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://bitcointalk.org/', 'Date/Time': '2024-04-01 22:44:10', 'Description': 'Bitcoin Dark Web Forum', 'User': 'alex_r', '_row': 5}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 5,
+      "record_ref": "operation_dark_web_sample.csv (Row 5)",
+      "artifact_id": "web_5",
+      "confidence": "High",
+      "category": "web_history"
+    },
+    {
+      "timestamp": "2024-04-01 22:44:10",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://bitcointalk.org/', 'Date/Time': '2024-04-01 22:44:10', 'Description': 'Bitcoin Dark Web Forum', 'User': 'alex_r', '_row': 5}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 5,
+      "record_ref": "operation_dark_web_sample.csv (Row 5)",
+      "artifact_id": "tl_5",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-01 23:00:00",
+      "event_type": "SEARCH_QUERY",
+      "description": "Searched: {'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-01 23:00:00', 'Description': 'Search: monero untraceable cryptocurrency [HIGH]', 'User': 'alex_r', '_row",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 16,
+      "record_ref": "operation_dark_web_sample.csv (Row 16)",
+      "artifact_id": "srch_16",
+      "confidence": "Medium",
+      "category": "search_query"
+    },
+    {
+      "timestamp": "2024-04-01 23:00:00",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-01 23:00:00', 'Description': 'Search: monero untraceable cryptocurrency [HIGH]', 'User': 'alex_r', '_row': 16}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 16,
+      "record_ref": "operation_dark_web_sample.csv (Row 16)",
+      "artifact_id": "tl_16",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-01 23:58:01",
+      "event_type": "WEB_ACCESS",
+      "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://www.torproject.org/download/', 'Date/Time': '2024-04-01 23:58:01', 'Description': 'Tor Browser Download', 'User': 'alex_r', '_row': 3",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 3,
+      "record_ref": "operation_dark_web_sample.csv (Row 3)",
+      "artifact_id": "web_3",
+      "confidence": "High",
+      "category": "web_history"
+    },
+    {
+      "timestamp": "2024-04-01 23:58:01",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://www.torproject.org/download/', 'Date/Time': '2024-04-01 23:58:01', 'Description': 'Tor Browser Download', 'User': 'alex_r', '_row': 3}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 3,
+      "record_ref": "operation_dark_web_sample.csv (Row 3)",
+      "artifact_id": "tl_3",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-02 00:50:00",
+      "event_type": "USER_ACCOUNT",
+      "description": "Account: {'Artifact Type': 'TSK_OS_ACCOUNT', 'Path': 'C:\\\\Users\\\\alex_r', 'Date/Time': '2024-04-02 00:50:00', 'Description': 'Username: alex_r | Last Login: 2024-04-02', 'User': 'alex_r', '_row': 12}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 12,
+      "record_ref": "operation_dark_web_sample.csv (Row 12)",
+      "artifact_id": "usr_12",
+      "confidence": "Medium",
+      "category": "user_account"
+    },
+    {
+      "timestamp": "2024-04-02 00:50:00",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_OS_ACCOUNT', 'Path': 'C:\\\\Users\\\\alex_r', 'Date/Time': '2024-04-02 00:50:00', 'Description': 'Username: alex_r | Last Login: 2024-04-02', 'User': 'alex_r', '_row': 12}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 12,
+      "record_ref": "operation_dark_web_sample.csv (Row 12)",
+      "artifact_id": "tl_12",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-02 01:00:00",
+      "event_type": "USB_EVENT",
+      "description": "USB device: {'Artifact Type': 'TSK_DEVICE_ATTACHED', 'Path': 'E:', 'Date/Time': '2024-04-02 01:00:00', 'Description': 'Kingston DataTraveler 32GB - Serial: 0018F3A92B11', 'User': 'alex_r', '_row': 8}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 8,
+      "record_ref": "operation_dark_web_sample.csv (Row 8)",
+      "artifact_id": "usb_8",
+      "confidence": "High",
+      "category": "usb"
+    },
+    {
+      "timestamp": "2024-04-02 01:00:00",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_DEVICE_ATTACHED', 'Path': 'E:', 'Date/Time': '2024-04-02 01:00:00', 'Description': 'Kingston DataTraveler 32GB - Serial: 0018F3A92B11', 'User': 'alex_r', '_row': 8}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 8,
+      "record_ref": "operation_dark_web_sample.csv (Row 8)",
+      "artifact_id": "tl_8",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-02 01:30:22",
+      "event_type": "WEB_ACCESS",
+      "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://darknetlive.com/', 'Date/Time': '2024-04-02 01:30:22', 'Description': 'Darknet Live Portal', 'User': 'alex_r', '_row': 4}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 4,
+      "record_ref": "operation_dark_web_sample.csv (Row 4)",
+      "artifact_id": "web_4",
+      "confidence": "High",
+      "category": "web_history"
+    },
+    {
+      "timestamp": "2024-04-02 01:30:22",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://darknetlive.com/', 'Date/Time': '2024-04-02 01:30:22', 'Description': 'Darknet Live Portal', 'User': 'alex_r', '_row': 4}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 4,
+      "record_ref": "operation_dark_web_sample.csv (Row 4)",
+      "artifact_id": "tl_4",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-02 02:15:44",
+      "event_type": "WEB_ACCESS",
+      "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://zqktlwi4fecvo6ri.onion/', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'The Hidden Wiki - Dark Web', 'User': 'alex_r', '_row': 2",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 2,
+      "record_ref": "operation_dark_web_sample.csv (Row 2)",
+      "artifact_id": "web_2",
+      "confidence": "High",
+      "category": "web_history"
+    },
+    {
+      "timestamp": "2024-04-02 02:15:44",
+      "event_type": "SEARCH_QUERY",
+      "description": "Searched: {'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'Search: buy substances dark web [CRITICAL]', 'User': 'alex_r', '_row': 15}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 15,
+      "record_ref": "operation_dark_web_sample.csv (Row 15)",
+      "artifact_id": "srch_15",
+      "confidence": "Medium",
+      "category": "search_query"
+    },
+    {
+      "timestamp": "2024-04-02 02:15:44",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://zqktlwi4fecvo6ri.onion/', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'The Hidden Wiki - Dark Web', 'User': 'alex_r', '_row': 2}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 2,
+      "record_ref": "operation_dark_web_sample.csv (Row 2)",
+      "artifact_id": "tl_2",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-02 02:15:44",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'Search: buy substances dark web [CRITICAL]', 'User': 'alex_r', '_row': 15}",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 15,
+      "record_ref": "operation_dark_web_sample.csv (Row 15)",
+      "artifact_id": "tl_15",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-02 03:05:18",
+      "event_type": "EMAIL",
+      "description": "Email: {'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-02 03:05:18', 'Description': 'From: anon@protonmail.com To: buyer123@tutanota.com Subject: XMR payment received', 'User': 'alex_r', ",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 6,
+      "record_ref": "operation_dark_web_sample.csv (Row 6)",
+      "artifact_id": "email_6",
+      "confidence": "High",
+      "category": "email"
+    },
+    {
+      "timestamp": "2024-04-02 03:05:18",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-02 03:05:18', 'Description': 'From: anon@protonmail.com To: buyer123@tutanota.com Subject: XMR payment received', 'User': 'alex_r', '_row':",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 6,
+      "record_ref": "operation_dark_web_sample.csv (Row 6)",
+      "artifact_id": "tl_6",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-02 03:30:00",
+      "event_type": "FILE_DELETED",
+      "description": "Deleted: transaction_history_xmr.csv",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 13,
+      "record_ref": "operation_dark_web_sample.csv (Row 13)",
+      "artifact_id": "del_13",
+      "confidence": "High",
+      "category": "deleted"
+    },
+    {
+      "timestamp": "2024-04-02 03:30:00",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_RECYCLE_BIN', 'File Name': 'transaction_history_xmr.csv', 'Path': 'C:\\\\$Recycle.Bin\\\\', 'Date/Time': '2024-04-02 03:30:00', 'Description': 'Deleted Monero Transactions', 'User':",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 13,
+      "record_ref": "operation_dark_web_sample.csv (Row 13)",
+      "artifact_id": "tl_13",
+      "confidence": "Medium",
+      "category": "timeline"
+    },
+    {
+      "timestamp": "2024-04-02 03:31:00",
+      "event_type": "FILE_DELETED",
+      "description": "Deleted: vendor_contacts_darkweb.txt",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 14,
+      "record_ref": "operation_dark_web_sample.csv (Row 14)",
+      "artifact_id": "del_14",
+      "confidence": "High",
+      "category": "deleted"
+    },
+    {
+      "timestamp": "2024-04-02 03:31:00",
+      "event_type": "TIMELINE_EVENT",
+      "description": "{'Artifact Type': 'TSK_RECYCLE_BIN', 'File Name': 'vendor_contacts_darkweb.txt', 'Path': 'C:\\\\$Recycle.Bin\\\\', 'Date/Time': '2024-04-02 03:31:00', 'Description': 'Deleted Vendor Contacts', 'User': 'al",
+      "source": "operation_dark_web_sample.csv",
+      "source_row": 14,
+      "record_ref": "operation_dark_web_sample.csv (Row 14)",
+      "artifact_id": "tl_14",
+      "confidence": "Medium",
+      "category": "timeline"
+    }
+  ],
+  "evidence_refs": [
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 5,
+      "record_ref": "operation_dark_web_sample.csv (Row 5)",
+      "timestamp": "2024-04-01 22:44:10",
+      "artifact_id": "web_5",
+      "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://bitcointalk.org/', 'Date/Time': '2024-04-01 22:44:10', 'Description': 'Bitcoin Dark Web Forum', 'User': 'alex_r', '_row': 5}",
+      "confidence": "High"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 3,
+      "record_ref": "operation_dark_web_sample.csv (Row 3)",
+      "timestamp": "2024-04-01 23:58:01",
+      "artifact_id": "web_3",
+      "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://www.torproject.org/download/', 'Date/Time': '2024-04-01 23:58:01', 'Description': 'Tor Browser Download', 'User': 'alex_r', '_row': 3}",
+      "confidence": "High"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 4,
+      "record_ref": "operation_dark_web_sample.csv (Row 4)",
+      "timestamp": "2024-04-02 01:30:22",
+      "artifact_id": "web_4",
+      "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://darknetlive.com/', 'Date/Time': '2024-04-02 01:30:22', 'Description': 'Darknet Live Portal', 'User': 'alex_r', '_row': 4}",
+      "confidence": "High"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 2,
+      "record_ref": "operation_dark_web_sample.csv (Row 2)",
+      "timestamp": "2024-04-02 02:15:44",
+      "artifact_id": "web_2",
+      "description": "URL visited: {'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://zqktlwi4fecvo6ri.onion/', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'The Hidden Wiki - Dark Web', 'User': 'alex_r', '_row': 2}",
+      "confidence": "High"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 7,
+      "record_ref": "operation_dark_web_sample.csv (Row 7)",
+      "timestamp": "2024-04-01 22:30:00",
+      "artifact_id": "email_7",
+      "description": "Email: {'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-01 22:30:00', 'Description': 'From: vendor_elite@protonmail.com Subject: Shipment tracking WT7823DE', 'User': 'alex_r', '_row': 7}",
+      "confidence": "High"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 6,
+      "record_ref": "operation_dark_web_sample.csv (Row 6)",
+      "timestamp": "2024-04-02 03:05:18",
+      "artifact_id": "email_6",
+      "description": "Email: {'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-02 03:05:18', 'Description': 'From: anon@protonmail.com To: buyer123@tutanota.com Subject: XMR payment received', 'User': 'alex_r', '_row':",
+      "confidence": "High"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 8,
+      "record_ref": "operation_dark_web_sample.csv (Row 8)",
+      "timestamp": "2024-04-02 01:00:00",
+      "artifact_id": "usb_8",
+      "description": "USB device: {'Artifact Type': 'TSK_DEVICE_ATTACHED', 'Path': 'E:', 'Date/Time': '2024-04-02 01:00:00', 'Description': 'Kingston DataTraveler 32GB - Serial: 0018F3A92B11', 'User': 'alex_r', '_row': 8}",
+      "confidence": "High"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 13,
+      "record_ref": "operation_dark_web_sample.csv (Row 13)",
+      "timestamp": "2024-04-02 03:30:00",
+      "artifact_id": "del_13",
+      "description": "Deleted: transaction_history_xmr.csv",
+      "confidence": "High"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 14,
+      "record_ref": "operation_dark_web_sample.csv (Row 14)",
+      "timestamp": "2024-04-02 03:31:00",
+      "artifact_id": "del_14",
+      "description": "Deleted: vendor_contacts_darkweb.txt",
+      "confidence": "High"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 12,
+      "record_ref": "operation_dark_web_sample.csv (Row 12)",
+      "timestamp": "2024-04-02 00:50:00",
+      "artifact_id": "usr_12",
+      "description": "Account: {'Artifact Type': 'TSK_OS_ACCOUNT', 'Path': 'C:\\\\Users\\\\alex_r', 'Date/Time': '2024-04-02 00:50:00', 'Description': 'Username: alex_r | Last Login: 2024-04-02', 'User': 'alex_r', '_row': 12}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 16,
+      "record_ref": "operation_dark_web_sample.csv (Row 16)",
+      "timestamp": "2024-04-01 23:00:00",
+      "artifact_id": "srch_16",
+      "description": "Searched: {'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-01 23:00:00', 'Description': 'Search: monero untraceable cryptocurrency [HIGH]', 'User': 'alex_r', '_row': 16}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 15,
+      "record_ref": "operation_dark_web_sample.csv (Row 15)",
+      "timestamp": "2024-04-02 02:15:44",
+      "artifact_id": "srch_15",
+      "description": "Searched: {'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'Search: buy substances dark web [CRITICAL]', 'User': 'alex_r', '_row': 15}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 11,
+      "record_ref": "operation_dark_web_sample.csv (Row 11)",
+      "timestamp": "2024-03-15 09:00:00",
+      "artifact_id": "prog_11",
+      "description": "Program: Electrum Wallet",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 10,
+      "record_ref": "operation_dark_web_sample.csv (Row 10)",
+      "timestamp": "2024-03-20 11:00:00",
+      "artifact_id": "prog_10",
+      "description": "Program: VeraCrypt 1.25",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 9,
+      "record_ref": "operation_dark_web_sample.csv (Row 9)",
+      "timestamp": "2024-03-28 20:00:00",
+      "artifact_id": "prog_9",
+      "description": "Program: Tor Browser 13.0",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 11,
+      "record_ref": "operation_dark_web_sample.csv (Row 11)",
+      "timestamp": "2024-03-15 09:00:00",
+      "artifact_id": "tl_11",
+      "description": "{'Artifact Type': 'TSK_INSTALLED_PROG', 'Program Name': 'Electrum Wallet', 'Path': 'C:\\\\Users\\\\alex_r\\\\AppData\\\\Roaming\\\\Electrum', 'Date/Time': '2024-03-15 09:00:00', 'Description': 'Cryptocurrency W",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 10,
+      "record_ref": "operation_dark_web_sample.csv (Row 10)",
+      "timestamp": "2024-03-20 11:00:00",
+      "artifact_id": "tl_10",
+      "description": "{'Artifact Type': 'TSK_INSTALLED_PROG', 'Program Name': 'VeraCrypt 1.25', 'Path': 'C:\\\\Program Files\\\\VeraCrypt', 'Date/Time': '2024-03-20 11:00:00', 'Description': 'Disk Encryption', 'User': 'alex_r'",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 9,
+      "record_ref": "operation_dark_web_sample.csv (Row 9)",
+      "timestamp": "2024-03-28 20:00:00",
+      "artifact_id": "tl_9",
+      "description": "{'Artifact Type': 'TSK_INSTALLED_PROG', 'Program Name': 'Tor Browser 13.0', 'Path': 'C:\\\\Users\\\\alex_r\\\\Desktop\\\\Tor', 'Date/Time': '2024-03-28 20:00:00', 'Description': 'Anonymous Browsing Tool', 'Us",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 7,
+      "record_ref": "operation_dark_web_sample.csv (Row 7)",
+      "timestamp": "2024-04-01 22:30:00",
+      "artifact_id": "tl_7",
+      "description": "{'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-01 22:30:00', 'Description': 'From: vendor_elite@protonmail.com Subject: Shipment tracking WT7823DE', 'User': 'alex_r', '_row': 7}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 5,
+      "record_ref": "operation_dark_web_sample.csv (Row 5)",
+      "timestamp": "2024-04-01 22:44:10",
+      "artifact_id": "tl_5",
+      "description": "{'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://bitcointalk.org/', 'Date/Time': '2024-04-01 22:44:10', 'Description': 'Bitcoin Dark Web Forum', 'User': 'alex_r', '_row': 5}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 16,
+      "record_ref": "operation_dark_web_sample.csv (Row 16)",
+      "timestamp": "2024-04-01 23:00:00",
+      "artifact_id": "tl_16",
+      "description": "{'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-01 23:00:00', 'Description': 'Search: monero untraceable cryptocurrency [HIGH]', 'User': 'alex_r', '_row': 16}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 3,
+      "record_ref": "operation_dark_web_sample.csv (Row 3)",
+      "timestamp": "2024-04-01 23:58:01",
+      "artifact_id": "tl_3",
+      "description": "{'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'https://www.torproject.org/download/', 'Date/Time': '2024-04-01 23:58:01', 'Description': 'Tor Browser Download', 'User': 'alex_r', '_row': 3}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 12,
+      "record_ref": "operation_dark_web_sample.csv (Row 12)",
+      "timestamp": "2024-04-02 00:50:00",
+      "artifact_id": "tl_12",
+      "description": "{'Artifact Type': 'TSK_OS_ACCOUNT', 'Path': 'C:\\\\Users\\\\alex_r', 'Date/Time': '2024-04-02 00:50:00', 'Description': 'Username: alex_r | Last Login: 2024-04-02', 'User': 'alex_r', '_row': 12}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 8,
+      "record_ref": "operation_dark_web_sample.csv (Row 8)",
+      "timestamp": "2024-04-02 01:00:00",
+      "artifact_id": "tl_8",
+      "description": "{'Artifact Type': 'TSK_DEVICE_ATTACHED', 'Path': 'E:', 'Date/Time': '2024-04-02 01:00:00', 'Description': 'Kingston DataTraveler 32GB - Serial: 0018F3A92B11', 'User': 'alex_r', '_row': 8}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 4,
+      "record_ref": "operation_dark_web_sample.csv (Row 4)",
+      "timestamp": "2024-04-02 01:30:22",
+      "artifact_id": "tl_4",
+      "description": "{'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://darknetlive.com/', 'Date/Time': '2024-04-02 01:30:22', 'Description': 'Darknet Live Portal', 'User': 'alex_r', '_row': 4}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 2,
+      "record_ref": "operation_dark_web_sample.csv (Row 2)",
+      "timestamp": "2024-04-02 02:15:44",
+      "artifact_id": "tl_2",
+      "description": "{'Artifact Type': 'TSK_WEB_HISTORY', 'Path': 'http://zqktlwi4fecvo6ri.onion/', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'The Hidden Wiki - Dark Web', 'User': 'alex_r', '_row': 2}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 15,
+      "record_ref": "operation_dark_web_sample.csv (Row 15)",
+      "timestamp": "2024-04-02 02:15:44",
+      "artifact_id": "tl_15",
+      "description": "{'Artifact Type': 'TSK_KEYWORD_HIT', 'Path': 'Browser History', 'Date/Time': '2024-04-02 02:15:44', 'Description': 'Search: buy substances dark web [CRITICAL]', 'User': 'alex_r', '_row': 15}",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 6,
+      "record_ref": "operation_dark_web_sample.csv (Row 6)",
+      "timestamp": "2024-04-02 03:05:18",
+      "artifact_id": "tl_6",
+      "description": "{'Artifact Type': 'TSK_EMAIL_MESSAGE', 'Date/Time': '2024-04-02 03:05:18', 'Description': 'From: anon@protonmail.com To: buyer123@tutanota.com Subject: XMR payment received', 'User': 'alex_r', '_row':",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 13,
+      "record_ref": "operation_dark_web_sample.csv (Row 13)",
+      "timestamp": "2024-04-02 03:30:00",
+      "artifact_id": "tl_13",
+      "description": "{'Artifact Type': 'TSK_RECYCLE_BIN', 'File Name': 'transaction_history_xmr.csv', 'Path': 'C:\\\\$Recycle.Bin\\\\', 'Date/Time': '2024-04-02 03:30:00', 'Description': 'Deleted Monero Transactions', 'User':",
+      "confidence": "Medium"
+    },
+    {
+      "source": "operation_dark_web_sample.csv",
+      "row": 14,
+      "record_ref": "operation_dark_web_sample.csv (Row 14)",
+      "timestamp": "2024-04-02 03:31:00",
+      "artifact_id": "tl_14",
+      "description": "{'Artifact Type': 'TSK_RECYCLE_BIN', 'File Name': 'vendor_contacts_darkweb.txt', 'Path': 'C:\\\\$Recycle.Bin\\\\', 'Date/Time': '2024-04-02 03:31:00', 'Description': 'Deleted Vendor Contacts', 'User': 'al",
+      "confidence": "Medium"
+    }
+  ],
+  "artifacts_detail": {
+    "web_history": {
+      "count": 4,
+      "samples": [
+        {
+          "Artifact Type": "TSK_WEB_HISTORY",
+          "Path": "http://zqktlwi4fecvo6ri.onion/",
+          "Date/Time": "2024-04-02 02:15:44",
+          "Description": "The Hidden Wiki - Dark Web",
+          "User": "alex_r",
+          "_row": 2
+        },
+        {
+          "Artifact Type": "TSK_WEB_HISTORY",
+          "Path": "https://www.torproject.org/download/",
+          "Date/Time": "2024-04-01 23:58:01",
+          "Description": "Tor Browser Download",
+          "User": "alex_r",
+          "_row": 3
+        },
+        {
+          "Artifact Type": "TSK_WEB_HISTORY",
+          "Path": "http://darknetlive.com/",
+          "Date/Time": "2024-04-02 01:30:22",
+          "Description": "Darknet Live Portal",
+          "User": "alex_r",
+          "_row": 4
+        },
+        {
+          "Artifact Type": "TSK_WEB_HISTORY",
+          "Path": "https://bitcointalk.org/",
+          "Date/Time": "2024-04-01 22:44:10",
+          "Description": "Bitcoin Dark Web Forum",
+          "User": "alex_r",
+          "_row": 5
+        }
+      ]
+    },
+    "email_messages": {
+      "count": 2,
+      "samples": [
+        {
+          "Artifact Type": "TSK_EMAIL_MESSAGE",
+          "Date/Time": "2024-04-02 03:05:18",
+          "Description": "From: anon@protonmail.com To: buyer123@tutanota.com Subject: XMR payment received",
+          "User": "alex_r",
+          "_row": 6
+        },
+        {
+          "Artifact Type": "TSK_EMAIL_MESSAGE",
+          "Date/Time": "2024-04-01 22:30:00",
+          "Description": "From: vendor_elite@protonmail.com Subject: Shipment tracking WT7823DE",
+          "User": "alex_r",
+          "_row": 7
+        }
+      ]
+    },
+    "usb_devices": {
+      "count": 1,
+      "samples": [
+        {
+          "Artifact Type": "TSK_DEVICE_ATTACHED",
+          "Path": "E:",
+          "Date/Time": "2024-04-02 01:00:00",
+          "Description": "Kingston DataTraveler 32GB - Serial: 0018F3A92B11",
+          "User": "alex_r",
+          "_row": 8
+        }
+      ]
+    },
+    "user_accounts": {
+      "count": 1,
+      "samples": [
+        {
+          "Artifact Type": "TSK_OS_ACCOUNT",
+          "Path": "C:\\Users\\alex_r",
+          "Date/Time": "2024-04-02 00:50:00",
+          "Description": "Username: alex_r | Last Login: 2024-04-02",
+          "User": "alex_r",
+          "_row": 12
+        }
+      ]
+    },
+    "recent_documents": {
+      "count": 0,
+      "samples": []
+    },
+    "search_queries": {
+      "count": 2,
+      "samples": [
+        {
+          "Artifact Type": "TSK_KEYWORD_HIT",
+          "Path": "Browser History",
+          "Date/Time": "2024-04-02 02:15:44",
+          "Description": "Search: buy substances dark web [CRITICAL]",
+          "User": "alex_r",
+          "_row": 15
+        },
+        {
+          "Artifact Type": "TSK_KEYWORD_HIT",
+          "Path": "Browser History",
+          "Date/Time": "2024-04-01 23:00:00",
+          "Description": "Search: monero untraceable cryptocurrency [HIGH]",
+          "User": "alex_r",
+          "_row": 16
+        }
+      ]
+    },
+    "deleted_files": {
+      "count": 2,
+      "samples": [
+        {
+          "Artifact Type": "TSK_RECYCLE_BIN",
+          "File Name": "transaction_history_xmr.csv",
+          "Path": "C:\\$Recycle.Bin\\",
+          "Date/Time": "2024-04-02 03:30:00",
+          "Description": "Deleted Monero Transactions",
+          "User": "alex_r",
+          "Size": "102400",
+          "_row": 13
+        },
+        {
+          "Artifact Type": "TSK_RECYCLE_BIN",
+          "File Name": "vendor_contacts_darkweb.txt",
+          "Path": "C:\\$Recycle.Bin\\",
+          "Date/Time": "2024-04-02 03:31:00",
+          "Description": "Deleted Vendor Contacts",
+          "User": "alex_r",
+          "Size": "8192",
+          "_row": 14
+        }
+      ]
+    },
+    "installed_programs": {
+      "count": 3,
+      "samples": [
+        {
+          "Artifact Type": "TSK_INSTALLED_PROG",
+          "Program Name": "Tor Browser 13.0",
+          "Path": "C:\\Users\\alex_r\\Desktop\\Tor",
+          "Date/Time": "2024-03-28 20:00:00",
+          "Description": "Anonymous Browsing Tool",
+          "User": "alex_r",
+          "_row": 9
+        },
+        {
+          "Artifact Type": "TSK_INSTALLED_PROG",
+          "Program Name": "VeraCrypt 1.25",
+          "Path": "C:\\Program Files\\VeraCrypt",
+          "Date/Time": "2024-03-20 11:00:00",
+          "Description": "Disk Encryption",
+          "User": "alex_r",
+          "_row": 10
+        },
+        {
+          "Artifact Type": "TSK_INSTALLED_PROG",
+          "Program Name": "Electrum Wallet",
+          "Path": "C:\\Users\\alex_r\\AppData\\Roaming\\Electrum",
+          "Date/Time": "2024-03-15 09:00:00",
+          "Description": "Cryptocurrency Wallet",
+          "User": "alex_r",
+          "_row": 11
+        }
+      ]
+    }
+  },
+  "conclusions": "The examination of Operation Dark Web yielded 15 recoverable artifacts with 0 high-confidence events identified.\n\nAll conclusions are based solely on the digital evidence recovered and analyzed. The forensic examiner makes no determination of guilt or innocence.",
+  "recommendations": [
+    "Further investigation of identified URLs and online accounts is recommended.",
+    "Recovered deleted files should be subjected to detailed content analysis.",
+    "Email communications should be cross-referenced with known contacts.",
+    "External storage devices should be located and forensically examined.",
+    "All recovered artifacts should be reviewed by qualified legal counsel.",
+    "Chain of custody documentation must be maintained throughout legal proceedings."
+  ],
+  "statistics": {
+    "total_artifacts": 15,
+    "total_files": 0,
+    "normalized_events": 0,
+    "high_confidence_events": 0,
+    "medium_confidence_events": 0,
+    "low_confidence_events": 0,
+    "suspicious_events": 3,
+    "web_history_count": 4,
+    "email_count": 2,
+    "installed_programs_count": 3,
+    "usb_devices_count": 1,
+    "user_accounts_count": 1,
+    "recent_documents_count": 0,
+    "search_queries_count": 2,
+    "deleted_files_count": 2,
+    "registry_entries_count": 0,
+    "timeline_events_count": 15,
+    "media_count": 0
+  },
+  "chain_of_custody": {
+    "evidence_item": "operation_dark_web_sample.csv",
+    "file_hash": "691c7d3608fbc2ff5c2d699ff43b56ab",
+    "received_by": "Agent K. Patel",
+    "department": "Digital Forensics Lab",
+    "received_date": "2026-05-28T11:04:27.875330",
+    "analysis_date": "2026-05-28T11:04:27.933755",
+    "tools_used": [
+      "Autopsy Parser v3",
+      "RAG Engine v3",
+      "Automated Digital Forensics Reporter v3"
+    ],
+    "hash_verified": "MD5 hash computed and recorded",
+    "notes": "Evidence handled in accordance with forensic best practices and ACPO guidelines."
+  }
+}

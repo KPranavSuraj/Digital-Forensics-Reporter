@@ -1,0 +1,180 @@
+================================================================================
+FORENSIC IMAGE EVIDENCE MANIFEST
+Case: Operation Dark Web | Number: CY-2024-0112
+Examiner: Agent K. Patel | Department: Cyber Crime Division
+Generated: 2024-06-10 14:00:00
+================================================================================
+Total Image Files Recovered: 7
+Source Device: HP Pavilion Laptop - Asset Tag HP-2024-221 (Sarah Malik)
+================================================================================
+
+================================================================================
+ENTRY 1 - CRITICAL EVIDENCE
+================================================================================
+File Name         : dark_market_listings_screenshot.jpg
+File Path         : C:\Users\smalik\Pictures\Screenshots\dark_market_listings_screenshot.jpg
+File Size         : 1835008 bytes (1.75 MB)
+MD5 Hash          : a1b2c3d4e5f6111000000001abcdef01
+SHA256            : 1a2b3c4d5e6f11100000001abcdef1234567890abcdef1234567890abcdef123456
+Date Created      : 2024-06-05 02:20:00
+Date Modified     : 2024-06-05 02:20:00
+Date Accessed     : 2024-06-05 02:21:00
+Camera Make       : N/A (Screenshot)
+Software          : Tor Browser 13.5 (Screenshot)
+GPS Coordinates   : N/A
+Author            : smalik
+URL Referenced    : http://darkwebmarket3g2urhv.onion/listings
+Description       : Screenshot of dark web marketplace product listings page taken via Tor browser
+Risk Level        : CRITICAL - Direct evidence of dark web marketplace access
+Notes             : Screenshot shows drug listings with prices in BTC/XMR. Taken at 02:20 AM.
+Deleted           : No
+Thumbnail Present : Yes
+
+================================================================================
+ENTRY 2 - CRITICAL EVIDENCE
+================================================================================
+File Name         : crypto_wallet_balance.jpg
+File Path         : C:\Users\smalik\Pictures\Crypto\crypto_wallet_balance.jpg
+File Size         : 614400 bytes (600 KB)
+MD5 Hash          : b2c3d4e5f678222000000002bcdef0234
+SHA256            : 2b3c4d5e6f7822200000000002bcdef12345678901abcdef1234567890abcdef1234
+Date Created      : 2024-06-04 23:00:00
+Date Modified     : 2024-06-04 23:00:00
+Date Accessed     : 2024-06-05 02:30:00
+Camera Make       : N/A (Screenshot)
+Software          : Monero GUI Wallet 0.18.3
+GPS Coordinates   : N/A
+Author            : smalik
+Description       : Screenshot of Monero wallet showing balance of 47.3 XMR (approx. $6,800 USD)
+Risk Level        : CRITICAL - Evidence of significant untraceable cryptocurrency holdings
+Notes             : Wallet balance suggests multiple prior transactions. XMR chosen specifically for untraceability.
+Deleted           : No
+Thumbnail Present : Yes
+
+================================================================================
+ENTRY 3 - DELETED IMAGE RECOVERED
+================================================================================
+File Name         : supplier_package_photo.jpg
+File Path         : C:\$Recycle.Bin\S-1-5-21-xxx\supplier_package_photo.jpg
+File Size         : 3670016 bytes (3.5 MB)
+MD5 Hash          : c3d4e5f6789033300000003cdef034567
+SHA256            : 3c4d5e6f78903330000000003cdef123456789012abcdef1234567890abcdef12345
+Date Created      : 2024-06-04 18:00:00
+Date Modified     : 2024-06-04 18:00:00
+Date Deleted      : 2024-06-05 04:10:00
+Camera Make       : Samsung
+Camera Model      : Galaxy S23
+Software          : Samsung Camera
+GPS Coordinates   : 17.3619° N, 78.4760° E
+GPS Location      : Hyderabad, Telangana, India - Residential area
+Author            : smalik
+Description       : Photograph of received package - physical delivery from supplier
+Risk Level        : CRITICAL - Physical evidence of illegal goods received, deliberately deleted
+Notes             : GPS confirms taken at home address. Photo deleted during evidence cleanup on June 5. Shows opened package contents.
+Deleted           : YES - Recovered from Recycle Bin
+Thumbnail Present : Yes
+
+================================================================================
+ENTRY 4 - SUSPICIOUS IMAGE
+================================================================================
+File Name         : veracrypt_volume_screenshot.png
+File Path         : C:\Users\smalik\Pictures\Screenshots\veracrypt_volume_screenshot.png
+File Size         : 512000 bytes (500 KB)
+MD5 Hash          : d4e5f67890124440000004def04567890
+SHA256            : 4d5e6f78901244400000004def1234567890123abcdef1234567890abcdef1234567
+Date Created      : 2024-05-10 11:30:00
+Date Modified     : 2024-05-10 11:30:00
+Date Accessed     : 2024-06-05 01:05:00
+Camera Make       : N/A (Screenshot)
+Software          : VeraCrypt 1.26
+GPS Coordinates   : N/A
+Author            : smalik
+Description       : Screenshot of VeraCrypt showing mounted encrypted volume VAULT_1 on drive E:
+Risk Level        : HIGH - Evidence of encrypted storage in use on connected USB device
+Device Referenced : Kingston DataTraveler 128GB (ENCRYPTED_VAULT)
+Notes             : Encrypted container mounted on same day as dark web marketplace access. Accessed again June 5.
+Deleted           : No
+Thumbnail Present : Yes
+
+================================================================================
+ENTRY 5 - DELETED IMAGE RECOVERED
+================================================================================
+File Name         : customer_order_confirmation.png
+File Path         : C:\$Recycle.Bin\S-1-5-21-xxx\customer_order_confirmation.png
+File Size         : 768000 bytes (750 KB)
+MD5 Hash          : e5f6789012345550000005ef0567890ab
+SHA256            : 5e6f789012345550000000005ef1234567890123abcdef1234567890abcdef123456
+Date Created      : 2024-06-06 11:30:00
+Date Modified     : 2024-06-06 11:30:00
+Date Deleted      : 2024-06-07 09:00:00
+Camera Make       : N/A (Screenshot)
+Software          : ProtonMail Web Interface
+GPS Coordinates   : N/A
+Author            : smalik
+Email Reference   : customer_447@tutanota.com
+Description       : Screenshot of customer order confirmation email showing XMR payment received
+Risk Level        : CRITICAL - Evidence of completed illegal transaction, deleted to destroy evidence
+Notes             : Shows Monero transaction ID confirming payment receipt from customer. Deleted next day.
+Deleted           : YES - Recovered from Recycle Bin
+Thumbnail Present : Yes
+
+================================================================================
+ENTRY 6 - SUSPICIOUS IMAGE
+================================================================================
+File Name         : pgp_key_generation.png
+File Path         : C:\Users\smalik\Pictures\Screenshots\pgp_key_generation.png
+File Size         : 409600 bytes (400 KB)
+MD5 Hash          : f67890123456666000006f06789012abc
+SHA256            : 6f789012345666600000006f0123456789012abcdef1234567890abcdef12345678
+Date Created      : 2024-05-12 13:30:00
+Date Modified     : 2024-05-12 13:30:00
+Date Accessed     : 2024-06-05 02:55:00
+Camera Make       : N/A (Screenshot)
+Software          : Kleopatra GPG4Win 3.2.0
+GPS Coordinates   : N/A
+Author            : smalik
+Description       : Screenshot of PGP key generation process in Kleopatra - creating key for s.malik.anon@protonmail.com
+Risk Level        : HIGH - Evidence of anonymous identity creation for covert communications
+Email Referenced  : s.malik.anon@protonmail.com
+Notes             : Anonymous email address used for all dark web communications. PGP key linked to this identity.
+Deleted           : No
+Thumbnail Present : Yes
+
+================================================================================
+ENTRY 7 - LOCATION EVIDENCE
+================================================================================
+File Name         : dead_drop_location_photo.jpg
+File Path         : C:\Users\smalik\Pictures\Camera Roll\dead_drop_location_photo.jpg
+File Size         : 5242880 bytes (5.0 MB)
+MD5 Hash          : 1a2b3c4d5e6f777000000007abcdef01
+SHA256            : 7a8b9c0d1e2f77700000007abcdef1234567890abcdef1234567890abcdef1234567
+Date Created      : 2024-06-05 16:00:00
+Date Modified     : 2024-06-05 16:00:00
+Date Accessed     : 2024-06-05 16:05:00
+Camera Make       : Samsung
+Camera Model      : Galaxy S23
+Software          : Samsung Camera
+GPS Coordinates   : 17.4400° N, 78.3489° E
+GPS Location      : Hyderabad, Telangana, India - Public location
+Author            : smalik
+Description       : Photograph of physical dead drop location used for package handoff
+Risk Level        : CRITICAL - GPS evidence of physical meeting location for illegal goods exchange
+Notes             : GPS coordinates match location referenced in supplier email "Shipped via dead drop". Photo taken after delivery.
+Deleted           : No
+Thumbnail Present : Yes
+
+================================================================================
+IMAGE ANALYSIS SUMMARY
+================================================================================
+Total Images         : 7
+Critical Risk        : 5
+High Risk            : 2
+Deleted & Recovered  : 2
+GPS Location Found   : 3 (home address + dead drop location)
+Dark Web Screenshots : 1
+Crypto Evidence      : 2
+Physical Evidence    : 2
+Evidence Destruction : YES (supplier package photo + order confirmation deleted)
+================================================================================
+END OF IMAGE MANIFEST
+================================================================================

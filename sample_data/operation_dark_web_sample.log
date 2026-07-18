@@ -1,0 +1,500 @@
+[2024-04-01 22:00:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2000
+[2024-04-01 22:01:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2001
+[2024-04-01 22:02:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2002
+[2024-04-01 22:03:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2003
+[2024-04-01 22:04:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2004
+[2024-04-01 22:05:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2005
+[2024-04-01 22:06:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2006
+[2024-04-01 22:07:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2007
+[2024-04-01 22:08:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2008
+[2024-04-01 22:09:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2009
+[2024-04-01 22:10:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2010
+[2024-04-01 22:11:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2011
+[2024-04-01 22:12:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2012
+[2024-04-01 22:13:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2013
+[2024-04-01 22:14:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2014
+[2024-04-01 22:15:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2015
+[2024-04-01 22:16:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2016
+[2024-04-01 22:17:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2017
+[2024-04-01 22:18:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2018
+[2024-04-01 22:19:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2019
+[2024-04-01 22:20:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2020
+[2024-04-01 22:21:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2021
+[2024-04-01 22:22:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2022
+[2024-04-01 22:23:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2023
+[2024-04-01 22:24:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2024
+[2024-04-01 22:25:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2025
+[2024-04-01 22:26:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2026
+[2024-04-01 22:27:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2027
+[2024-04-01 22:28:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2028
+[2024-04-01 22:29:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2029
+[2024-04-01 22:30:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2030
+[2024-04-01 22:31:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2031
+[2024-04-01 22:32:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2032
+[2024-04-01 22:33:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2033
+[2024-04-01 22:34:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2034
+[2024-04-01 22:35:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2035
+[2024-04-01 22:36:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2036
+[2024-04-01 22:37:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2037
+[2024-04-01 22:38:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2038
+[2024-04-01 22:39:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2039
+[2024-04-01 23:40:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2040
+[2024-04-01 23:41:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2041
+[2024-04-01 23:42:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2042
+[2024-04-01 23:43:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2043
+[2024-04-01 23:44:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2044
+[2024-04-01 23:45:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2045
+[2024-04-01 23:46:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2046
+[2024-04-01 23:47:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2047
+[2024-04-01 23:48:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2048
+[2024-04-01 23:49:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2049
+[2024-04-01 23:50:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2050
+[2024-04-01 23:51:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2051
+[2024-04-01 23:52:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2052
+[2024-04-01 23:53:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2053
+[2024-04-01 23:54:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2054
+[2024-04-01 23:55:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2055
+[2024-04-01 23:56:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2056
+[2024-04-01 23:57:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2057
+[2024-04-01 23:58:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2058
+[2024-04-01 23:59:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2059
+[2024-04-01 23:00:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2060
+[2024-04-01 23:01:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2061
+[2024-04-01 23:02:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2062
+[2024-04-01 23:03:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2063
+[2024-04-01 23:04:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2064
+[2024-04-01 23:05:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2065
+[2024-04-01 23:06:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2066
+[2024-04-01 23:07:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2067
+[2024-04-01 23:08:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2068
+[2024-04-01 23:09:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2069
+[2024-04-01 23:10:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2070
+[2024-04-01 23:11:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2071
+[2024-04-01 23:12:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2072
+[2024-04-01 23:13:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2073
+[2024-04-01 23:14:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2074
+[2024-04-01 23:15:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2075
+[2024-04-01 23:16:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2076
+[2024-04-01 23:17:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2077
+[2024-04-01 23:18:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2078
+[2024-04-01 23:19:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2079
+[2024-04-02 00:20:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2080
+[2024-04-02 00:21:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2081
+[2024-04-02 00:22:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2082
+[2024-04-02 00:23:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2083
+[2024-04-02 00:24:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2084
+[2024-04-02 00:25:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2085
+[2024-04-02 00:26:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2086
+[2024-04-02 00:27:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2087
+[2024-04-02 00:28:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2088
+[2024-04-02 00:29:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2089
+[2024-04-02 00:30:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2090
+[2024-04-02 00:31:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2091
+[2024-04-02 00:32:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2092
+[2024-04-02 00:33:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2093
+[2024-04-02 00:34:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2094
+[2024-04-02 00:35:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2095
+[2024-04-02 00:36:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2096
+[2024-04-02 00:37:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2097
+[2024-04-02 00:38:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2098
+[2024-04-02 00:39:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2099
+[2024-04-02 00:40:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2100
+[2024-04-02 00:41:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2101
+[2024-04-02 00:42:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2102
+[2024-04-02 00:43:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2103
+[2024-04-02 00:44:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2104
+[2024-04-02 00:45:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2105
+[2024-04-02 00:46:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2106
+[2024-04-02 00:47:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2107
+[2024-04-02 00:48:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2108
+[2024-04-02 00:49:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2109
+[2024-04-02 00:50:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2110
+[2024-04-02 00:51:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2111
+[2024-04-02 00:52:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2112
+[2024-04-02 00:53:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2113
+[2024-04-02 00:54:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2114
+[2024-04-02 00:55:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2115
+[2024-04-02 00:56:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2116
+[2024-04-02 00:57:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2117
+[2024-04-02 00:58:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2118
+[2024-04-02 00:59:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2119
+[2024-04-02 01:00:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2120
+[2024-04-02 01:01:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2121
+[2024-04-02 01:02:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2122
+[2024-04-02 01:03:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2123
+[2024-04-02 01:04:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2124
+[2024-04-02 01:05:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2125
+[2024-04-02 01:06:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2126
+[2024-04-02 01:07:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2127
+[2024-04-02 01:08:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2128
+[2024-04-02 01:09:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2129
+[2024-04-02 01:10:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2130
+[2024-04-02 01:11:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2131
+[2024-04-02 01:12:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2132
+[2024-04-02 01:13:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2133
+[2024-04-02 01:14:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2134
+[2024-04-02 01:15:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2135
+[2024-04-02 01:16:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2136
+[2024-04-02 01:17:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2137
+[2024-04-02 01:18:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2138
+[2024-04-02 01:19:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2139
+[2024-04-02 01:20:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2140
+[2024-04-02 01:21:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2141
+[2024-04-02 01:22:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2142
+[2024-04-02 01:23:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2143
+[2024-04-02 01:24:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2144
+[2024-04-02 01:25:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2145
+[2024-04-02 01:26:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2146
+[2024-04-02 01:27:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2147
+[2024-04-02 01:28:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2148
+[2024-04-02 01:29:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2149
+[2024-04-02 01:30:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2150
+[2024-04-02 01:31:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2151
+[2024-04-02 01:32:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2152
+[2024-04-02 01:33:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2153
+[2024-04-02 01:34:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2154
+[2024-04-02 01:35:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2155
+[2024-04-02 01:36:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2156
+[2024-04-02 01:37:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2157
+[2024-04-02 01:38:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2158
+[2024-04-02 01:39:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2159
+[2024-04-02 02:40:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2160
+[2024-04-02 02:41:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2161
+[2024-04-02 02:42:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2162
+[2024-04-02 02:43:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2163
+[2024-04-02 02:44:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2164
+[2024-04-02 02:45:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2165
+[2024-04-02 02:46:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2166
+[2024-04-02 02:47:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2167
+[2024-04-02 02:48:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2168
+[2024-04-02 02:49:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2169
+[2024-04-02 02:50:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2170
+[2024-04-02 02:51:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2171
+[2024-04-02 02:52:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2172
+[2024-04-02 02:53:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2173
+[2024-04-02 02:54:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2174
+[2024-04-02 02:55:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2175
+[2024-04-02 02:56:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2176
+[2024-04-02 02:57:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2177
+[2024-04-02 02:58:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2178
+[2024-04-02 02:59:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2179
+[2024-04-02 02:00:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2180
+[2024-04-02 02:01:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2181
+[2024-04-02 02:02:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2182
+[2024-04-02 02:03:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2183
+[2024-04-02 02:04:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2184
+[2024-04-02 02:05:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2185
+[2024-04-02 02:06:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2186
+[2024-04-02 02:07:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2187
+[2024-04-02 02:08:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2188
+[2024-04-02 02:09:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2189
+[2024-04-02 02:10:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2190
+[2024-04-02 02:11:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2191
+[2024-04-02 02:12:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2192
+[2024-04-02 02:13:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2193
+[2024-04-02 02:14:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2194
+[2024-04-02 02:15:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2195
+[2024-04-02 02:16:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2196
+[2024-04-02 02:17:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2197
+[2024-04-02 02:18:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2198
+[2024-04-02 02:19:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2199
+[2024-04-02 03:20:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2200
+[2024-04-02 03:21:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2201
+[2024-04-02 03:22:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2202
+[2024-04-02 03:23:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2203
+[2024-04-02 03:24:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2204
+[2024-04-02 03:25:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2205
+[2024-04-02 03:26:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2206
+[2024-04-02 03:27:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2207
+[2024-04-02 03:28:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2208
+[2024-04-02 03:29:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2209
+[2024-04-02 03:30:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2210
+[2024-04-02 03:31:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2211
+[2024-04-02 03:32:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2212
+[2024-04-02 03:33:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2213
+[2024-04-02 03:34:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2214
+[2024-04-02 03:35:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2215
+[2024-04-02 03:36:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2216
+[2024-04-02 03:37:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2217
+[2024-04-02 03:38:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2218
+[2024-04-02 03:39:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2219
+[2024-04-02 03:40:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2220
+[2024-04-02 03:41:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2221
+[2024-04-02 03:42:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2222
+[2024-04-02 03:43:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2223
+[2024-04-02 03:44:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2224
+[2024-04-02 03:45:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2225
+[2024-04-02 03:46:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2226
+[2024-04-02 03:47:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2227
+[2024-04-02 03:48:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2228
+[2024-04-02 03:49:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2229
+[2024-04-02 03:50:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2230
+[2024-04-02 03:51:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2231
+[2024-04-02 03:52:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2232
+[2024-04-02 03:53:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2233
+[2024-04-02 03:54:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2234
+[2024-04-02 03:55:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2235
+[2024-04-02 03:56:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2236
+[2024-04-02 03:57:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2237
+[2024-04-02 03:58:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2238
+[2024-04-02 03:59:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2239
+[2024-04-02 04:00:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2240
+[2024-04-02 04:01:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2241
+[2024-04-02 04:02:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2242
+[2024-04-02 04:03:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2243
+[2024-04-02 04:04:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2244
+[2024-04-02 04:05:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2245
+[2024-04-02 04:06:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2246
+[2024-04-02 04:07:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2247
+[2024-04-02 04:08:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2248
+[2024-04-02 04:09:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2249
+[2024-04-02 04:10:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2250
+[2024-04-02 04:11:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2251
+[2024-04-02 04:12:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2252
+[2024-04-02 04:13:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2253
+[2024-04-02 04:14:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2254
+[2024-04-02 04:15:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2255
+[2024-04-02 04:16:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2256
+[2024-04-02 04:17:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2257
+[2024-04-02 04:18:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2258
+[2024-04-02 04:19:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2259
+[2024-04-02 04:20:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2260
+[2024-04-02 04:21:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2261
+[2024-04-02 04:22:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2262
+[2024-04-02 04:23:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2263
+[2024-04-02 04:24:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2264
+[2024-04-02 04:25:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2265
+[2024-04-02 04:26:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2266
+[2024-04-02 04:27:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2267
+[2024-04-02 04:28:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2268
+[2024-04-02 04:29:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2269
+[2024-04-02 04:30:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2270
+[2024-04-02 04:31:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2271
+[2024-04-02 04:32:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2272
+[2024-04-02 04:33:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2273
+[2024-04-02 04:34:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2274
+[2024-04-02 04:35:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2275
+[2024-04-02 04:36:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2276
+[2024-04-02 04:37:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2277
+[2024-04-02 04:38:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2278
+[2024-04-02 04:39:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2279
+[2024-04-02 05:40:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2280
+[2024-04-02 05:41:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2281
+[2024-04-02 05:42:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2282
+[2024-04-02 05:43:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2283
+[2024-04-02 05:44:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2284
+[2024-04-02 05:45:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2285
+[2024-04-02 05:46:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2286
+[2024-04-02 05:47:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2287
+[2024-04-02 05:48:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2288
+[2024-04-02 05:49:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2289
+[2024-04-02 05:50:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2290
+[2024-04-02 05:51:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2291
+[2024-04-02 05:52:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2292
+[2024-04-02 05:53:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2293
+[2024-04-02 05:54:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2294
+[2024-04-02 05:55:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2295
+[2024-04-02 05:56:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2296
+[2024-04-02 05:57:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2297
+[2024-04-02 05:58:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2298
+[2024-04-02 05:59:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2299
+[2024-04-02 05:00:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2300
+[2024-04-02 05:01:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2301
+[2024-04-02 05:02:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2302
+[2024-04-02 05:03:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2303
+[2024-04-02 05:04:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2304
+[2024-04-02 05:05:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2305
+[2024-04-02 05:06:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2306
+[2024-04-02 05:07:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2307
+[2024-04-02 05:08:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2308
+[2024-04-02 05:09:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2309
+[2024-04-02 05:10:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2310
+[2024-04-02 05:11:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2311
+[2024-04-02 05:12:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2312
+[2024-04-02 05:13:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2313
+[2024-04-02 05:14:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2314
+[2024-04-02 05:15:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2315
+[2024-04-02 05:16:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2316
+[2024-04-02 05:17:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2317
+[2024-04-02 05:18:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2318
+[2024-04-02 05:19:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2319
+[2024-04-02 06:20:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2320
+[2024-04-02 06:21:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2321
+[2024-04-02 06:22:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2322
+[2024-04-02 06:23:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2323
+[2024-04-02 06:24:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2324
+[2024-04-02 06:25:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2325
+[2024-04-02 06:26:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2326
+[2024-04-02 06:27:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2327
+[2024-04-02 06:28:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2328
+[2024-04-02 06:29:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2329
+[2024-04-02 06:30:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2330
+[2024-04-02 06:31:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2331
+[2024-04-02 06:32:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2332
+[2024-04-02 06:33:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2333
+[2024-04-02 06:34:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2334
+[2024-04-02 06:35:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2335
+[2024-04-02 06:36:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2336
+[2024-04-02 06:37:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2337
+[2024-04-02 06:38:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2338
+[2024-04-02 06:39:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2339
+[2024-04-02 06:40:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2340
+[2024-04-02 06:41:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2341
+[2024-04-02 06:42:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2342
+[2024-04-02 06:43:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2343
+[2024-04-02 06:44:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2344
+[2024-04-02 06:45:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2345
+[2024-04-02 06:46:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2346
+[2024-04-02 06:47:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2347
+[2024-04-02 06:48:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2348
+[2024-04-02 06:49:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2349
+[2024-04-02 06:50:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2350
+[2024-04-02 06:51:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2351
+[2024-04-02 06:52:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2352
+[2024-04-02 06:53:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2353
+[2024-04-02 06:54:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2354
+[2024-04-02 06:55:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2355
+[2024-04-02 06:56:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2356
+[2024-04-02 06:57:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2357
+[2024-04-02 06:58:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2358
+[2024-04-02 06:59:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2359
+[2024-04-02 07:00:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2360
+[2024-04-02 07:01:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2361
+[2024-04-02 07:02:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2362
+[2024-04-02 07:03:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2363
+[2024-04-02 07:04:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2364
+[2024-04-02 07:05:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2365
+[2024-04-02 07:06:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2366
+[2024-04-02 07:07:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2367
+[2024-04-02 07:08:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2368
+[2024-04-02 07:09:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2369
+[2024-04-02 07:10:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2370
+[2024-04-02 07:11:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2371
+[2024-04-02 07:12:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2372
+[2024-04-02 07:13:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2373
+[2024-04-02 07:14:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2374
+[2024-04-02 07:15:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2375
+[2024-04-02 07:16:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2376
+[2024-04-02 07:17:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2377
+[2024-04-02 07:18:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2378
+[2024-04-02 07:19:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2379
+[2024-04-02 07:20:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2380
+[2024-04-02 07:21:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2381
+[2024-04-02 07:22:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2382
+[2024-04-02 07:23:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2383
+[2024-04-02 07:24:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2384
+[2024-04-02 07:25:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2385
+[2024-04-02 07:26:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2386
+[2024-04-02 07:27:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2387
+[2024-04-02 07:28:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2388
+[2024-04-02 07:29:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2389
+[2024-04-02 07:30:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2390
+[2024-04-02 07:31:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2391
+[2024-04-02 07:32:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2392
+[2024-04-02 07:33:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2393
+[2024-04-02 07:34:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2394
+[2024-04-02 07:35:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2395
+[2024-04-02 07:36:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2396
+[2024-04-02 07:37:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2397
+[2024-04-02 07:38:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2398
+[2024-04-02 07:39:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2399
+[2024-04-02 08:40:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2400
+[2024-04-02 08:41:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2401
+[2024-04-02 08:42:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2402
+[2024-04-02 08:43:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2403
+[2024-04-02 08:44:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2404
+[2024-04-02 08:45:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2405
+[2024-04-02 08:46:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2406
+[2024-04-02 08:47:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2407
+[2024-04-02 08:48:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2408
+[2024-04-02 08:49:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2409
+[2024-04-02 08:50:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2410
+[2024-04-02 08:51:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2411
+[2024-04-02 08:52:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2412
+[2024-04-02 08:53:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2413
+[2024-04-02 08:54:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2414
+[2024-04-02 08:55:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2415
+[2024-04-02 08:56:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2416
+[2024-04-02 08:57:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2417
+[2024-04-02 08:58:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2418
+[2024-04-02 08:59:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2419
+[2024-04-02 08:00:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2420
+[2024-04-02 08:01:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2421
+[2024-04-02 08:02:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2422
+[2024-04-02 08:03:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2423
+[2024-04-02 08:04:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2424
+[2024-04-02 08:05:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2425
+[2024-04-02 08:06:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2426
+[2024-04-02 08:07:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2427
+[2024-04-02 08:08:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2428
+[2024-04-02 08:09:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2429
+[2024-04-02 08:10:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2430
+[2024-04-02 08:11:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2431
+[2024-04-02 08:12:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2432
+[2024-04-02 08:13:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2433
+[2024-04-02 08:14:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2434
+[2024-04-02 08:15:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2435
+[2024-04-02 08:16:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2436
+[2024-04-02 08:17:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2437
+[2024-04-02 08:18:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2438
+[2024-04-02 08:19:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2439
+[2024-04-02 09:20:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2440
+[2024-04-02 09:21:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2441
+[2024-04-02 09:22:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2442
+[2024-04-02 09:23:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2443
+[2024-04-02 09:24:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2444
+[2024-04-02 09:25:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2445
+[2024-04-02 09:26:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2446
+[2024-04-02 09:27:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2447
+[2024-04-02 09:28:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2448
+[2024-04-02 09:29:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2449
+[2024-04-02 09:30:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2450
+[2024-04-02 09:31:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2451
+[2024-04-02 09:32:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2452
+[2024-04-02 09:33:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2453
+[2024-04-02 09:34:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2454
+[2024-04-02 09:35:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2455
+[2024-04-02 09:36:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2456
+[2024-04-02 09:37:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2457
+[2024-04-02 09:38:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2458
+[2024-04-02 09:39:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2459
+[2024-04-02 09:40:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2460
+[2024-04-02 09:41:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2461
+[2024-04-02 09:42:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2462
+[2024-04-02 09:43:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2463
+[2024-04-02 09:44:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2464
+[2024-04-02 09:45:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2465
+[2024-04-02 09:46:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2466
+[2024-04-02 09:47:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2467
+[2024-04-02 09:48:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2468
+[2024-04-02 09:49:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2469
+[2024-04-02 09:50:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2470
+[2024-04-02 09:51:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2471
+[2024-04-02 09:52:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2472
+[2024-04-02 09:53:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2473
+[2024-04-02 09:54:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2474
+[2024-04-02 09:55:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2475
+[2024-04-02 09:56:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2476
+[2024-04-02 09:57:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2477
+[2024-04-02 09:58:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2478
+[2024-04-02 09:59:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2479
+[2024-04-02 10:00:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2480
+[2024-04-02 10:01:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2481
+[2024-04-02 10:02:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2482
+[2024-04-02 10:03:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2483
+[2024-04-02 10:04:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2484
+[2024-04-02 10:05:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2485
+[2024-04-02 10:06:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2486
+[2024-04-02 10:07:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2487
+[2024-04-02 10:08:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2488
+[2024-04-02 10:09:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2489
+[2024-04-02 10:10:00] [CRIT] [TOR] Tor Browser launched — anonymous circuit established via 3 relay nodes | host=ALEX-PC | user=alex_r | pid=2490
+[2024-04-02 10:11:00] [CRIT] [CRYPTO] Monero wallet activity: Electrum transaction signed — XMR 2.5 sent | host=ALEX-PC | user=alex_r | pid=2491
+[2024-04-02 10:12:00] [WARN] [CRYPT] VeraCrypt container mounted at E:\hidden_volume | host=ALEX-PC | user=alex_r | pid=2492
+[2024-04-02 10:13:00] [CRIT] [NET] Connection to .onion domain: darknetlive.com via Tor exit node | host=ALEX-PC | user=alex_r | pid=2493
+[2024-04-02 10:14:00] [WARN] [EMAIL] ProtonMail session to buyer123@tutanota.com — XMR payment received | host=ALEX-PC | user=alex_r | pid=2494
+[2024-04-02 10:15:00] [CRIT] [FILE] File deleted: transaction_history_xmr.csv from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2495
+[2024-04-02 10:16:00] [CRIT] [FILE] File deleted: vendor_contacts_darkweb.txt from Recycle Bin | host=ALEX-PC | user=alex_r | pid=2496
+[2024-04-02 10:17:00] [WARN] [PROC] Process started: electrum.exe — Monero wallet opened | host=ALEX-PC | user=alex_r | pid=2497
+[2024-04-02 10:18:00] [INFO] [AUTH] User alex_r logged in from ALEX-PC at 22:50:00 | host=ALEX-PC | user=alex_r | pid=2498
+[2024-04-02 10:19:00] [CRIT] [USB] USB device mounted: Kingston DataTraveler 32GB [0018F3A92B11] on E: | host=ALEX-PC | user=alex_r | pid=2499

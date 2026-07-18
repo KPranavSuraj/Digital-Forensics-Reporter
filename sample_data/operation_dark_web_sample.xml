@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forensic_report case_name="Operation Dark Web" case_number="CY-2024-0090" analyst="Agent K. Patel">
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+  <web_history><url>http://darknetlive.com/</url><timestamp>2024-04-02 01:30:00</timestamp><user>alex_r</user><risk>HIGH</risk></web_history>
+  <email><from>anon@protonmail.com</from><to>buyer123@tutanota.com</to><subject>XMR payment</subject><timestamp>2024-04-02 03:05:00</timestamp><risk>CRITICAL</risk></email>
+  <deleted_file><name>transaction_history_xmr.csv</name><size_bytes>102400</size_bytes><timestamp>2024-04-02 03:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>vendor_contacts_darkweb.txt</name><size_bytes>8192</size_bytes><timestamp>2024-04-02 03:31:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <installed_program><name>Tor Browser 13.0</name><timestamp>2024-03-28 20:00:00</timestamp><risk>HIGH</risk></installed_program>
+  <installed_program><name>VeraCrypt 1.25</name><timestamp>2024-03-20 11:00:00</timestamp><risk>CRITICAL</risk></installed_program>
+  <keyword_hit><keyword>buy substances dark web</keyword><source>Browser History</source><timestamp>2024-04-02 02:15:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <usb_device><name>Kingston DataTraveler 32GB</name><serial>0018F3A92B11</serial><mount>E:</mount><timestamp>2024-04-02 01:00:00</timestamp><risk>HIGH</risk></usb_device>
+</forensic_report>

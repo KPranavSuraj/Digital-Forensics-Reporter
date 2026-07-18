@@ -1,0 +1,159 @@
+================================================================================
+FORENSIC IMAGE EVIDENCE MANIFEST
+Case: Operation Insider Threat | Number: CY-2024-0089
+Examiner: Agent M. Rodriguez | Department: Digital Forensics Lab
+Generated: 2024-03-20 10:00:00
+================================================================================
+Total Image Files Recovered: 6
+Source Device: HP EliteBook 840 - john_doe workstation
+================================================================================
+
+================================================================================
+ENTRY 1 - SUSPICIOUS IMAGE
+================================================================================
+File Name         : competitors_org_chart.jpg
+File Path         : C:\Users\john_doe\Documents\Competitors\competitors_org_chart.jpg
+File Size         : 2457600 bytes (2.4 MB)
+MD5 Hash          : a1b2c3d4e5f6789012345678abcdef01
+SHA256            : 1a2b3c4d5e6f7890abcdef1234567890abcdef1234567890abcdef1234567890ab
+Date Created      : 2024-03-12 14:30:00
+Date Modified     : 2024-03-12 14:35:00
+Date Accessed     : 2024-03-15 09:00:00
+Camera Make       : N/A (Screenshot)
+Camera Model      : N/A
+Software          : Snipping Tool 11.2302.20.0
+GPS Coordinates   : N/A
+Author            : john_doe
+Description       : Screenshot of competitor organizational chart - downloaded from competitor website
+Risk Level        : HIGH - Corporate espionage evidence
+Notes             : Image contains competitor company structure photographed for intelligence gathering
+Deleted           : No
+Thumbnail Present : Yes
+
+================================================================================
+ENTRY 2 - CRITICAL EVIDENCE
+================================================================================
+File Name         : confidential_document_photo.jpg
+File Path         : C:\Users\john_doe\Pictures\confidential_document_photo.jpg
+File Size         : 4915200 bytes (4.7 MB)
+MD5 Hash          : b2c3d4e5f678901234567890abcdef02
+SHA256            : 2b3c4d5e6f7890abcdef1234567890abcdef1234567890abcdef1234567890abcd
+Date Created      : 2024-03-14 21:45:00
+Date Modified     : 2024-03-14 21:45:00
+Date Accessed     : 2024-03-14 22:00:00
+Camera Make       : Apple
+Camera Model      : iPhone 14 Pro
+Software          : iOS 17.3.1
+GPS Coordinates   : 17.3850° N, 78.4867° E
+GPS Location      : Hyderabad, Telangana, India
+Author            : john_doe
+Description       : Photograph of Q4 strategy document taken with mobile phone
+Risk Level        : CRITICAL - Unauthorized photography of confidential documents
+Notes             : GPS metadata confirms image taken at office location after hours (21:45)
+Deleted           : No (Found in iCloud sync folder)
+Thumbnail Present : Yes
+
+================================================================================
+ENTRY 3 - DELETED IMAGE RECOVERED
+================================================================================
+File Name         : usb_transfer_screenshot.png
+File Path         : C:\$Recycle.Bin\S-1-5-21-xxx\usb_transfer_screenshot.png
+File Size         : 892416 bytes (872 KB)
+MD5 Hash          : c3d4e5f678901234567890abcdef0312
+SHA256            : 3c4d5e6f7890abcdef1234567890abcdef1234567890abcdef1234567890abcde
+Date Created      : 2024-03-15 09:10:00
+Date Modified     : 2024-03-15 09:10:00
+Date Accessed     : 2024-03-15 09:10:00
+Date Deleted      : 2024-03-15 10:45:00
+Camera Make       : N/A (Screenshot)
+Software          : Snipping Tool
+GPS Coordinates   : N/A
+Author            : john_doe
+Description       : Screenshot showing Windows Explorer with USB drive contents being copied
+Risk Level        : CRITICAL - Evidence of USB data transfer, deliberately deleted
+Notes             : Shows file transfer in progress to SanDisk USB device. Deleted to destroy evidence.
+Deleted           : YES - Recovered from Recycle Bin
+Thumbnail Present : Yes
+
+================================================================================
+ENTRY 4 - SUSPICIOUS IMAGE
+================================================================================
+File Name         : mega_upload_confirmation.png
+File Path         : C:\Users\john_doe\AppData\Local\Temp\mega_upload_confirmation.png
+File Size         : 345600 bytes (338 KB)
+MD5 Hash          : d4e5f678901234567890abcdef031234
+SHA256            : 4d5e6f7890abcdef1234567890abcdef1234567890abcdef1234567890abcdef01
+Date Created      : 2024-03-15 09:50:00
+Date Modified     : 2024-03-15 09:50:00
+Date Accessed     : 2024-03-15 09:50:00
+Camera Make       : N/A (Screenshot)
+Software          : Browser Screenshot Plugin
+GPS Coordinates   : N/A
+Author            : john_doe
+Description       : Screenshot of MEGA cloud upload confirmation showing client_database.zip uploaded
+Risk Level        : CRITICAL - Evidence of cloud exfiltration
+URL Referenced    : https://mega.nz/upload/secret_docs
+Notes             : Confirms successful upload of confidential files to MEGA cloud storage
+Deleted           : No
+Thumbnail Present : Yes
+
+================================================================================
+ENTRY 5 - RECOVERED DELETED
+================================================================================
+File Name         : recruiter_email_screenshot.jpg
+File Path         : C:\$Recycle.Bin\S-1-5-21-xxx\recruiter_email_screenshot.jpg
+File Size         : 1228800 bytes (1.2 MB)
+MD5 Hash          : e5f678901234567890abcdef03123456
+SHA256            : 5e6f7890abcdef1234567890abcdef1234567890abcdef1234567890abcdef0123
+Date Created      : 2024-03-14 22:20:00
+Date Modified     : 2024-03-14 22:20:00
+Date Deleted      : 2024-03-15 10:50:00
+Camera Make       : N/A (Screenshot)
+Software          : Snipping Tool
+GPS Coordinates   : N/A
+Author            : john_doe
+Email Reference   : From: john_doe@corp.com To: recruiter@competitor-corp.com
+Description       : Screenshot of email conversation with competitor recruiter discussing job offer
+Risk Level        : CRITICAL - Evidence of contact with competitor, deleted deliberately
+Notes             : Shows email thread about joining competitor company. Deleted after sending files.
+Deleted           : YES - Recovered from Recycle Bin
+Thumbnail Present : Yes
+
+================================================================================
+ENTRY 6 - METADATA EVIDENCE
+================================================================================
+File Name         : office_whiteboard_photo.jpg
+File Path         : C:\Users\john_doe\Pictures\Camera Roll\office_whiteboard_photo.jpg
+File Size         : 6291456 bytes (6.0 MB)
+MD5 Hash          : f678901234567890abcdef0312345678
+SHA256            : 6f7890abcdef1234567890abcdef1234567890abcdef1234567890abcdef012345
+Date Created      : 2024-03-13 16:00:00
+Date Modified     : 2024-03-13 16:00:00
+Date Accessed     : 2024-03-14 21:00:00
+Camera Make       : Apple
+Camera Model      : iPhone 14 Pro
+Software          : iOS 17.3.1
+GPS Coordinates   : 17.3850° N, 78.4867° E
+GPS Location      : Hyderabad, Telangana, India
+Author            : john_doe
+Description       : Photo of office whiteboard showing product roadmap and unreleased features
+Risk Level        : CRITICAL - Unauthorized photography of proprietary business plans
+Notes             : GPS confirms taken inside office premises. Shows R&D pipeline details.
+Deleted           : No
+Thumbnail Present : Yes
+
+================================================================================
+IMAGE ANALYSIS SUMMARY
+================================================================================
+Total Images         : 6
+Critical Risk        : 4
+High Risk            : 2
+Deleted & Recovered  : 2
+GPS Location Found   : 2 (both at office location)
+Screenshots          : 4
+Mobile Phone Photos  : 2
+Evidence of Exfil    : YES (MEGA upload confirmation, USB transfer screenshot)
+Evidence Destruction : YES (2 images deliberately deleted)
+================================================================================
+END OF IMAGE MANIFEST
+================================================================================

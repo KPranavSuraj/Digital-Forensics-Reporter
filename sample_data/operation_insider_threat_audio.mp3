@@ -1,0 +1,131 @@
+================================================================================
+FORENSIC AUDIO EVIDENCE MANIFEST
+Case: Operation Insider Threat | Number: CY-2024-0089
+Examiner: Agent M. Rodriguez | Department: Digital Forensics Lab
+Generated: 2024-03-20 11:00:00
+================================================================================
+Total Audio Files Recovered: 4
+Source Device: HP EliteBook 840 - john_doe workstation + iPhone 14 Pro
+================================================================================
+
+================================================================================
+ENTRY 1 - CRITICAL EVIDENCE
+================================================================================
+File Name         : phone_call_recording_march14.mp3
+File Path         : C:\Users\john_doe\Documents\Calls\phone_call_recording_march14.mp3
+File Size         : 7340032 bytes (7.0 MB)
+MD5 Hash          : a1b2c3d4e5f6aaa000000001abcdef01
+SHA256            : 1a2b3c4d5e6faaa00000001abcdef1234567890abcdef1234567890abcdef123456
+Duration          : 00:12:47
+Bit Rate          : 128 kbps
+Sample Rate       : 44100 Hz
+Channels          : Stereo
+Codec             : MP3
+Date Created      : 2024-03-14 22:05:00
+Date Modified     : 2024-03-14 22:18:00
+Date Accessed     : 2024-03-15 08:00:00
+Software          : Automatic Call Recorder Pro (Android/iOS)
+Author            : john_doe
+Phone Number      : +91-XXXXXXXXXX (Competitor company HR)
+Email Reference   : recruiter@competitor-corp.com
+Description       : Recording of phone call with competitor company recruiter discussing employment offer and data sharing
+Risk Level        : CRITICAL - Audio evidence of conspiracy with competitor
+Notes             : 12-minute call recorded using call recording app. Caller discusses sharing confidential strategy documents in exchange for job offer. Call made same evening as email to recruiter.
+Deleted           : No (Synced from iPhone via iTunes)
+Transcript        : Partial - keywords: strategy document, client list, Q4 roadmap, joining bonus
+
+================================================================================
+ENTRY 2 - DELETED AUDIO RECOVERED
+================================================================================
+File Name         : voice_memo_instructions.m4a
+File Path         : C:\$Recycle.Bin\S-1-5-21-xxx\voice_memo_instructions.m4a
+File Size         : 2097152 bytes (2.0 MB)
+MD5 Hash          : b2c3d4e5f678bbb000000002bcdef0234
+SHA256            : 2b3c4d5e6f78bbb0000000002bcdef123456789abcdef1234567890abcdef12345678
+Duration          : 00:03:22
+Bit Rate          : 64 kbps
+Sample Rate       : 22050 Hz
+Channels          : Mono
+Codec             : AAC (M4A)
+Date Created      : 2024-03-13 20:00:00
+Date Modified     : 2024-03-13 20:03:00
+Date Deleted      : 2024-03-15 10:58:00
+Software          : iPhone Voice Memos
+Author            : john_doe
+GPS Coordinates   : 17.3850° N, 78.4867° E
+GPS Location      : Hyderabad, Telangana, India
+Description       : Self-recorded voice memo with instructions for data transfer procedure
+Risk Level        : CRITICAL - Self-incriminating voice memo, deliberately deleted
+Notes             : Voice memo recorded on iPhone describes step-by-step instructions for copying files to USB without triggering DLP alerts. Deleted on exfiltration day to destroy evidence.
+Deleted           : YES - Recovered from Recycle Bin
+Transcript        : Partial - keywords: DLP bypass, USB copy, cloud upload, delete logs, CCleaner
+
+================================================================================
+ENTRY 3 - SUSPICIOUS AUDIO
+================================================================================
+File Name         : teams_meeting_audio_export.wav
+File Path         : C:\Users\john_doe\Downloads\teams_meeting_audio_export.wav
+File Size         : 94371840 bytes (90 MB)
+MD5 Hash          : c3d4e5f6789ccc000000003cdef03456
+SHA256            : 3c4d5e6f789ccc0000000003cdef12345678901abcdef1234567890abcdef1234567
+Duration          : 00:45:03
+Bit Rate          : 256 kbps
+Sample Rate       : 48000 Hz
+Channels          : Stereo
+Codec             : WAV (PCM)
+Date Created      : 2024-03-10 15:00:00
+Date Modified     : 2024-03-10 15:01:00
+Date Accessed     : 2024-03-14 21:30:00
+Software          : Microsoft Teams (Audio Export)
+Author            : john_doe
+GPS Coordinates   : N/A
+Description       : Audio export of executive product roadmap meeting - exported without authorization
+Risk Level        : CRITICAL - Unauthorized recording and export of confidential meeting audio
+Meeting Title     : Q4 2024 Product Roadmap - CONFIDENTIAL
+Attendees         : CEO, CTO, VP Product, VP Engineering (john_doe not listed as recorder)
+Notes             : Full 45-minute audio of strategy meeting exported as WAV. John Doe was not authorized to record. Accessed again night before data exfiltration suggesting review before sending.
+Deleted           : No
+Transcript        : Available (Microsoft Teams auto-transcription)
+
+================================================================================
+ENTRY 4 - EVIDENCE AUDIO
+================================================================================
+File Name         : whatsapp_voice_note_competitor.opus
+File Path         : C:\Users\john_doe\AppData\Roaming\WhatsApp\Media\WhatsApp Voice Notes\whatsapp_voice_note_competitor.opus
+File Size         : 524288 bytes (512 KB)
+MD5 Hash          : d4e5f6789012ddd00000004def045678
+SHA256            : 4d5e6f7890120000000004def123456789012abcdef1234567890abcdef12345678
+Duration          : 00:01:08
+Bit Rate          : 32 kbps
+Sample Rate       : 16000 Hz
+Channels          : Mono
+Codec             : Opus (WhatsApp)
+Date Created      : 2024-03-15 07:30:00
+Date Modified     : 2024-03-15 07:30:00
+Date Accessed     : 2024-03-15 07:35:00
+Software          : WhatsApp Desktop
+Author            : john_doe
+Phone Number      : +91-XXXXXXXXXX (Stored as "Ravi - Rival Corp")
+Description       : WhatsApp voice note sent to contact at competitor company confirming data transfer plan
+Risk Level        : CRITICAL - Evidence of coordinated data exfiltration conspiracy
+Notes             : 68-second voice note sent to competitor contact morning of exfiltration. Content suggests prior arrangement. Contact saved in phone as "Ravi - Rival Corp".
+Deleted           : No (Recovered from WhatsApp media folder)
+Transcript        : Partial - keywords: files ready, USB and cloud, proceed today, delete everything after
+
+================================================================================
+AUDIO ANALYSIS SUMMARY
+================================================================================
+Total Audio Files    : 4
+Critical Risk        : 4
+Deleted & Recovered  : 1
+Total Duration       : ~62 minutes
+Phone Calls          : 1
+Voice Memos          : 1
+Meeting Recordings   : 1
+WhatsApp Voice Notes : 1
+Evidence of Conspiracy: YES (call + voice note with competitor)
+Evidence Destruction : YES (voice memo with DLP bypass instructions deleted)
+GPS Metadata Found   : 1 file (office location confirmed)
+================================================================================
+END OF AUDIO MANIFEST
+================================================================================

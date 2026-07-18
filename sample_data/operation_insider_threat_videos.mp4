@@ -1,0 +1,155 @@
+================================================================================
+FORENSIC VIDEO EVIDENCE MANIFEST
+Case: Operation Insider Threat | Number: CY-2024-0089
+Examiner: Agent M. Rodriguez | Department: Digital Forensics Lab
+Generated: 2024-03-20 10:30:00
+================================================================================
+Total Video Files Recovered: 5
+Source Device: HP EliteBook 840 - john_doe workstation
+================================================================================
+
+================================================================================
+ENTRY 1 - CRITICAL EVIDENCE
+================================================================================
+File Name         : screen_recording_upload.mp4
+File Path         : C:\Users\john_doe\Videos\screen_recording_upload.mp4
+File Size         : 52428800 bytes (50 MB)
+MD5 Hash          : a1b2c3d4e5f6000000000001abcdef01
+SHA256            : 1a2b3c4d5e6f0000000001abcdef1234567890abcdef1234567890abcdef123456
+Duration          : 00:04:32
+Resolution        : 1920x1080
+Frame Rate        : 30 fps
+Codec             : H.264
+Audio Track       : Yes (AAC)
+Date Created      : 2024-03-15 09:20:00
+Date Modified     : 2024-03-15 09:25:00
+Date Accessed     : 2024-03-15 09:25:00
+Software          : Xbox Game Bar (Windows Screen Recorder)
+Author            : john_doe
+GPS Coordinates   : N/A
+Description       : Screen recording showing MEGA cloud upload in progress - client_database.zip and Q4_strategy.docx being uploaded
+Risk Level        : CRITICAL - Direct video evidence of data exfiltration
+URL Referenced    : https://mega.nz/upload/secret_docs
+Notes             : Recording shows entire upload process including file selection and upload confirmation. 4 minutes 32 seconds.
+Deleted           : No
+Thumbnail Frame   : 00:00:05
+
+================================================================================
+ENTRY 2 - CRITICAL EVIDENCE
+================================================================================
+File Name         : usb_copy_recording.mp4
+File Path         : C:\Users\john_doe\Videos\usb_copy_recording.mp4
+File Size         : 31457280 bytes (30 MB)
+MD5 Hash          : b2c3d4e5f67800000000002bcdef0234
+SHA256            : 2b3c4d5e6f780000000002bcdef123456789abcdef1234567890abcdef12345678
+Duration          : 00:02:47
+Resolution        : 1920x1080
+Frame Rate        : 30 fps
+Codec             : H.264
+Audio Track       : No
+Date Created      : 2024-03-15 08:57:00
+Date Modified     : 2024-03-15 08:59:00
+Date Accessed     : 2024-03-15 09:00:00
+Software          : Xbox Game Bar (Windows Screen Recorder)
+Author            : john_doe
+GPS Coordinates   : N/A
+Description       : Screen recording of Windows Explorer showing bulk file copy to SanDisk USB drive
+Risk Level        : CRITICAL - Video evidence of USB exfiltration
+Device Referenced : SanDisk Ultra USB 3.0 64GB (Serial: 4C530001...)
+Notes             : Video shows 47 files being copied to USB including confidential Q4 reports, employee records and client database
+Deleted           : No
+Thumbnail Frame   : 00:00:03
+
+================================================================================
+ENTRY 3 - DELETED VIDEO RECOVERED
+================================================================================
+File Name         : meeting_recording_confidential.mp4
+File Path         : C:\$Recycle.Bin\S-1-5-21-xxx\meeting_recording_confidential.mp4
+File Size         : 209715200 bytes (200 MB)
+MD5 Hash          : c3d4e5f6789000000000003cdef03456
+SHA256            : 3c4d5e6f78900000000003cdef12345678901abcdef1234567890abcdef1234567
+Duration          : 00:45:12
+Resolution        : 1280x720
+Frame Rate        : 24 fps
+Codec             : H.264
+Audio Track       : Yes (AAC 128kbps)
+Date Created      : 2024-03-10 14:00:00
+Date Modified     : 2024-03-10 14:45:00
+Date Deleted      : 2024-03-15 10:55:00
+Software          : Microsoft Teams (Screen Recording)
+Author            : john_doe
+GPS Coordinates   : N/A
+Description       : Unauthorized recording of confidential product roadmap meeting
+Risk Level        : CRITICAL - Covert recording of proprietary business meeting, deliberately deleted
+Notes             : 45-minute recording of executive strategy meeting. Deleted on same day as data exfiltration.
+Deleted           : YES - Recovered from Recycle Bin
+Thumbnail Frame   : 00:00:10
+
+================================================================================
+ENTRY 4 - SUSPICIOUS VIDEO
+================================================================================
+File Name         : tor_tutorial_download.mp4
+File Path         : C:\Users\john_doe\Downloads\tor_tutorial_download.mp4
+File Size         : 15728640 bytes (15 MB)
+MD5 Hash          : d4e5f6789010000000004def045678ab
+SHA256            : 4d5e6f7890100000000004def123456789012abcdef1234567890abcdef12345678
+Duration          : 00:08:15
+Resolution        : 1280x720
+Frame Rate        : 30 fps
+Codec             : VP9
+Audio Track       : Yes
+Date Created      : 2024-03-15 10:10:00
+Date Modified     : 2024-03-15 10:10:00
+Date Accessed     : 2024-03-15 10:15:00
+Software          : YouTube (Downloaded via yt-dlp)
+Author            : Unknown (YouTube)
+URL Referenced    : https://www.youtube.com/watch?v=xxx
+GPS Coordinates   : N/A
+Description       : Tutorial video on using Tor browser to hide internet activity downloaded from YouTube
+Risk Level        : HIGH - Anti-forensic technique research
+Notes             : Downloaded same day as exfiltration events. Indicates intent to cover tracks.
+Deleted           : No
+Thumbnail Frame   : 00:00:01
+
+================================================================================
+ENTRY 5 - EVIDENCE VIDEO
+================================================================================
+File Name         : ccleaner_wiping_evidence.mp4
+File Path         : C:\Users\john_doe\Videos\ccleaner_wiping_evidence.mp4
+File Size         : 10485760 bytes (10 MB)
+MD5 Hash          : e5f67890123400000005ef0567890abc
+SHA256            : 5e6f789012340000000005ef1234567890123abcdef1234567890abcdef123456789
+Duration          : 00:01:55
+Resolution        : 1920x1080
+Frame Rate        : 30 fps
+Codec             : H.264
+Audio Track       : No
+Date Created      : 2024-03-15 11:05:00
+Date Modified     : 2024-03-15 11:07:00
+Date Accessed     : 2024-03-15 11:07:00
+Software          : Xbox Game Bar (Windows Screen Recorder)
+Author            : john_doe
+GPS Coordinates   : N/A
+Description       : Screen recording of CCleaner being run to wipe browser history and temporary files
+Risk Level        : CRITICAL - Video evidence of deliberate evidence destruction
+Software Referenced: CCleaner Professional v6.19.0
+Notes             : Shows CCleaner secure deletion running after data exfiltration. Confirms intentional evidence wiping.
+Deleted           : No
+Thumbnail Frame   : 00:00:02
+
+================================================================================
+VIDEO ANALYSIS SUMMARY
+================================================================================
+Total Videos         : 5
+Critical Risk        : 4
+High Risk            : 1
+Deleted & Recovered  : 1
+Total Duration       : ~63 minutes
+Screen Recordings    : 4
+Meeting Recordings   : 1
+Evidence of Exfil    : YES (MEGA upload recording, USB copy recording)
+Evidence Destruction : YES (CCleaner recording, deleted meeting recording)
+Anti-forensic Tools  : YES (Tor tutorial downloaded)
+================================================================================
+END OF VIDEO MANIFEST
+================================================================================

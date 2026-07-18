@@ -1,0 +1,2525 @@
+{
+  "case_metadata": {
+    "case_name": "Operation Dark Web",
+    "case_number": "CY-2024-0090",
+    "analyst": "Agent K. Patel",
+    "date": "2024-04-02",
+    "classification": "CONFIDENTIAL"
+  },
+  "artifacts": [
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 0
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 1
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 2
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 3
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 4
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 5
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 6
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 7
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 8
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 9
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 10
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 11
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 12
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 13
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 14
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 15
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 16
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 17
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 18
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 19
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 20
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 21
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 22
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 23
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 24
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 25
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 26
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 27
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 28
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 29
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 30
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 31
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 32
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 33
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 34
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 35
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 36
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 37
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 38
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 39
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 40
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 41
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 42
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 43
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 44
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 45
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 46
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 47
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 48
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 49
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 50
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 51
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 52
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 53
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 54
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 55
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 56
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 57
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 58
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 59
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 60
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 61
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 62
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 63
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 64
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 65
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 66
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 67
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 68
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 69
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 70
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 71
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 72
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 73
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 74
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 75
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 76
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 77
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 78
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 79
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 80
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 81
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 82
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 83
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 84
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 85
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 86
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 87
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 88
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 89
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 90
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 91
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 92
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 93
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 94
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 95
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 96
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 97
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 98
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 99
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 100
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 101
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 102
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 103
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 104
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 105
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 106
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 107
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 108
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 109
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 110
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 111
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 112
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 113
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 114
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 115
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 116
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 117
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 118
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 119
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 120
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 121
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 122
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 123
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 124
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 125
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 126
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 127
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 128
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 129
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 130
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 131
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 132
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 133
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 134
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 135
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 136
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 137
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 138
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 139
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 140
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 141
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 142
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 143
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 144
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 145
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 146
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 147
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 148
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 149
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 150
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 151
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 152
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 153
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 154
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 155
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 156
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 157
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 158
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 159
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 160
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 161
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 162
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 163
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 164
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 165
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 166
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 167
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 168
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 169
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 170
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 171
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 172
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 173
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 174
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 175
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 176
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 177
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 178
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 179
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 180
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 181
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 182
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 183
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 184
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 185
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 186
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 187
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 188
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 189
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 190
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 191
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 192
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 193
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 194
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 195
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 196
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 197
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 198
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 199
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 200
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 201
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 202
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 203
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 204
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 205
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 206
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 207
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 208
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 209
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 210
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 211
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 212
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 213
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 214
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 215
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 216
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 217
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 218
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 219
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 220
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 221
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 222
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 223
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 224
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 225
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 226
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 227
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 228
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 229
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 230
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 231
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 232
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 233
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 234
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 235
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 236
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 237
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 238
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 239
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 240
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 241
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 242
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 243
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 244
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 245
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 246
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 247
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 248
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 249
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 250
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 251
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 252
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 253
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 254
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 255
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 256
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 257
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 258
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 259
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 260
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 261
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 262
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 263
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 264
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 265
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 266
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 267
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 268
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 269
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 270
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 271
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 272
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 273
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 274
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 275
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 276
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 277
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 278
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 279
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 280
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 281
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 282
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 283
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 284
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 285
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 286
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 287
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 288
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 289
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 290
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 291
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-20 11:00:00",
+      "program": "VeraCrypt 1.25",
+      "path": "C:\\Program Files\\VeraCrypt",
+      "risk": "CRITICAL",
+      "index": 292
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:00:00",
+      "program": "Electrum Wallet",
+      "path": "C:\\Users\\alex_r\\AppData\\Electrum",
+      "risk": "CRITICAL",
+      "index": 293
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-04-02 03:30:00",
+      "file": "transaction_history_xmr.csv",
+      "size_bytes": 102400,
+      "risk": "CRITICAL",
+      "index": 294
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-04-02 02:00:00",
+      "keyword": "buy substances dark web anonymous",
+      "source": "Browser History",
+      "risk": "CRITICAL",
+      "index": 295
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-04-02 02:15:00",
+      "url": "http://zqktlwi4fecvo6ri.onion/",
+      "description": "Hidden Wiki Access",
+      "user": "alex_r",
+      "risk": "HIGH",
+      "index": 296
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-04-02 03:05:00",
+      "from": "anon@protonmail.com",
+      "to": "buyer123@tutanota.com",
+      "subject": "Package confirmed",
+      "risk": "CRITICAL",
+      "index": 297
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-04-02 01:00:00",
+      "device": "Kingston DataTraveler 32GB",
+      "serial": "0018F3A92B11",
+      "mount_point": "E:",
+      "risk": "HIGH",
+      "index": 298
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-28 20:00:00",
+      "program": "Tor Browser 13.0",
+      "path": "C:\\Users\\alex_r\\Desktop\\Tor",
+      "risk": "HIGH",
+      "index": 299
+    }
+  ]
+}

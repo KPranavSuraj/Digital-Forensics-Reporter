@@ -1,0 +1,52 @@
+DARK WEB INVESTIGATION - DISK IMAGE CONTENTS
+============================================
+
+CASE: Operation Dark Web
+DATE: 2024-01-15
+ANALYST: Digital Forensics Team
+
+FOUND FILES:
+-----------
+
+1. transactions.log
+   Dark Web marketplace transaction logs
+   Content: Bitcoin addresses, transaction hashes
+   Size: 2.5 MB
+   Status: Recovered from unallocated space
+
+2. user_profiles.db
+   User database from marketplace
+   Content: Usernames, aliases, IP logs
+   Size: 4.2 MB
+   Status: Partially recovered
+
+3. cryptocurrency_wallets.csv
+   Wallet addresses and balances
+   Content: 1,247 active wallets
+   Size: 612 KB
+   Status: Complete
+
+4. server_logs.tar.gz
+   Server access logs
+   Content: 89,000+ log entries
+   Size: 3.8 MB
+   Status: Complete
+
+5. chat_transcripts/
+   Encrypted chat messages
+   Content: 45,000 messages
+   Size: 7.2 MB
+   Status: Partially decrypted
+
+6. malware_samples/
+   Detected malware
+   Content: 234 samples
+   Size: 124 MB
+   Status: Quarantined
+
+SUMMARY:
+--------
+Total Files Found: 847
+Total Data: 142 MB
+Unallocated Space: 23 MB (potential deleted files)
+Evidence Grade: High confidence forensic data

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forensic_report case_name="Operation Insider Threat" case_number="CY-2024-0089" analyst="Agent M. Rodriguez">
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+  <email><from>john.doe@corp.com</from><to>recruiter@competitor.com</to><subject>Strategy Docs</subject><timestamp>2024-03-16 06:11:00</timestamp><attachment>Q4_Strategy.docx</attachment><risk>CRITICAL</risk></email>
+  <deleted_file><name>Q4_2024_Strategy_CONFIDENTIAL.docx</name><path>C:\$Recycle.Bin\</path><size_bytes>45632</size_bytes><timestamp>2024-03-15 18:30:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <deleted_file><name>client_database_master.mdb</name><path>C:\$Recycle.Bin\</path><size_bytes>524288</size_bytes><timestamp>2024-03-15 18:32:00</timestamp><risk>CRITICAL</risk></deleted_file>
+  <usb_device><name>SanDisk Ultra USB 64GB</name><serial>4C530001200115119007</serial><mount>F:</mount><timestamp>2024-03-15 16:55:00</timestamp><risk>HIGH</risk></usb_device>
+  <installed_program><name>CCleaner Professional</name><version>6.19</version><path>C:\Program Files\CCleaner</path><timestamp>2024-03-10 14:30:00</timestamp><risk>HIGH</risk></installed_program>
+  <keyword_hit><keyword>how to delete forensic evidence</keyword><source>Chrome History</source><timestamp>2024-03-15 18:02:00</timestamp><risk>CRITICAL</risk></keyword_hit>
+  <web_history><url>https://mega.nz/upload</url><timestamp>2024-03-15 17:45:00</timestamp><user>john_doe</user><risk>HIGH</risk></web_history>
+  <web_history><url>https://google.com/search?q=delete+evidence</url><timestamp>2024-03-15 18:02:00</timestamp><user>john_doe</user><risk>CRITICAL</risk></web_history>
+</forensic_report>

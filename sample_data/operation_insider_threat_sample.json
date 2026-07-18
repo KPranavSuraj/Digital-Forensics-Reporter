@@ -1,0 +1,2711 @@
+{
+  "case_metadata": {
+    "case_name": "Operation Insider Threat",
+    "case_number": "CY-2024-0089",
+    "analyst": "Agent M. Rodriguez",
+    "date": "2024-03-15",
+    "classification": "CONFIDENTIAL"
+  },
+  "artifacts": [
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 08:00:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 0
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 08:01:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 1
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 08:02:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 2
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 08:03:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 3
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 08:04:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 4
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 08:05:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 5
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 08:06:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 6
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 08:07:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 7
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 08:08:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 8
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 08:09:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 9
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 08:10:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 10
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 08:11:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 11
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 08:12:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 12
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 08:13:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 13
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 08:14:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 14
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 08:15:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 15
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 08:16:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 16
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 08:17:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 17
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 08:18:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 18
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 08:19:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 19
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 09:20:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 20
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 09:21:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 21
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 09:22:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 22
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 09:23:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 23
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 09:24:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 24
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 09:25:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 25
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:26:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 26
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:27:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 27
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 09:28:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 28
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 09:29:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 29
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 09:30:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 30
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 09:31:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 31
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 09:32:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 32
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 09:33:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 33
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 09:34:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 34
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 09:35:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 35
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:36:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 36
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 09:37:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 37
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 09:38:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 38
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 09:39:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 39
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 10:40:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 40
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 10:41:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 41
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 10:42:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 42
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 10:43:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 43
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 10:44:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 44
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 10:45:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 45
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 10:46:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 46
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 10:47:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 47
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 10:48:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 48
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 10:49:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 49
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 10:50:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 50
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 10:51:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 51
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 10:52:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 52
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 10:53:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 53
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 10:54:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 54
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 10:55:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 55
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 10:56:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 56
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 10:57:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 57
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 10:58:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 58
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 10:59:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 59
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 11:00:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 60
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 11:01:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 61
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 11:02:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 62
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 11:03:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 63
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 11:04:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 64
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 11:05:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 65
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 11:06:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 66
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 11:07:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 67
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 11:08:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 68
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 11:09:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 69
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 11:10:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 70
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 11:11:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 71
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 11:12:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 72
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 11:13:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 73
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 11:14:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 74
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 11:15:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 75
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 11:16:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 76
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 11:17:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 77
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 11:18:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 78
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 11:19:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 79
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 12:20:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 80
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 12:21:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 81
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 12:22:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 82
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 12:23:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 83
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 12:24:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 84
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 12:25:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 85
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 12:26:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 86
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 12:27:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 87
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 12:28:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 88
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 12:29:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 89
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 12:30:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 90
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 12:31:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 91
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 12:32:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 92
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 12:33:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 93
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 12:34:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 94
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 12:35:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 95
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 12:36:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 96
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 12:37:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 97
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 12:38:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 98
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 12:39:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 99
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 13:40:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 100
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 13:41:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 101
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 13:42:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 102
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 13:43:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 103
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 13:44:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 104
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 13:45:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 105
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 13:46:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 106
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 13:47:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 107
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 13:48:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 108
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 13:49:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 109
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 13:50:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 110
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 13:51:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 111
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 13:52:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 112
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 13:53:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 113
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 13:54:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 114
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 13:55:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 115
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 13:56:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 116
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 13:57:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 117
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 13:58:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 118
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 13:59:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 119
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 14:00:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 120
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 14:01:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 121
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 14:02:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 122
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 14:03:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 123
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 14:04:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 124
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 14:05:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 125
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 14:06:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 126
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 14:07:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 127
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 14:08:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 128
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 14:09:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 129
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 14:10:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 130
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 14:11:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 131
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 14:12:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 132
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 14:13:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 133
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 14:14:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 134
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 14:15:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 135
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 14:16:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 136
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 14:17:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 137
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 14:18:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 138
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 14:19:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 139
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 15:20:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 140
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 15:21:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 141
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 15:22:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 142
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 15:23:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 143
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 15:24:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 144
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 15:25:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 145
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 15:26:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 146
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 15:27:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 147
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 15:28:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 148
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 15:29:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 149
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 15:30:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 150
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 15:31:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 151
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 15:32:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 152
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 15:33:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 153
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 15:34:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 154
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 15:35:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 155
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 15:36:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 156
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 15:37:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 157
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 15:38:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 158
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 15:39:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 159
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 16:40:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 160
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 16:41:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 161
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 16:42:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 162
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 16:43:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 163
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 16:44:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 164
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 16:45:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 165
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 16:46:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 166
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 16:47:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 167
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 16:48:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 168
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 16:49:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 169
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 16:50:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 170
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 16:51:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 171
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 16:52:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 172
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 16:53:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 173
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 16:54:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 174
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 16:55:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 175
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 16:56:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 176
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 16:57:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 177
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 16:58:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 178
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 16:59:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 179
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 17:00:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 180
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 17:01:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 181
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 17:02:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 182
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 17:03:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 183
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 17:04:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 184
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 17:05:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 185
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 17:06:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 186
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 17:07:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 187
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 17:08:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 188
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 17:09:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 189
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 17:10:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 190
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 17:11:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 191
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 17:12:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 192
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 17:13:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 193
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 17:14:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 194
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 17:15:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 195
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 17:16:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 196
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 17:17:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 197
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 17:18:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 198
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 17:19:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 199
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 18:20:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 200
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 18:21:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 201
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 18:22:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 202
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 18:23:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 203
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 18:24:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 204
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 18:25:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 205
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 18:26:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 206
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 18:27:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 207
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 18:28:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 208
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 18:29:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 209
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 18:30:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 210
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 18:31:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 211
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 18:32:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 212
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 18:33:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 213
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 18:34:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 214
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 18:35:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 215
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 18:36:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 216
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 18:37:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 217
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 18:38:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 218
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 18:39:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 219
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 19:40:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 220
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 19:41:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 221
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 19:42:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 222
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 19:43:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 223
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 19:44:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 224
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 19:45:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 225
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 19:46:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 226
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 19:47:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 227
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 19:48:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 228
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 19:49:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 229
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 19:50:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 230
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 19:51:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 231
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 19:52:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 232
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 19:53:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 233
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 19:54:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 234
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 19:55:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 235
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 19:56:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 236
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 19:57:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 237
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 19:58:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 238
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 19:59:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 239
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 20:00:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 240
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 20:01:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 241
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 20:02:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 242
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 20:03:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 243
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 20:04:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 244
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 20:05:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 245
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 20:06:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 246
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 20:07:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 247
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 20:08:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 248
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 20:09:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 249
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 20:10:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 250
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 20:11:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 251
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 20:12:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 252
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 20:13:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 253
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 20:14:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 254
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 20:15:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 255
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 20:16:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 256
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 20:17:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 257
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 20:18:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 258
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 20:19:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 259
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 21:20:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 260
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 21:21:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 261
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 21:22:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 262
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 21:23:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 263
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 21:24:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 264
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 21:25:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 265
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 21:26:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 266
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 21:27:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 267
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 21:28:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 268
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 21:29:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 269
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 21:30:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 270
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 21:31:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 271
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 21:32:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 272
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 21:33:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 273
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 21:34:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 274
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 21:35:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 275
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 21:36:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 276
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 21:37:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 277
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 21:38:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 278
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 21:39:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 279
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 22:40:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 280
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 22:41:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 281
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 22:42:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 282
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 22:43:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 283
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 22:44:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 284
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 22:45:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 285
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 22:46:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 286
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 22:47:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 287
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 22:48:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 288
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 22:49:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 289
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 22:50:00",
+      "url": "https://mega.nz/upload",
+      "description": "MEGA Cloud Upload",
+      "user": "john_doe",
+      "risk": "HIGH",
+      "index": 290
+    },
+    {
+      "type": "TSK_WEB_HISTORY",
+      "timestamp": "2024-03-15 22:51:00",
+      "url": "https://google.com/search?q=delete+forensic+evidence",
+      "description": "Incriminating search query",
+      "user": "john_doe",
+      "risk": "CRITICAL",
+      "index": 291
+    },
+    {
+      "type": "TSK_EMAIL_MESSAGE",
+      "timestamp": "2024-03-15 22:52:00",
+      "from": "john.doe@corp.com",
+      "to": "recruiter@competitor.com",
+      "subject": "Strategy Documents",
+      "attachment": "Q4_Strategy.docx",
+      "risk": "CRITICAL",
+      "index": 292
+    },
+    {
+      "type": "TSK_DEVICE_ATTACHED",
+      "timestamp": "2024-03-15 22:53:00",
+      "device": "SanDisk Ultra USB 64GB",
+      "serial": "4C530001200115119007",
+      "mount_point": "F:",
+      "risk": "HIGH",
+      "index": 293
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 22:54:00",
+      "file": "Q4_2024_Strategy_CONFIDENTIAL.docx",
+      "size_bytes": 45632,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 294
+    },
+    {
+      "type": "TSK_RECYCLE_BIN",
+      "timestamp": "2024-03-15 22:55:00",
+      "file": "client_database_master.mdb",
+      "size_bytes": 524288,
+      "path": "C:\\$Recycle.Bin\\",
+      "risk": "CRITICAL",
+      "index": 295
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 22:56:00",
+      "program": "CCleaner Professional",
+      "path": "C:\\Program Files\\CCleaner",
+      "purpose": "File Wiping Tool",
+      "risk": "HIGH",
+      "index": 296
+    },
+    {
+      "type": "TSK_INSTALLED_PROG",
+      "timestamp": "2024-03-15 22:57:00",
+      "program": "TrueCrypt 7.1a",
+      "path": "C:\\Program Files\\TrueCrypt",
+      "purpose": "Disk Encryption",
+      "risk": "HIGH",
+      "index": 297
+    },
+    {
+      "type": "TSK_KEYWORD_HIT",
+      "timestamp": "2024-03-15 22:58:00",
+      "keyword": "how to delete forensic evidence",
+      "source": "Chrome History",
+      "risk": "CRITICAL",
+      "index": 298
+    },
+    {
+      "type": "TSK_OS_ACCOUNT",
+      "timestamp": "2024-03-15 22:59:00",
+      "username": "john_doe",
+      "admin": false,
+      "last_login": "2024-03-15 08:50:22",
+      "risk": "MEDIUM",
+      "index": 299
+    }
+  ]
+}

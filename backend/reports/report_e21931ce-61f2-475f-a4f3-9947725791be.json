@@ -1,0 +1,188 @@
+{
+  "job_id": "e21931ce-61f2-475f-a4f3-9947725791be",
+  "generated_at": "2026-05-28T09:27:06.273159",
+  "case_info": {
+    "case_name": "Operation Dark Web",
+    "analyst_name": "Agent K. Patel",
+    "case_number": "CY-2024-0090",
+    "department": "Digital Forensics Lab",
+    "created_at": "2026-05-28T09:27:05.780342"
+  },
+  "executive_summary": "This report presents findings of a digital forensic examination of Operation Dark Web (Case No. CY-2024-0090), conducted by Agent K. Patel of the Digital Forensics Lab.\n\nThe examination yielded 43 digital artifacts including 0 web history entries, 0 email records, 0 USB device connections, and 1 recovered deleted files. High-confidence events: 0. Suspicious events: 1.\n\nAll evidence has been handled per chain of custody protocols to maintain admissibility.",
+  "methodology": "The digital forensic examination was conducted in accordance with NIST SP 800-86 and ACPO Good Practice Guide for Digital Evidence.\n\n1. Evidence Acquisition: Subject digital media was forensically processed using write-blocking procedures. MD5 hash values recorded to verify integrity.\n\n2. Evidence Verification: Forensic image verified for accuracy. File hash recorded in chain of custody documentation.\n\n3. Artifact Extraction: Evidence processed through automated parsing pipeline covering web history, email, USB devices, user accounts, deleted files, registry entries, installed programs, and search queries.\n\n4. Normalization: All artifacts normalized into unified schema with full traceability: source file, row/line reference, timestamp, artifact ID, and confidence rating (High/Medium/Low).\n\n5. RAG Indexing: All artifacts indexed for cross-referencing and AI-assisted analysis. Each AI finding cites the exact source artifact(s) it is based on.\n\n6. Documentation: All findings documented with evidence references in format: 'Finding: [X] | Evidence: [filename] (Row [N]) | Time: [T] | Artifact: [ID]'.",
+  "findings": {
+    "web_activity": {
+      "title": "3.1 Web Activity",
+      "narrative": "No web browsing history artifacts identified.",
+      "count": 0,
+      "evidence_refs": [],
+      "sample_events": []
+    },
+    "email_analysis": {
+      "title": "3.2 Email Analysis",
+      "narrative": "No email artifacts identified.",
+      "count": 0,
+      "evidence_refs": [],
+      "sample_events": []
+    },
+    "device_connections": {
+      "title": "3.3 Device Connections",
+      "narrative": "No external storage device connections identified.",
+      "count": 0,
+      "evidence_refs": [],
+      "sample_events": []
+    },
+    "deleted_files": {
+      "title": "3.4 Deleted Files",
+      "narrative": "File system analysis recovered 1 deleted file(s). Recovery indicates possible deliberate destruction of evidence.",
+      "count": 1,
+      "evidence_refs": [
+        {
+          "source": "operation_dark_web_content.txt",
+          "row": 42,
+          "record_ref": "operation_dark_web_content.txt (Row 42)",
+          "timestamp": "Unknown",
+          "artifact_id": "del_42",
+          "description": "Deleted: Unallocated Space: 23 MB (potential deleted files)",
+          "confidence": "High"
+        }
+      ],
+      "sample_events": [
+        {
+          "description": "Deleted: Unallocated Space: 23 MB (potential deleted files)",
+          "timestamp": "Unknown",
+          "source": "operation_dark_web_content.txt",
+          "row": 42,
+          "record_ref": "operation_dark_web_content.txt (Row 42)",
+          "artifact_id": "del_42",
+          "confidence": "High"
+        }
+      ]
+    },
+    "user_accounts": {
+      "title": "3.5 User Accounts",
+      "narrative": "No user account information identified.",
+      "count": 0,
+      "evidence_refs": [],
+      "sample_events": []
+    },
+    "search_queries": {
+      "title": "3.6 Search Queries",
+      "narrative": "No search query records recovered.",
+      "count": 0,
+      "evidence_refs": [],
+      "sample_events": []
+    },
+    "installed_programs": {
+      "title": "3.7 Installed Programs",
+      "narrative": "No installed program records identified.",
+      "count": 0,
+      "evidence_refs": [],
+      "sample_events": []
+    }
+  },
+  "timeline": [
+    {
+      "timestamp": "Unknown",
+      "event_type": "FILE_DELETED",
+      "description": "Deleted: Unallocated Space: 23 MB (potential deleted files)",
+      "source": "operation_dark_web_content.txt",
+      "source_row": 42,
+      "record_ref": "operation_dark_web_content.txt (Row 42)",
+      "artifact_id": "del_42",
+      "confidence": "High",
+      "category": "deleted"
+    }
+  ],
+  "evidence_refs": [
+    {
+      "source": "operation_dark_web_content.txt",
+      "row": 42,
+      "record_ref": "operation_dark_web_content.txt (Row 42)",
+      "timestamp": "Unknown",
+      "artifact_id": "del_42",
+      "description": "Deleted: Unallocated Space: 23 MB (potential deleted files)",
+      "confidence": "High"
+    }
+  ],
+  "artifacts_detail": {
+    "web_history": {
+      "count": 0,
+      "samples": []
+    },
+    "email_messages": {
+      "count": 0,
+      "samples": []
+    },
+    "usb_devices": {
+      "count": 0,
+      "samples": []
+    },
+    "user_accounts": {
+      "count": 0,
+      "samples": []
+    },
+    "recent_documents": {
+      "count": 0,
+      "samples": []
+    },
+    "search_queries": {
+      "count": 0,
+      "samples": []
+    },
+    "deleted_files": {
+      "count": 1,
+      "samples": [
+        {
+          "raw": "Unallocated Space: 23 MB (potential deleted files)",
+          "_row": 42
+        }
+      ]
+    },
+    "installed_programs": {
+      "count": 0,
+      "samples": []
+    }
+  },
+  "conclusions": "The examination of Operation Dark Web yielded 43 recoverable artifacts with 0 high-confidence events identified.\n\nAll conclusions are based solely on the digital evidence recovered and analyzed. The forensic examiner makes no determination of guilt or innocence.",
+  "recommendations": [
+    "Recovered deleted files should be subjected to detailed content analysis.",
+    "All recovered artifacts should be reviewed by qualified legal counsel.",
+    "Chain of custody documentation must be maintained throughout legal proceedings."
+  ],
+  "statistics": {
+    "total_artifacts": 43,
+    "total_files": 0,
+    "normalized_events": 0,
+    "high_confidence_events": 0,
+    "medium_confidence_events": 0,
+    "low_confidence_events": 0,
+    "suspicious_events": 1,
+    "web_history_count": 0,
+    "email_count": 0,
+    "installed_programs_count": 0,
+    "usb_devices_count": 0,
+    "user_accounts_count": 0,
+    "recent_documents_count": 0,
+    "search_queries_count": 0,
+    "deleted_files_count": 1,
+    "registry_entries_count": 0,
+    "timeline_events_count": 0,
+    "media_count": 0
+  },
+  "chain_of_custody": {
+    "evidence_item": "operation_dark_web_content.txt",
+    "file_hash": "99302a14d6b32c3da0ba286590390056",
+    "received_by": "Agent K. Patel",
+    "department": "Digital Forensics Lab",
+    "received_date": "2026-05-28T09:27:05.780342",
+    "analysis_date": "2026-05-28T09:27:06.273641",
+    "tools_used": [
+      "Autopsy Parser v3",
+      "RAG Engine v3",
+      "Automated Digital Forensics Reporter v3"
+    ],
+    "hash_verified": "MD5 hash computed and recorded",
+    "notes": "Evidence handled in accordance with forensic best practices and ACPO guidelines."
+  }
+}

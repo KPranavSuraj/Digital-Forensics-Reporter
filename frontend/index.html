@@ -1,0 +1,3881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AUTOPSY SIM — Digital Forensics Bureau</title>
+<script>(function(){var T='AUTOPSY SIM — Digital Forensics Bureau';try{Object.defineProperty(document,'title',{get:function(){return T;},set:function(){},configurable:false});}catch(e){document.title=T;}})();</script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5' fill='%23c8392b'/><text y='70' x='50' text-anchor='middle' font-size='55' fill='white'>🔬</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<style>
+
+/* ═══════════════════════════════════════════════════════
+   AUTOPSY SIMULATOR — CRIME GAME UI SYSTEM
+   ═══════════════════════════════════════════════════════ */
+:root {
+  --bg:         #050709;
+  --bg2:        #080c10;
+  --bg3:        #0d1219;
+  --panel:      #0a0f16;
+  --panel2:     #0f1620;
+  --border:     #1a2535;
+  --border2:    #223040;
+  --accent:     #c8392b;
+  --accent2:    #e8472e;
+  --amber:      #d4890a;
+  --amber2:     #f0a020;
+  --green:      #1a6b3a;
+  --green2:     #22a050;
+  --cyan:       #0a7a8a;
+  --cyan2:      #10a8bc;
+  --text:       #c8d4e0;
+  --text2:      #8aa0b8;
+  --text3:      #506070;
+  --muted:      #506070;
+  --scanline:   rgba(10,200,220,0.03);
+  --glow-red:   0 0 12px rgba(200,57,43,0.5), 0 0 30px rgba(200,57,43,0.2);
+  --glow-amber: 0 0 10px rgba(212,137,10,0.5);
+  --glow-cyan:  0 0 10px rgba(16,168,188,0.4);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── SCANLINE OVERLAY ────────────────────────────────── */
+body::before {
+  content:'';
+  position:fixed; inset:0; z-index:9999; pointer-events:none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    var(--scanline) 2px,
+    var(--scanline) 4px
+  );
+  animation: scanroll 8s linear infinite;
+}
+body::after {
+  content:'';
+  position:fixed; inset:0; z-index:9998; pointer-events:none;
+  background: radial-gradient(ellipse at 50% 0%, rgba(200,57,43,0.04) 0%, transparent 60%),
+              radial-gradient(ellipse at 100% 100%, rgba(10,168,188,0.03) 0%, transparent 50%);
+}
+@keyframes scanroll { from{background-position:0 0} to{background-position:0 100px} }
+
+/* ── TOP NAV / HEADER ─────────────────────────────────── */
+nav {
+  background: linear-gradient(180deg, #0a0f16 0%, #060b10 100%);
+  border-bottom: 2px solid var(--accent);
+  padding: 0 1.5rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 2px 20px rgba(200,57,43,0.25), 0 0 60px rgba(200,57,43,0.06);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-logo-icon {
+  width: 32px; height: 32px;
+  background: var(--accent);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px;
+  box-shadow: var(--glow-red);
+  animation: pulse-hex 3s ease-in-out infinite;
+}
+@keyframes pulse-hex {
+  0%,100% { box-shadow: var(--glow-red); }
+  50% { box-shadow: 0 0 20px rgba(200,57,43,0.8), 0 0 40px rgba(200,57,43,0.3); }
+}
+
+.nav-title {
+  font-family: 'Orbitron', monospace;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.nav-title span { color: var(--accent); }
+
+.nav-sub {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--text3);
+  letter-spacing: 0.15em;
+  margin-top: 1px;
+}
+
+.nav-divider {
+  width: 1px; height: 28px;
+  background: linear-gradient(180deg, transparent, var(--border2), transparent);
+  margin: 0 0.25rem;
+}
+
+nav-badge, .nav-badge {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: var(--cyan2);
+  border: 1px solid var(--cyan);
+  padding: 2px 8px;
+  text-transform: uppercase;
+  background: rgba(10,120,138,0.1);
+}
+
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* user badge */
+#userBadge {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.1em;
+  background: rgba(16,168,188,0.08) !important;
+  border: 1px solid rgba(16,168,188,0.25) !important;
+  color: var(--cyan2) !important;
+  padding: 3px 10px !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
+}
+
+/* logout button */
+nav button[onclick="logout()"] {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 0.68rem !important;
+  letter-spacing: 0.08em;
+  background: rgba(200,57,43,0.08) !important;
+  border: 1px solid rgba(200,57,43,0.35) !important;
+  color: #ff8070 !important;
+  padding: 3px 10px !important;
+  border-radius: 0 !important;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+nav button[onclick="logout()"]:hover {
+  background: rgba(200,57,43,0.2) !important;
+  box-shadow: var(--glow-red);
+}
+
+/* api indicator */
+.api-indicator {
+  display: flex; align-items: center; gap: 6px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.dot { width:7px; height:7px; border-radius:50%; display:inline-block; }
+.dot-green { background:#22a050; box-shadow: 0 0 8px #22a050; animation: blink 2s infinite; }
+.dot-red   { background:#c8392b; box-shadow: 0 0 8px #c8392b; animation: blink 1.2s infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+/* refresh button */
+.btn-secondary[onclick="refreshJobs()"] {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 0.65rem !important;
+  letter-spacing: 0.08em;
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid var(--border2) !important;
+  color: var(--text2) !important;
+  padding: 3px 10px !important;
+  border-radius: 0 !important;
+}
+
+/* ── MAIN LAYOUT ───────────────────────────────────────── */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* ── TAB BAR ───────────────────────────────────────────── */
+.tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  position: relative;
+  overflow: hidden;
+}
+.tabs::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border2), transparent);
+}
+
+.tab {
+  flex: 1;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--text3);
+  text-transform: uppercase;
+  border-right: 1px solid var(--border);
+  transition: all 0.2s;
+  position: relative;
+  background: transparent;
+}
+.tab:last-child { border-right: none; }
+.tab:hover {
+  color: var(--text2);
+  background: rgba(255,255,255,0.02);
+}
+.tab.active {
+  color: var(--accent2);
+  background: rgba(200,57,43,0.06);
+  font-weight: 700;
+}
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--accent);
+  box-shadow: var(--glow-red);
+}
+
+/* ── PANELS ────────────────────────────────────────────── */
+.tab-panel { display: none; }
+.tab-panel.active { display: block; animation: fadeIn 0.25s ease; }
+@keyframes fadeIn { from{opacity:0;transform:translateY(4px)} to{opacity:1;transform:none} }
+
+/* ── CARDS / PANELS ────────────────────────────────────── */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--border2);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: linear-gradient(180deg, var(--accent), transparent);
+}
+
+.card-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--amber2);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card-title::before {
+  content: '▶';
+  color: var(--accent);
+  font-size: 0.6rem;
+}
+
+/* ── FORM ELEMENTS ─────────────────────────────────────── */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+
+label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: var(--text3);
+  text-transform: uppercase;
+}
+
+input[type="text"], textarea, select {
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-left: 2px solid var(--cyan);
+  color: var(--text);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.82rem;
+  padding: 0.55rem 0.75rem;
+  outline: none;
+  border-radius: 0;
+  transition: all 0.2s;
+  width: 100%;
+}
+input[type="text"]:focus, textarea:focus {
+  border-color: var(--cyan2);
+  border-left-color: var(--accent);
+  box-shadow: inset 0 0 8px rgba(16,168,188,0.05), 0 0 0 1px rgba(16,168,188,0.1);
+  background: rgba(10,200,220,0.03);
+}
+input::placeholder { color: var(--text3); opacity: 0.6; }
+
+/* ── UPLOAD ZONE ───────────────────────────────────────── */
+.upload-zone {
+  border: 1px dashed var(--border2);
+  background: var(--bg3);
+  padding: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.upload-zone::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(200,57,43,0.015) 10px,
+    rgba(200,57,43,0.015) 20px
+  );
+}
+.upload-zone:hover {
+  border-color: var(--accent);
+  background: rgba(200,57,43,0.04);
+  box-shadow: inset 0 0 30px rgba(200,57,43,0.05);
+}
+.upload-zone.drag-over {
+  border-color: var(--accent2);
+  background: rgba(200,57,43,0.08);
+  box-shadow: inset 0 0 40px rgba(200,57,43,0.1), var(--glow-red);
+}
+.upload-zone input[type="file"] { display: none; }
+.upload-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+  filter: grayscale(0.3);
+}
+.upload-zone > div:not(.upload-icon):not(:last-child) {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+.upload-text {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text3);
+  letter-spacing: 0.08em;
+  margin-top: 0.4rem;
+}
+
+/* ── UPLOAD TYPE PANELS ──────────────────────────────── */
+.upload-type-panel { 
+  display: none; 
+  animation: fadeIn .2s ease;
+}
+.upload-type-panel.active { 
+  display: block; 
+}
+
+/* ── TAB BUTTONS (Upload Type Tabs) ──────────────────────── */
+.tab-button {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: .65rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: .45rem .85rem;
+  color: var(--text3);
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  transition: all .15s;
+}
+.tab-button:hover {
+  color: var(--text2);
+}
+.tab-button.active {
+  color: var(--accent2);
+  border-bottom-color: var(--accent);
+}
+
+/* ── BUTTONS ───────────────────────────────────────────── */
+.btn {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.4rem;
+  border: 1px solid;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+.btn::before {
+  content:'';
+  position:absolute; top:0; left:-100%; width:100%; height:100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+  transition: left 0.4s;
+}
+.btn:hover::before { left:100%; }
+
+.btn-primary {
+  background: rgba(200,57,43,0.12);
+  border-color: var(--accent);
+  color: #ff8070;
+}
+.btn-primary:hover:not(:disabled) {
+  background: rgba(200,57,43,0.22);
+  box-shadow: var(--glow-red);
+  color: #fff;
+}
+.btn-primary:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.03);
+  border-color: var(--border2);
+  color: var(--text2);
+}
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: var(--cyan);
+  color: var(--cyan2);
+}
+
+.mt-2 { margin-top: 1rem; display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
+
+/* ── SPINNER ───────────────────────────────────────────── */
+.spinner {
+  width: 14px; height: 14px;
+  border: 2px solid rgba(200,57,43,0.3);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+.spinner.hidden { display: none; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── ALERTS ────────────────────────────────────────────── */
+.alert {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid;
+  margin-bottom: 0.75rem;
+}
+.alert-error   { background: rgba(200,57,43,0.08); border-color: var(--accent); color: #ff8070; }
+.alert-info    { background: rgba(16,168,188,0.06); border-color: var(--cyan); color: var(--cyan2); }
+.alert-success { background: rgba(34,160,80,0.08); border-color: var(--green2); color: #50dd80; }
+.alert-warning { background: rgba(212,137,10,0.08); border-color: var(--amber); color: var(--amber2); }
+.hidden { display: none !important; }
+
+/* ── PROGRESS PIPELINE ─────────────────────────────────── */
+.pipeline-steps {
+  display: flex;
+  gap: 0;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+.pipeline-step {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text3);
+  border: 1px solid var(--border);
+  border-right: none;
+  background: var(--bg3);
+  position: relative;
+  transition: all 0.3s;
+}
+.pipeline-step:last-child { border-right: 1px solid var(--border); }
+.pipeline-step.active {
+  color: var(--amber2);
+  background: rgba(212,137,10,0.06);
+  border-color: var(--amber);
+  box-shadow: var(--glow-amber);
+}
+.pipeline-step.done {
+  color: var(--green2);
+  background: rgba(34,160,80,0.06);
+  border-color: var(--green);
+}
+.pipeline-step .step-icon { font-size: 1rem; display: block; margin-bottom: 3px; }
+.pipeline-step .step-label { display: block; }
+
+.progress-bar-wrap {
+  height: 4px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  margin-top: 0.75rem;
+}
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--amber2));
+  transition: width 0.5s ease;
+  box-shadow: 0 0 8px rgba(200,57,43,0.5);
+}
+
+/* ── CASE QUEUE ────────────────────────────────────────── */
+.job-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border2);
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.job-card:hover {
+  border-left-color: var(--cyan);
+  background: rgba(16,168,188,0.04);
+}
+.job-card.selected {
+  border-left-color: var(--accent);
+  background: rgba(200,57,43,0.05);
+}
+
+.job-status-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.status-done    { background: var(--green2); box-shadow: 0 0 8px var(--green2); }
+.status-running { background: var(--amber2); box-shadow: 0 0 8px var(--amber2); animation: blink 1s infinite; }
+.status-error   { background: var(--accent); box-shadow: var(--glow-red); }
+.status-queued  { background: var(--text3); }
+
+.job-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+.job-meta {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--text3);
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}
+.job-actions { margin-left: auto; display: flex; gap: 0.5rem; }
+
+/* ── STATUS / RISK PILLS ──────────────────────────────── */
+.risk-pill {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  padding: 2px 7px;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+.risk-critical { background: rgba(200,57,43,0.12); border-color: var(--accent); color: #ff7060; }
+.risk-high     { background: rgba(212,137,10,0.1);  border-color: var(--amber);  color: var(--amber2); }
+.risk-medium   { background: rgba(16,168,188,0.08); border-color: var(--cyan);   color: var(--cyan2); }
+
+.status-badge {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+.status-complete { background: rgba(34,160,80,0.1); border-color: var(--green); color: #50dd80; }
+.status-processing { background: rgba(212,137,10,0.1); border-color: var(--amber); color: var(--amber2); }
+.status-failed { background: rgba(200,57,43,0.1); border-color: var(--accent); color: #ff7060; }
+
+/* ── REPORT VIEWER ─────────────────────────────────────── */
+.report-header {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.report-title-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.report-case-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.report-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.report-meta-item { }
+.report-meta-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  color: var(--text3);
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.report-meta-value {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.section-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--amber2);
+  text-transform: uppercase;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.section-title::before { content: '//'; color: var(--accent); font-size: 0.7rem; }
+
+/* Finding cards in report */
+.finding-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border2);
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s;
+}
+.finding-card:hover { border-left-color: var(--amber); }
+.finding-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+.finding-desc {
+  font-size: 0.85rem;
+  color: var(--text2);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+/* Findings nav (sub-tabs in report) */
+.findings-nav {
+  display: flex;
+  gap: 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.ftab {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: var(--text3);
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.ftab:hover { color: var(--text2); }
+.ftab.active {
+  color: var(--cyan2);
+  border-bottom-color: var(--cyan);
+}
+
+/* ── AI QUERY ──────────────────────────────────────────── */
+.chat-window {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  height: 380px;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border2) transparent;
+}
+.msg {
+  padding: 0.65rem 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  max-width: 85%;
+  position: relative;
+}
+.msg-user {
+  background: rgba(200,57,43,0.08);
+  border: 1px solid rgba(200,57,43,0.2);
+  border-left: 3px solid var(--accent);
+  color: var(--text);
+  align-self: flex-end;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+}
+.msg-user::before {
+  content: 'ANALYST ▸';
+  display: block;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+.msg-ai {
+  background: rgba(16,168,188,0.05);
+  border: 1px solid rgba(16,168,188,0.15);
+  border-left: 3px solid var(--cyan);
+  color: var(--text);
+  align-self: flex-start;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.9rem;
+}
+.msg-ai::before {
+  content: 'FORENSIC AI ▸';
+  display: block;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--cyan2);
+  margin-bottom: 4px;
+}
+.chat-input-row {
+  display: flex;
+  gap: 0.5rem;
+}
+.chat-input-row input {
+  flex: 1;
+  border-left-color: var(--accent);
+}
+
+/* ── MEDIA EVIDENCE ────────────────────────────────────── */
+.media-no-case {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text3);
+}
+.media-no-case-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+  opacity: 0.4;
+}
+.media-no-case h3 {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  color: var(--text2);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.media-no-case p {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  line-height: 1.8;
+}
+
+.media-case-header {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+.media-case-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.95rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.media-case-sub {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text3);
+  letter-spacing: 0.1em;
+}
+
+.media-case-btns {
+  display: flex; gap: 0.5rem; margin-top: 0.75rem;
+}
+.case-sel-btn {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border: 1px solid var(--border2);
+  background: var(--bg3);
+  color: var(--text3);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.case-sel-btn.active {
+  border-color: var(--accent);
+  color: var(--accent2);
+  background: rgba(200,57,43,0.08);
+}
+
+/* image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.evidence-img-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.evidence-img-card:hover {
+  border-color: var(--amber);
+  box-shadow: 0 0 20px rgba(212,137,10,0.1);
+}
+.evidence-img-card img {
+  width: 100%;
+  display: block;
+  max-height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+}
+.evidence-img-meta {
+  padding: 0.6rem 0.75rem;
+}
+.evidence-img-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.evidence-img-desc {
+  font-size: 0.8rem;
+  color: var(--text3);
+  margin-top: 3px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+}
+.evidence-file-link {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.62rem;
+  color: var(--text3);
+  margin-top: 5px;
+  display: flex;
+  gap: 0.75rem;
+}
+.evidence-file-link a {
+  color: var(--cyan2);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+}
+.evidence-file-link a:hover { text-decoration: underline; }
+
+/* video list */
+.video-item {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.video-item video {
+  width: 100%;
+  max-height: 300px;
+  display: block;
+  background: #000;
+  border-bottom: 1px solid var(--border);
+}
+.video-meta {
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.video-meta-left {}
+.video-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.video-desc {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  color: var(--text3);
+  margin-top: 4px;
+  line-height: 1.6;
+}
+.video-file-row {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.62rem;
+  color: var(--text3);
+  margin-top: 6px;
+  display: flex; gap: 1rem;
+}
+.video-file-row a { color: var(--cyan2); text-decoration: none; }
+
+/* audio list */
+.audio-item {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.audio-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.audio-info { flex: 1; min-width: 200px; }
+.audio-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+  display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+}
+.audio-subtitle {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--text3);
+  letter-spacing: 0.04em;
+  margin-top: 4px;
+  line-height: 1.6;
+}
+.audio-player { width: 100%; margin-top: 8px; }
+.audio-file-row {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.62rem;
+  color: var(--text3);
+  margin-top: 6px;
+  display: flex; gap: 1rem;
+}
+.audio-file-row a { color: var(--cyan2); text-decoration: none; }
+
+audio {
+  width: 100%;
+  height: 36px;
+  filter: sepia(1) saturate(0.5) hue-rotate(160deg) brightness(0.85);
+}
+
+/* ── UTILITY ────────────────────────────────────────────── */
+.text-muted { color: var(--text3); }
+.text-sm { font-size: 0.82rem; }
+.text-xs { font-family: 'Share Tech Mono', monospace; font-size: 0.68rem; letter-spacing: 0.06em; }
+.mt-1 { margin-top: 0.5rem; }
+.text-center { text-align: center; }
+
+/* stat boxes in report */
+.stat-box {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--accent);
+  padding: 0.85rem 1rem;
+  text-align: center;
+}
+.stat-num {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent2);
+  display: block;
+}
+.stat-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: var(--text3);
+  text-transform: uppercase;
+  display: block;
+  margin-top: 2px;
+}
+
+/* report table */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.report-table th {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text3);
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg3);
+  border-bottom: 1px solid var(--border2);
+}
+.report-table td {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text2);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.9rem;
+}
+.report-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+/* Raw JSON view */
+pre {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--cyan2);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 1rem;
+  overflow-x: auto;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Empty states */
+.empty-state {
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--text3);
+}
+.empty-state-icon { font-size: 2rem; margin-bottom: 0.75rem; opacity: 0.4; }
+.empty-state p {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  line-height: 1.8;
+}
+
+/* ── API KEY PANEL ────────────────────────────────────────── */
+#apiKeyPanel {
+  position: fixed; top: 56px; right: 1rem; z-index: 500;
+  width: 360px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--amber);
+  padding: 1.25rem;
+  display: none;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+#apiKeyPanel.open { display: block; animation: fadeIn 0.2s ease; }
+.api-key-input-wrap {
+  position: relative; display: flex; gap: 0.5rem;
+}
+#apiKeyInput {
+  flex: 1;
+  border-left-color: var(--amber) !important;
+  letter-spacing: 0.1em;
+}
+.api-key-status {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  margin-top: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  border-left: 2px solid;
+}
+.api-key-status.active {
+  color: #50dd80; border-color: var(--green2);
+  background: rgba(34,160,80,0.08);
+}
+.api-key-status.inactive {
+  color: var(--text3); border-color: var(--border2);
+  background: transparent;
+}
+.api-timer {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.62rem; color: var(--text3);
+  margin-top: 0.4rem; letter-spacing: 0.06em;
+}
+
+
+/* ── ANALYSIS MODES ───────────────────────────────────────── */
+.mode-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.mode-card {
+  border: 1px solid var(--border); background: var(--bg3);
+  padding: 0.75rem 0.6rem; text-align: center; cursor: pointer;
+  transition: all 0.2s; position: relative;
+}
+.mode-card:hover { border-color: var(--cyan); background: rgba(16,168,188,0.04); }
+.mode-card.selected {
+  border-color: var(--accent); background: rgba(200,57,43,0.07);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.mode-card .mode-icon { font-size: 1.4rem; display: block; margin-bottom: 4px; }
+.mode-card .mode-name {
+  font-family: 'Share Tech Mono', monospace; font-size: 0.65rem;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--text2);
+}
+.mode-card .mode-desc {
+  font-family: 'Share Tech Mono', monospace; font-size: 0.58rem;
+  color: var(--text3); margin-top: 3px; line-height: 1.5;
+}
+.mode-card.selected .mode-name { color: var(--accent2); }
+
+/* ── DASHBOARD ─────────────────────────────────────────────── */
+.dashboard-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(160px,1fr));
+  gap: 0.75rem; margin-bottom: 1rem;
+}
+.dash-stat {
+  background: var(--bg3); border: 1px solid var(--border);
+  border-top: 2px solid var(--border2); padding: 0.85rem 1rem;
+  text-align: center; transition: all 0.2s;
+}
+.dash-stat:hover { border-top-color: var(--accent); }
+.dash-stat .ds-num {
+  font-family: 'Orbitron', monospace; font-size: 1.5rem;
+  font-weight: 700; color: var(--accent2); display: block;
+}
+.dash-stat .ds-label {
+  font-family: 'Share Tech Mono', monospace; font-size: 0.6rem;
+  letter-spacing: 0.1em; color: var(--text3); text-transform: uppercase;
+  display: block; margin-top: 3px;
+}
+.dash-stat.green .ds-num { color: var(--green2); }
+.dash-stat.amber .ds-num { color: var(--amber2); }
+.dash-stat.cyan  .ds-num { color: var(--cyan2); }
+
+/* ── STATUS BADGES ─────────────────────────────────────────── */
+.status-dot {
+  display: inline-block; width: 8px; height: 8px;
+  border-radius: 50%; margin-right: 5px; vertical-align: middle;
+}
+.dot-green { background: var(--green2); box-shadow: 0 0 6px var(--green2); animation: blink 2s infinite; }
+.dot-red   { background: var(--accent); box-shadow: 0 0 6px var(--accent); }
+.dot-amber { background: var(--amber2); box-shadow: 0 0 6px var(--amber2); animation: blink 1s infinite; }
+
+/* ── FEEDBACK TOASTS ────────────────────────────────────────── */
+#toastContainer {
+  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 9999;
+  display: flex; flex-direction: column; gap: 0.5rem; pointer-events: none;
+}
+.toast {
+  font-family: 'Share Tech Mono', monospace; font-size: 0.72rem;
+  letter-spacing: 0.06em; padding: 0.65rem 1rem;
+  border-left: 3px solid; min-width: 260px;
+  animation: slideIn 0.3s ease; pointer-events: auto;
+}
+.toast-success { background: rgba(34,160,80,0.12); border-color: var(--green2); color: #50dd80; }
+.toast-error   { background: rgba(200,57,43,0.12); border-color: var(--accent);  color: #ff8070; }
+.toast-info    { background: rgba(16,168,188,0.10); border-color: var(--cyan);    color: var(--cyan2); }
+.toast-warn    { background: rgba(212,137,10,0.10); border-color: var(--amber);   color: var(--amber2); }
+@keyframes slideIn { from{opacity:0;transform:translateX(20px)} to{opacity:1;transform:none} }
+
+
+/* ── TIMELINE ─────────────────────────────────────────────── */
+.tl-event {
+  display: flex; gap: 0; margin-bottom: 0;
+  position: relative; cursor: pointer;
+  transition: background .15s;
+}
+.tl-event:hover { background: rgba(255,255,255,.02); }
+.tl-event:hover .tl-card { border-left-color: var(--amber); }
+
+.tl-line-col {
+  width: 40px; flex-shrink: 0;
+  display: flex; flex-direction: column; align-items: center;
+  padding-top: 6px;
+}
+.tl-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  border: 2px solid; flex-shrink: 0; z-index: 1;
+  background: var(--bg);
+}
+.tl-dot.high   { border-color: var(--accent);  box-shadow: 0 0 6px var(--accent); }
+.tl-dot.medium { border-color: var(--amber2);  box-shadow: 0 0 6px var(--amber2); }
+.tl-dot.low    { border-color: var(--text3); }
+.tl-dot.media  { border-color: var(--cyan2);   box-shadow: 0 0 6px var(--cyan2); }
+.tl-stem {
+  width: 1px; flex: 1; background: var(--border); margin-top: 3px;
+  min-height: 28px;
+}
+
+.tl-card {
+  flex: 1; padding: .65rem .85rem;
+  border-left: 2px solid var(--border);
+  margin-bottom: .35rem;
+  transition: border-color .15s;
+}
+.tl-event-type {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: .62rem; letter-spacing: .12em;
+  text-transform: uppercase; margin-bottom: 3px;
+  display: flex; align-items: center; gap: .4rem; flex-wrap: wrap;
+}
+.tl-desc {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: .9rem; font-weight: 500;
+  color: var(--text); margin-bottom: 4px; line-height: 1.4;
+}
+.tl-meta {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: .62rem; color: var(--text3);
+  letter-spacing: .04em; line-height: 1.8;
+}
+.tl-meta span { margin-right: .75rem; }
+.tl-meta .tl-src { color: var(--cyan2); }
+.tl-meta .tl-ts  { color: var(--amber2); }
+.tl-meta .tl-ref { color: var(--text3); }
+
+/* Expanded detail pane */
+.tl-detail {
+  display: none;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--amber);
+  margin: 0 0 .5rem 40px;
+  padding: .75rem 1rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: .68rem; line-height: 1.9;
+  color: var(--text2);
+}
+.tl-detail.open { display: block; animation: fadeIn .2s ease; }
+.tl-detail .detail-row { display: flex; gap: .5rem; margin-bottom: 2px; }
+.tl-detail .detail-key { color: var(--text3); min-width: 110px; flex-shrink: 0; }
+.tl-detail .detail-val { color: var(--text); word-break: break-all; }
+
+/* evidence box inside detail */
+.tl-evidence-box {
+  margin-top: .6rem;
+  padding: .5rem .75rem;
+  background: rgba(200,57,43,.06);
+  border-left: 2px solid var(--accent);
+  color: var(--text);
+}
+.tl-evidence-box strong {
+  font-family: 'Orbitron', monospace; font-size: .6rem;
+  letter-spacing: .1em; color: var(--accent2);
+  display: block; margin-bottom: 4px;
+}
+
+/* media inline in timeline */
+.tl-media-thumb {
+  max-width: 100%; max-height: 160px;
+  display: block; margin-top: .5rem;
+  border: 1px solid var(--border);
+}
+audio.tl-audio { width:100%; margin-top:.5rem; height:36px; }
+video.tl-video { width:100%; max-height:180px; display:block; margin-top:.5rem; }
+
+/* ── REPORT SECTIONS ──────────────────────────────────────── */
+.report-section { display:none; padding-top:.75rem; }
+.report-section.active { display:block; animation:fadeIn .2s ease; }
+
+
+/* ── AUDIT TRAIL ──────────────────────────────────────────── */
+.audit-entry {
+  display: flex; gap: .6rem; padding: .35rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+}
+.audit-time {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: .62rem; color: var(--amber2);
+  flex-shrink: 0; min-width: 78px;
+}
+.audit-action {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: .65rem; color: var(--cyan2);
+  flex-shrink: 0; min-width: 130px;
+  text-transform: uppercase; letter-spacing: .04em;
+}
+.audit-detail { font-size: .83rem; color: var(--text2); flex: 1; }
+
+/* ── HASH DISPLAY ─────────────────────────────────────────── */
+.hash-box {
+  background: var(--bg3); border: 1px solid var(--border);
+  border-left: 3px solid var(--green2);
+  padding: .5rem .75rem; margin-top: .5rem;
+  font-family: 'Share Tech Mono', monospace; font-size: .68rem;
+  letter-spacing: .04em; color: var(--green2); word-break: break-all;
+}
+.hash-label {
+  font-size: .58rem; color: var(--text3); display: block;
+  text-transform: uppercase; letter-spacing: .1em; margin-bottom: 2px;
+}
+
+/* ── CONFIDENCE BADGE ─────────────────────────────────────── */
+.conf-badge {
+  display: inline-flex; align-items: center; gap: .3rem;
+  padding: 2px 7px; border: 1px solid; border-radius: 0;
+  font-family: 'Share Tech Mono', monospace; font-size: .6rem;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.conf-high   { border-color: var(--accent);  color: #ff7060; background: rgba(200,57,43,.08); }
+.conf-medium { border-color: var(--amber);   color: var(--amber2); background: rgba(212,137,10,.08); }
+.conf-low    { border-color: var(--border2); color: var(--text3); background: transparent; }
+
+/* ── EXPORT BUTTONS ───────────────────────────────────────── */
+.export-btn-row {
+  display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .75rem;
+}
+
+/* ── INVESTIGATION MODE TABS (job detail) ─────────────────── */
+.inv-tabs {
+  display: flex; gap: 0; border-bottom: 1px solid var(--border);
+  margin-bottom: .75rem;
+}
+.inv-tab {
+  font-family: 'Share Tech Mono', monospace; font-size: .65rem;
+  letter-spacing: .1em; text-transform: uppercase; cursor: pointer;
+  padding: .45rem .85rem; color: var(--text3);
+  border-bottom: 2px solid transparent; transition: all .15s;
+  background: none; border-top: none; border-left: none; border-right: none;
+}
+.inv-tab:hover { color: var(--text2); }
+.inv-tab.active { color: var(--accent2); border-bottom-color: var(--accent); }
+.inv-panel { display: none; }
+.inv-panel.active { display: block; animation: fadeIn .2s ease; }
+
+/* scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border2); }
+
+/* ── LOGIN OVERLAY (if present) ───────────────────────── */
+#loginOverlay {
+  position: fixed; inset: 0; z-index: 9000;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+}
+.login-box {
+  width: 420px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  padding: 2.5rem;
+  position: relative;
+}
+.login-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: repeating-linear-gradient(
+    45deg, transparent, transparent 20px,
+    rgba(200,57,43,0.01) 20px, rgba(200,57,43,0.01) 40px
+  );
+  pointer-events: none;
+}
+.login-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.login-logo-hex {
+  width: 56px; height: 56px;
+  background: rgba(200,57,43,0.1);
+  border: 2px solid var(--accent);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  margin: 0 auto 1rem;
+  box-shadow: var(--glow-red);
+}
+.login-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.login-subtitle {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--text3);
+  letter-spacing: 0.15em;
+  margin-top: 4px;
+}
+.login-box .form-group { margin-bottom: 1rem; }
+.login-error {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  color: #ff7060;
+  padding: 0.5rem 0.75rem;
+  background: rgba(200,57,43,0.08);
+  border-left: 2px solid var(--accent);
+  margin-bottom: 1rem;
+}
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(200,57,43,0.1);
+  border: 1px solid var(--accent);
+  color: #ff8070;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+}
+.login-btn:hover {
+  background: rgba(200,57,43,0.2);
+  box-shadow: var(--glow-red);
+  color: #fff;
+}
+
+</style>
+</head>
+<body>
+
+
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-icon">🔬</div>
+    <div>
+      <div class="nav-title"><span>AUTOPSY</span> SIM</div>
+      <div class="nav-sub">DIGITAL FORENSICS BUREAU // CLASSIFIED</div>
+    </div>
+  </div>
+  <div class="nav-divider"></div>
+  <span class="nav-badge">AI-POWERED</span>
+  <div class="nav-right">
+    <span id="userBadge" style="background:rgba(16,168,188,0.08);border:1px solid rgba(16,168,188,0.25);color:#10a8bc;font-size:0.7rem;padding:3px 10px;border-radius:0;font-family:'Share Tech Mono',monospace;letter-spacing:0.1em;text-transform:uppercase">👤 </span>
+    <button onclick="logout()" style="background:rgba(200,57,43,0.08);border:1px solid rgba(200,57,43,0.35);color:#ff8070;font-size:0.68rem;padding:3px 10px;border-radius:0;cursor:pointer;font-family:'Share Tech Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;transition:all 0.2s">⎋ LOGOUT</button>
+    <div class="api-indicator" id="apiIndicator">
+      <span class="dot dot-red" id="apiDot"></span>
+      <span id="apiText" style="color:var(--muted);font-family:'Share Tech Mono',monospace;font-size:0.65rem;letter-spacing:0.08em">CHECKING...</span>
+    </div>
+    <button class="btn btn-secondary" style="font-size:0.65rem;padding:3px 10px;letter-spacing:0.1em" onclick="refreshJobs()">⟳ REFRESH</button>
+    <button id="apiKeyBtn" onclick="toggleApiKeyPanel()" style="background:rgba(212,137,10,0.08);border:1px solid rgba(212,137,10,0.35);color:#f0a020;font-size:0.68rem;padding:3px 10px;border-radius:0;cursor:pointer;font-family:'Share Tech Mono',monospace;letter-spacing:0.08em;text-transform:uppercase;transition:all 0.2s">🔑 API KEY</button>
+  </div>
+</nav>
+
+<!-- API KEY PANEL -->
+<div id="apiKeyPanel">
+  <div class="card-title" style="margin-bottom:0.75rem">🔑 API KEY — SESSION ONLY</div>
+
+  <!-- Real-time status indicator -->
+  <div id="apiKeyIndicator" style="display:flex;align-items:center;gap:0.6rem;padding:0.6rem 0.75rem;background:var(--bg3);border:1px solid var(--border);margin-bottom:0.75rem">
+    <span id="apiKeyDot" style="font-size:1rem">🔴</span>
+    <span id="apiKeyIndicatorText" style="font-family:'Share Tech Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;color:var(--text3)">Not Set</span>
+  </div>
+
+  <div style="font-family:'Share Tech Mono',monospace;font-size:0.63rem;color:var(--text3);margin-bottom:0.75rem;line-height:1.7">
+    Encrypted in memory only. Never stored to disk.<br>
+    Auto-clears on logout or 30 min inactivity.
+  </div>
+  <div style="margin-bottom:0.5rem">
+    <label>KEY TYPE</label>
+    <select id="apiKeyType" style="margin-top:0.3rem">
+      <option value="groq">Groq (llama-3.3-70b)</option>
+      <option value="openai">OpenAI (gpt-4)</option>
+    </select>
+  </div>
+  <div style="margin-bottom:0.75rem">
+    <label>API KEY</label>
+    <div class="api-key-input-wrap" style="margin-top:0.3rem">
+      <input type="password" id="apiKeyInput" placeholder="Paste key here..." autocomplete="off" autocorrect="off" spellcheck="false">
+    </div>
+  </div>
+
+  <!-- Validation feedback -->
+  <div id="apiKeyFeedback" style="display:none;font-family:'Share Tech Mono',monospace;font-size:0.72rem;padding:0.4rem 0.6rem;margin-bottom:0.6rem;border-left:2px solid;letter-spacing:0.06em"></div>
+
+  <div id="apiKeyTimer" class="api-timer" style="display:none"></div>
+
+  <div style="margin-top:0.75rem;display:flex;gap:0.5rem">
+    <!-- SET is prominent -->
+    <button id="apiSetBtn" class="btn btn-primary" style="font-size:0.72rem;flex:2;padding:0.55rem;letter-spacing:0.12em;font-weight:700" onclick="submitApiKey()">▶ SET KEY</button>
+    <button class="btn btn-secondary" style="font-size:0.65rem;flex:1" onclick="clearApiKey()">✕ CLEAR</button>
+    <button class="btn btn-secondary" style="font-size:0.65rem;flex:1" onclick="toggleApiKeyPanel()">CLOSE</button>
+  </div>
+</div>
+
+
+<div class="main">
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('upload')">📤 UPLOAD &amp; ANALYZE</div>
+    <div class="tab" onclick="switchTab('jobs')">📋 CASE QUEUE</div>
+    <div class="tab" onclick="switchTab('report')">📊 REPORT VIEWER</div>
+    <div class="tab" onclick="switchTab('query')">💬 AI QUERY</div>
+    <div class="tab" onclick="switchTab('media')">🎬 MEDIA EVIDENCE</div>
+    <div class="tab" onclick="switchTab('timeline')">📅 TIMELINE</div>
+  </div>
+
+  <!-- UPLOAD TAB -->
+  <div id="tab-upload" class="tab-panel active">
+
+    <!-- API Warning Banner -->
+    <div id="apiBanner" class="alert alert-error hidden">
+      ⚠️ Backend server is not running. Please double-click <strong>START.bat</strong> first, then refresh this page.
+    </div>
+
+    <div class="card">
+      <div class="card-title">🗂️ Case Information</div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Case Name</label>
+          <input id="caseName" type="text" placeholder="e.g. Operation Insider Threat" oninput="saveFields()">
+        </div>
+        <div class="form-group">
+          <label>Case Number</label>
+          <input id="caseNumber" type="text" placeholder="e.g. CY-2024-0089" oninput="saveFields()">
+        </div>
+        <div class="form-group">
+          <label>Analyst Name</label>
+          <input id="analystName" type="text" placeholder="e.g. Agent M. Rodriguez" oninput="saveFields()">
+        </div>
+        <div class="form-group">
+          <label>Department</label>
+          <input id="department" type="text" placeholder="e.g. Digital Forensics Lab" oninput="saveFields()">
+        </div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="card" id="dashboardCard">
+      <div class="card-title">📊 CASE DASHBOARD</div>
+      <div class="dashboard-grid">
+        <div class="dash-stat"><span class="ds-num" id="ds-jobs">0</span><span class="ds-label">Cases</span></div>
+        <div class="dash-stat amber"><span class="ds-num" id="ds-artifacts">0</span><span class="ds-label">Artifacts</span></div>
+        <div class="dash-stat" style="border-top-color:var(--accent)"><span class="ds-num" id="ds-suspicious">0</span><span class="ds-label">Suspicious</span></div>
+        <div class="dash-stat cyan"><span class="ds-num" id="ds-media">0</span><span class="ds-label">Media</span></div>
+        <div class="dash-stat green"><span class="ds-num" id="ds-completed">0</span><span class="ds-label">Completed</span></div>
+        <div class="dash-stat"><span class="ds-num" id="ds-failed">0</span><span class="ds-label">Failed</span></div>
+      </div>
+    </div>
+
+    <!-- ANALYSIS MODE SELECTOR -->
+    <div class="card">
+      <div class="card-title">⚡ ANALYSIS MODE</div>
+      <div class="mode-grid">
+        <div class="mode-card" id="mode-quick" onclick="selectMode('quick')">
+          <span class="mode-icon">⚡</span>
+          <span class="mode-name">Quick</span>
+          <span class="mode-desc">Fast scan — key findings only</span>
+        </div>
+        <div class="mode-card selected" id="mode-detailed" onclick="selectMode('detailed')">
+          <span class="mode-icon">🔬</span>
+          <span class="mode-name">Detailed</span>
+          <span class="mode-desc">Full analysis — complete report</span>
+        </div>
+        <div class="mode-card" id="mode-interactive" onclick="selectMode('interactive')">
+          <span class="mode-icon">🕵️</span>
+          <span class="mode-name">Interactive</span>
+          <span class="mode-desc">AI-guided investigation</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">📁 Upload Evidence</div>
+      
+      <!-- UPLOAD TYPE TABS -->
+      <div style="display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:1rem;margin-left:-1.5rem;margin-right:-1.5rem;padding:0 1.5rem">
+        <button class="inv-tab tab-button active" onclick="switchUploadType('artifacts', this)" data-tab="artifacts">
+          🗄️ Forensic Artifacts
+        </button>
+        <button class="inv-tab tab-button" onclick="switchUploadType('diskimage', this)" data-tab="diskimage">
+          💾 Disk Images
+        </button>
+      </div>
+      
+      <!-- ARTIFACTS UPLOAD ZONE -->
+      <div id="uploadType-artifacts" class="upload-type-panel active">
+        <div class="upload-zone" id="dropZone" onclick="document.getElementById('fileInput').click()"
+             ondragover="onDrag(event)" ondragleave="offDrag(event)" ondrop="onDrop(event)">
+          <input type="file" id="fileInput" accept=".xml,.csv,.json,.txt,.log" onchange="onFileSelect(event)">
+          <div class="upload-icon">🗄️</div>
+          <div style="font-size:1rem;font-weight:600">Drop Autopsy export here</div>
+          <div class="upload-text">Supported: XML · CSV · JSON · TXT · LOG</div>
+          <div class="upload-text" style="margin-top:0.5rem">Or click to browse</div>
+        </div>
+        <div id="filePreview" class="hidden" style="margin-top:1rem">
+          <div class="alert alert-info" id="fileInfo"></div>
+        </div>
+        <div class="mt-2" style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap">
+          <button class="btn btn-primary" id="analyzeBtn" onclick="startAnalysis()" disabled>
+            <span id="analyzeBtnText">⚡ Analyze & Generate Report</span>
+            <div class="spinner hidden" id="analyzeSpinner"></div>
+          </button>
+          <button class="btn btn-secondary" onclick="loadSampleData()">🧪 Load Sample Data</button>
+          <span id="uploadStatus" class="text-muted text-sm"></span>
+        </div>
+      </div>
+
+      <!-- DISK IMAGE UPLOAD ZONE -->
+      <div id="uploadType-diskimage" class="upload-type-panel">
+        <div style="margin-bottom:1rem;padding:.75rem;background:rgba(16,168,188,.08);border-left:3px solid var(--cyan2);border-radius:2px">
+          <div style="font-size:.65rem;color:var(--text2);font-family:'Share Tech Mono',monospace;line-height:1.6">
+            <strong style="color:var(--cyan2)">Disk Image Analysis</strong><br>
+            Upload raw disk images for automatic filesystem detection and file extraction.<br>
+            Supports deletion recovery and forensic analysis.
+          </div>
+        </div>
+        <div class="upload-zone" id="diskImageDropZone" onclick="document.getElementById('diskImageInput').click()"
+             ondragover="onDrag(event)" ondragleave="offDrag(event)" ondrop="onDropDiskImage(event)">
+          <input type="file" id="diskImageInput" accept=".dd,.img,.raw,.E01,.e01" onchange="onDiskImageSelect(event)">
+          <div class="upload-icon">💾</div>
+          <div style="font-size:1rem;font-weight:600">Drop Disk Image here</div>
+          <div class="upload-text">Supported: DD · IMG · RAW · E01</div>
+          <div class="upload-text" style="margin-top:0.5rem">Or click to browse (Max 500 MB)</div>
+        </div>
+        <div id="diskImagePreview" class="hidden" style="margin-top:1rem">
+          <div class="alert alert-info" id="diskImageInfo"></div>
+        </div>
+        <div class="mt-2" style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap">
+          <button class="btn btn-primary" id="analyzeDiskBtn" onclick="startDiskImageAnalysis()" disabled>
+            <span id="analyzeDiskBtnText">⚡ Analyze Disk Image</span>
+            <div class="spinner hidden" id="analyzeDiskSpinner"></div>
+          </button>
+          <button class="btn btn-secondary" onclick="loadDiskImageSample()">🧪 Load Sample Disk Image</button>
+          <span id="diskImageStatus" class="text-muted text-sm"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXTERNAL EVIDENCE URL -->
+    <div class="card">
+      <div class="card-title">🔗 EXTERNAL EVIDENCE (URL)</div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:.65rem;color:var(--text3);margin-bottom:.75rem;line-height:1.7">
+        Link external media evidence by URL — video, audio, or image.<br>Will be rendered inline with a preview button.
+      </div>
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:flex-end">
+        <div style="flex:2;min-width:180px"><label>URL</label><input type="text" id="extMediaUrl" placeholder="https://example.com/evidence.mp4" style="margin-top:.3rem"></div>
+        <div style="width:110px"><label>Type</label><select id="extMediaType" style="margin-top:.3rem"><option value="video">Video</option><option value="audio">Audio</option><option value="image">Image</option></select></div>
+        <div style="flex:1;min-width:130px"><label>Label</label><input type="text" id="extMediaLabel" placeholder="e.g. CCTV footage" style="margin-top:.3rem"></div>
+        <button class="btn btn-secondary" style="font-size:.7rem;align-self:flex-end" onclick="addExternalMedia()">+ ADD</button>
+      </div>
+      <div id="extMediaList" style="margin-top:.6rem;display:flex;flex-direction:column;gap:.35rem"></div>
+    </div>
+
+    <div id="progressSection" class="card hidden">
+      <div class="card-title">⚙️ Processing Pipeline</div>
+      <div id="pipelineSteps">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+          <span id="icon-parsing">⏳</span>
+          <span style="font-weight:600">1. Parsing Autopsy Log</span>
+          <span id="badge-parsing" class="badge badge-yellow">Pending</span>
+        </div>
+        <div class="progress-bar" style="margin-bottom:1rem"><div class="progress-fill" id="prog-parsing" style="width:0%"></div></div>
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+          <span id="icon-indexing">⏳</span>
+          <span style="font-weight:600">2. RAG Indexing</span>
+          <span id="badge-indexing" class="badge badge-yellow">Pending</span>
+        </div>
+        <div class="progress-bar" style="margin-bottom:1rem"><div class="progress-fill" id="prog-indexing" style="width:0%"></div></div>
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+          <span id="icon-generating">⏳</span>
+          <span style="font-weight:600">3. AI Report Generation</span>
+          <span id="badge-generating" class="badge badge-yellow">Pending</span>
+        </div>
+        <div class="progress-bar" style="margin-bottom:1rem"><div class="progress-fill" id="prog-generating" style="width:0%"></div></div>
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+          <span id="icon-completed">⏳</span>
+          <span style="font-weight:600">4. PDF Generation</span>
+          <span id="badge-completed" class="badge badge-yellow">Pending</span>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" id="prog-completed" style="width:0%"></div></div>
+      </div>
+      <div id="completionActions" class="hidden mt-2" style="display:flex;gap:1rem;flex-wrap:wrap">
+        <button class="btn btn-success" onclick="downloadReport()">⬇️ Download PDF Report</button>
+        <button class="btn btn-secondary" onclick="viewReport()">👁️ View Report</button>
+        <button class="btn btn-secondary" onclick="switchTab('query')">💬 Query with AI</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JOBS TAB — INVESTIGATION MODE -->
+  <div id="tab-jobs" class="tab-panel">
+    <div class="card">
+      <div class="card-title">📋 CASE PROCESSING QUEUE</div>
+      <div id="jobsList"><div class="empty-state"><div class="empty-state-icon">📋</div><p>No cases yet. Upload a forensic log to get started.</p></div></div>
+    </div>
+
+    <!-- INVESTIGATION PANEL — appears when case selected -->
+    <div id="investigationPanel" style="display:none">
+      <div class="card" style="border-top:3px solid var(--accent)">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem">
+          <div>
+            <div id="invCaseName" style="font-family:'Orbitron',monospace;font-size:.9rem;font-weight:900;color:#fff;letter-spacing:.1em"></div>
+            <div id="invCaseMeta" style="font-family:'Share Tech Mono',monospace;font-size:.62rem;color:var(--text3);margin-top:3px"></div>
+          </div>
+          <div class="export-btn-row">
+            <button class="btn btn-secondary" style="font-size:.65rem" onclick="exportData('timeline')">⬇ Timeline JSON</button>
+            <button class="btn btn-secondary" style="font-size:.65rem" onclick="exportData('artifacts')">⬇ Artifacts JSON</button>
+            <button class="btn btn-secondary" style="font-size:.65rem" onclick="exportData('queries')">⬇ Query Log JSON</button>
+          </div>
+        </div>
+        <div id="invHashBox" class="hash-box" style="display:none">
+          <span class="hash-label">SHA-256 File Integrity Proof</span>
+          <span id="invHash"></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="inv-tabs">
+          <button class="inv-tab active" onclick="showInvTab(0,this)">📊 Overview</button>
+          <button class="inv-tab" onclick="showInvTab(1,this)">🔍 Findings</button>
+          <button class="inv-tab" onclick="showInvTab(2,this)">📅 Timeline</button>
+          <button class="inv-tab" onclick="showInvTab(3,this)">🎬 Media</button>
+          <button class="inv-tab" onclick="showInvTab(4,this)">📋 Logs</button>
+        </div>
+        <div class="inv-panel active" id="inv-0"><div id="invOverview"></div></div>
+        <div class="inv-panel" id="inv-1"><div id="invFindings"></div></div>
+        <div class="inv-panel" id="inv-2"><div id="invTimeline"></div></div>
+        <div class="inv-panel" id="inv-3"><div id="invMedia"></div></div>
+        <div class="inv-panel" id="inv-4"><div id="invLogs"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REPORT TAB -->
+  <div id="tab-report" class="tab-panel">
+    <div id="noReport" class="card">
+      <div class="text-muted" style="text-align:center;padding:2rem">
+        <div style="font-size:3rem">📊</div>
+        <div style="margin-top:1rem;font-size:1rem">No report loaded yet</div>
+        <div class="text-sm mt-1">Upload and analyze a forensic log to view the report</div>
+      </div>
+    </div>
+    <div id="reportContent" class="hidden"></div>
+  </div>
+
+  <!-- QUERY TAB -->
+  <div id="tab-query" class="tab-panel">
+    <div class="card">
+      <div class="card-title">💬 AI-Powered Case Query (RAG)</div>
+      <div id="noQueryCase" class="alert alert-info">Complete a forensic analysis first to enable AI querying.</div>
+      <div id="querySection" class="hidden">
+        <div class="chat-box">
+          <div class="chat-messages" id="chatMessages">
+            <div class="msg msg-ai">Hello! I'm your AI forensic analyst. Ask me anything about the evidence in this case.</div>
+          </div>
+          <div class="chat-input">
+            <input type="text" id="queryInput" placeholder="e.g. What suspicious websites were visited?" onkeydown="if(event.key==='Enter') sendQuery()">
+            <button class="btn btn-primary" onclick="sendQuery()" id="queryBtn">Send</button>
+          </div>
+        </div>
+        <div class="mt-1" style="display:flex;flex-wrap:wrap;gap:0.5rem">
+          <span class="text-sm text-muted">Quick queries:</span>
+          <button class="ftab" onclick="quickQuery('What web activity was found?')">Web Activity</button>
+          <button class="ftab" onclick="quickQuery('Were any files deleted?')">Deleted Files</button>
+          <button class="ftab" onclick="quickQuery('What USB devices were connected?')">USB Devices</button>
+          <button class="ftab" onclick="quickQuery('Summarize the key findings')">Key Findings</button>
+          <button class="ftab" onclick="quickQuery('What search queries did the user make?')">Search History</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MEDIA EVIDENCE TAB -->
+  <div id="tab-media" class="tab-panel">
+    <!-- No case uploaded yet -->
+    <div id="mediaNoCase" class="card" style="text-align:center;padding:3rem">
+      <div style="font-size:3rem;margin-bottom:1rem">🎬</div>
+      <div style="font-size:1rem;font-weight:600;margin-bottom:.5rem">No Case Uploaded Yet</div>
+      <div style="color:var(--muted);font-size:.85rem">Upload a forensic log file in the <strong>Upload &amp; Analyze</strong> tab.<br>Media evidence for that case will appear here automatically.</div>
+    </div>
+
+    <!-- Case media viewer (shown after upload) -->
+    <div id="mediaCaseViewer" style="display:none">
+      <div class="card">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+          <div>
+            <div class="card-title" id="mediaCaseTitle">🎬 MEDIA EVIDENCE</div>
+            <div style="font-size:.8rem;color:var(--muted)" id="mediaCaseSubtitle"></div>
+          </div>
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap" id="mediaCaseBtns"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="findings-nav" id="mediaTypeTabs">
+          <div class="ftab active" id="mtab-images" onclick="selectMediaType('images',this)">🖼️ Images</div>
+          <div class="ftab" id="mtab-videos" onclick="selectMediaType('videos',this)">🎬 Videos</div>
+          <div class="ftab" id="mtab-audio" onclick="selectMediaType('audio',this)">🔊 Audio</div>
+        </div>
+        <div id="media-images" style="display:block;margin-top:1rem">
+          <div id="imageGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem"></div>
+        </div>
+        <div id="media-videos" style="display:none;margin-top:1rem">
+          <div id="videoList" style="display:flex;flex-direction:column;gap:1rem"></div>
+        </div>
+        <div id="media-audio" style="display:none;margin-top:1rem">
+          <div id="audioList" style="display:flex;flex-direction:column;gap:1rem"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TIMELINE TAB -->
+  <div id="tab-timeline" class="tab-panel">
+    <div class="card">
+      <div class="card-title">📅 FORENSIC TIMELINE</div>
+      <div id="timelineNoCase" style="text-align:center;padding:3rem;color:var(--text3)">
+        <div style="font-size:2rem;margin-bottom:1rem;opacity:.4">📅</div>
+        <div style="font-family:'Orbitron',monospace;font-size:.85rem;letter-spacing:.15em;color:var(--text2);text-transform:uppercase;margin-bottom:.5rem">No Case Loaded</div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:.72rem;letter-spacing:.08em;line-height:1.8">
+          Upload and analyze a forensic log to view the timeline.<br>
+          Events will appear in chronological order with full source traceability.
+        </div>
+      </div>
+      <div id="timelineContent" style="display:none">
+        <!-- Filter bar -->
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem;align-items:center">
+          <span style="font-family:'Share Tech Mono',monospace;font-size:.65rem;letter-spacing:.1em;color:var(--text3);text-transform:uppercase">Filter:</span>
+          <button class="ftab active" id="tlf-all"      onclick="filterTimeline('all',this)">All</button>
+          <button class="ftab"        id="tlf-deleted"  onclick="filterTimeline('deleted',this)">🗑 Deleted</button>
+          <button class="ftab"        id="tlf-usb"      onclick="filterTimeline('usb',this)">🔌 USB</button>
+          <button class="ftab"        id="tlf-web"      onclick="filterTimeline('web_history',this)">🌐 Web</button>
+          <button class="ftab"        id="tlf-email"    onclick="filterTimeline('email',this)">📧 Email</button>
+          <button class="ftab"        id="tlf-media"    onclick="filterTimeline('media',this)">🎬 Media</button>
+          <button class="ftab"        id="tlf-high"     onclick="filterTimeline('high',this)">🔴 High Conf.</button>
+          <div style="margin-left:auto">
+            <span id="tlCount" style="font-family:'Share Tech Mono',monospace;font-size:.65rem;color:var(--text3)"></span>
+          </div>
+        </div>
+        <!-- Timeline list -->
+        <div id="timelineList"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+
+const API = 'http://127.0.0.1:8000';
+let _csrfToken = '';
+
+async function _fetchCsrf() {
+  try {
+    const r = await fetch(`${API}/api/auth/csrf`, { credentials: 'include' });
+    if (r.ok) { const d = await r.json(); _csrfToken = d.csrf_token || ''; }
+  } catch(e) {}
+}
+
+function _csrfHeaders(extra) {
+  return Object.assign({ 'Content-Type': 'application/json', 'X-CSRF-Token': _csrfToken }, extra || {});
+}
+
+// ═══════════════════════════════════════════════════════
+// INVESTIGATION MODE
+// ═══════════════════════════════════════════════════════
+let _invJobId = null;
+
+function showInvTab(idx, btn) {
+  document.querySelectorAll('.inv-panel').forEach((el,i) => el.classList.toggle('active', i===idx));
+  document.querySelectorAll('.inv-tab').forEach((b,i) => b.classList.toggle('active', i===idx));
+}
+
+async function openInvestigation(jobId) {
+  _invJobId = jobId;
+  const panel = document.getElementById('investigationPanel');
+  if (!panel) return;
+  panel.style.display = 'block';
+
+  try {
+    // Load job status for sha256 and metadata
+    const jr = await fetch(`${API}/api/status/${jobId}`);
+    const job = await jr.json();
+
+    document.getElementById('invCaseName').textContent = job.case_name || 'Unknown Case';
+    document.getElementById('invCaseMeta').textContent =
+      `Case: ${job.case_number||'?'} | Analyst: ${job.analyst_name||'?'} | ${job.created_at ? new Date(job.created_at).toLocaleString() : ''}`;
+
+    // SHA-256 hash display
+    const hashBox = document.getElementById('invHashBox');
+    if (job.sha256) {
+      hashBox.style.display = 'block';
+      document.getElementById('invHash').textContent = job.sha256;
+    } else {
+      hashBox.style.display = 'none';
+    }
+
+    // Load all panels
+    await Promise.all([
+      loadInvOverview(jobId, job),
+      loadInvTimeline(jobId),
+      loadInvLogs(jobId),
+      loadInvMedia(jobId, job),
+    ]);
+    loadInvFindings(jobId);
+
+  } catch(e) { console.error('[Investigation]', e); }
+}
+
+async function loadInvOverview(jobId, job) {
+  const el = document.getElementById('invOverview');
+  if (!el) return;
+  try {
+    const pr = await fetch(`${API}/api/report-preview/${jobId}`);
+    if (!pr.ok) { el.innerHTML = '<div class="text-muted text-sm">Report not yet generated.</div>'; return; }
+    const report = await pr.json();
+    const s = report.statistics || {};
+    const conf_high   = s.high_confidence_events   || 0;
+    const conf_medium = s.medium_confidence_events  || 0;
+    const conf_low    = s.low_confidence_events     || 0;
+    const suspicious  = s.suspicious_events         || 0;
+    el.innerHTML = `
+      <div class="dashboard-grid" style="margin-bottom:.75rem">
+        <div class="dash-stat"><span class="ds-num">${s.total_artifacts||0}</span><span class="ds-label">Artifacts</span></div>
+        <div class="dash-stat" style="border-top-color:var(--accent)"><span class="ds-num" style="color:#ff7060">${suspicious}</span><span class="ds-label">Suspicious</span></div>
+        <div class="dash-stat green"><span class="ds-num">${conf_high}</span><span class="ds-label">High Conf.</span></div>
+        <div class="dash-stat amber"><span class="ds-num">${conf_medium}</span><span class="ds-label">Med. Conf.</span></div>
+        <div class="dash-stat"><span class="ds-num">${s.deleted_files_count||0}</span><span class="ds-label">Deleted Files</span></div>
+        <div class="dash-stat cyan"><span class="ds-num">${s.usb_devices_count||0}</span><span class="ds-label">USB Devices</span></div>
+      </div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:.65rem;color:var(--text3);margin-bottom:.5rem">
+        Based on ${s.normalized_events||0} normalized events across ${s.total_artifacts||0} artifacts.
+      </div>
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+        <span class="conf-badge conf-high">● ${conf_high} High Confidence</span>
+        <span class="conf-badge conf-medium">● ${conf_medium} Medium Confidence</span>
+        <span class="conf-badge conf-low">● ${conf_low} Low Confidence</span>
+      </div>`;
+  } catch(e) { el.innerHTML = '<div class="text-muted text-sm">Error loading overview.</div>'; }
+}
+
+async function loadInvFindings(jobId) {
+  const el = document.getElementById('invFindings');
+  if (!el) return;
+  try {
+    const pr = await fetch(`${API}/api/report-preview/${jobId}`);
+    if (!pr.ok) { el.innerHTML = '<div class="text-muted text-sm">Report not yet generated.</div>'; return; }
+    const report = await pr.json();
+    const findings = report.findings || {};
+    const s = report.statistics || {};
+    let html = '';
+    const CATS = [
+      ['deleted_files','🗑️ Deleted Files','deleted_files_count','High'],
+      ['device_connections','🔌 USB Devices','usb_devices_count','High'],
+      ['web_activity','🌐 Web Activity','web_history_count','High'],
+      ['email_analysis','📧 Email','email_count','High'],
+      ['search_queries','🔍 Search Queries','search_queries_count','Medium'],
+      ['user_accounts','👤 User Accounts','user_accounts_count','Medium'],
+      ['installed_programs','💿 Programs','installed_programs_count','Medium'],
+    ];
+    CATS.forEach(([key,label,statKey,conf]) => {
+      const f = findings[key]; if (!f || !f.count) return;
+      const cc = conf.toLowerCase();
+      html += `<div style="background:var(--bg3);border:1px solid var(--border);padding:.65rem .85rem;margin-bottom:.4rem">
+        <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.3rem">
+          <span style="font-weight:600;font-size:.9rem">${label}</span>
+          <span class="conf-badge conf-${cc}">Confidence: ${conf}</span>
+          <span style="font-family:'Share Tech Mono',monospace;font-size:.6rem;color:var(--text3);margin-left:auto">
+            Based on ${f.count} artifact${f.count!==1?'s':''}
+          </span>
+        </div>
+        <div style="font-size:.85rem;color:var(--text2);line-height:1.5">${_esc(f.narrative||'')}</div>
+        ${(f.sample_events||[]).slice(0,2).map(ev=>`
+          <div style="margin-top:.4rem;font-family:'Share Tech Mono',monospace;font-size:.61rem;color:var(--text3);border-left:2px solid var(--border);padding-left:.5rem">
+            ${_esc(ev.description||'')} | <span style="color:var(--cyan2)">${_esc(ev.record_ref||ev.source||'?')}</span> | <span style="color:var(--amber2)">${_esc(ev.timestamp||'?')}</span>
+          </div>`).join('')}
+      </div>`;
+    });
+    el.innerHTML = html || '<div class="text-muted text-sm">No findings data.</div>';
+  } catch(e) { el.innerHTML = '<div class="text-muted text-sm">Error loading findings.</div>'; }
+}
+
+async function loadInvTimeline(jobId) {
+  const el = document.getElementById('invTimeline');
+  if (!el) return;
+  try {
+    const r = await fetch(`${API}/api/timeline/${jobId}`);
+    if (!r.ok) { el.innerHTML = '<div class="text-muted text-sm">Timeline not available yet.</div>'; return; }
+    const data = await r.json();
+    const events = (data.events || []).slice(0, 60);
+    if (!events.length) { el.innerHTML = '<div class="text-muted text-sm">No timeline events.</div>'; return; }
+    el.innerHTML = events.map(e => {
+      const ts = e.timestamp || '';
+      const timePart = ts.includes('T') ? ts.split('T')[1]?.slice(0,5) : ts.slice(0,16);
+      const row = e.source_row != null ? ` (Row ${e.source_row})` : '';
+      return `<div style="display:flex;gap:.6rem;padding:.3rem 0;border-bottom:1px solid var(--border);align-items:center;font-size:.83rem">
+        <span style="font-family:'Share Tech Mono',monospace;font-size:.65rem;color:var(--amber2);flex-shrink:0;min-width:50px">${_esc(timePart)}</span>
+        <span style="color:var(--accent2)">→</span>
+        <span style="color:var(--cyan2);font-family:'Share Tech Mono',monospace;font-size:.62rem;flex-shrink:0;min-width:90px">${_esc((e.event_type||'').replace(/_/g,' '))}</span>
+        <span style="flex:1;color:var(--text)">${_esc(e.description||'')}</span>
+        <span style="font-family:'Share Tech Mono',monospace;font-size:.58rem;color:var(--text3);flex-shrink:0">${_esc(e.source||'')}${_esc(row)}</span>
+      </div>`;
+    }).join('');
+  } catch(e) { el.innerHTML = '<div class="text-muted text-sm">Error loading timeline.</div>'; }
+}
+
+async function loadInvMedia(jobId, job) {
+  const el = document.getElementById('invMedia');
+  if (!el) return;
+  const IMAGE_EXTS = ['jpg','jpeg','png','gif','webp'];
+  const AUDIO_EXTS = ['mp3','wav','aac','m4a','ogg'];
+  const VIDEO_EXTS = ['mp4','avi','mov','mkv','webm'];
+  const fname = (job.filename||'').toLowerCase();
+  const ext = fname.split('.').pop();
+  let html = '';
+  if (IMAGE_EXTS.includes(ext)) {
+    html = `<img src="${API}/api/media-file/${jobId}" style="max-width:100%;max-height:300px;display:block;border:1px solid var(--border)" alt="Evidence">`;
+  } else if (AUDIO_EXTS.includes(ext)) {
+    html = `<audio src="${API}/api/media-file/${jobId}" controls style="width:100%;margin-top:.5rem"></audio>`;
+  } else if (VIDEO_EXTS.includes(ext)) {
+    html = `<video src="${API}/api/media-file/${jobId}" controls style="width:100%;max-height:320px;display:block"></video>`;
+  } else {
+    html = '<div class="text-muted text-sm">No media file for this case — uploaded file is a log/data file.</div>';
+  }
+  el.innerHTML = html;
+}
+
+async function loadInvLogs(jobId) {
+  const el = document.getElementById('invLogs');
+  if (!el) return;
+  try {
+    const r = await fetch(`${API}/api/job-audit/${jobId}`);
+    if (!r.ok) { el.innerHTML = '<div class="text-muted text-sm">No audit trail yet.</div>'; return; }
+    const data = await r.json();
+    const entries = data.audit_trail || [];
+    el.innerHTML = `
+      <div style="font-family:'Share Tech Mono',monospace;font-size:.63rem;color:var(--text3);margin-bottom:.5rem">
+        ${entries.length} event${entries.length!==1?'s':''} recorded for this case
+      </div>
+      ${entries.map(e => {
+        const ts  = e.timestamp || '';
+        const tm  = ts.includes('T') ? ts.split('T')[1]?.slice(0,8) : ts.slice(11,19);
+        const ACT_ICONS = {
+          CASE_CREATED:'📁', EVIDENCE_UPLOADED:'⬆', ANALYSIS_STARTED:'⚙️',
+          REPORT_GENERATED:'📄', QUERY_ASKED:'💬', PIPELINE_ERROR:'❌',
+        };
+        const icon = ACT_ICONS[e.action] || '📋';
+        return `<div class="audit-entry">
+          <span class="audit-time">${_esc(tm)}</span>
+          <span class="audit-action">${icon} ${_esc(e.action||'?')}</span>
+          <span class="audit-detail">${_esc(e.detail||'')}${e.user?' — '+_esc(e.user):''}</span>
+        </div>`;
+      }).join('')}`;
+  } catch(e) { el.innerHTML = '<div class="text-muted text-sm">Error loading logs.</div>'; }
+}
+
+// ── EXPORT ────────────────────────────────────────────────
+async function exportData(type) {
+  if (!_invJobId) { showToast('Select a case first','warn'); return; }
+  try {
+    const r = await fetch(`${API}/api/export/${type}/${_invJobId}`);
+    if (!r.ok) throw new Error('Export failed');
+    const data = await r.json();
+    const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+    const url  = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = `${type}_${_invJobId.slice(0,8)}.json`;
+    a.click(); URL.revokeObjectURL(url);
+    showToast(`✅ ${type} exported`, 'success', 2000);
+  } catch(e) { showToast(`❌ Export failed: ${e.message}`, 'error'); }
+}
+
+
+
+// ═══════════════════════════════════════════════════════
+// EXTERNAL EVIDENCE URL
+// ═══════════════════════════════════════════════════════
+let _extMediaItems = [];
+
+function addExternalMedia() {
+  const url   = (document.getElementById('extMediaUrl').value||'').trim();
+  const type  = document.getElementById('extMediaType').value;
+  const label = (document.getElementById('extMediaLabel').value||'').trim() || url;
+  if (!url) { showToast('Please enter a URL','warn'); return; }
+  try { new URL(url); } catch(e) { showToast('Invalid URL','error'); return; }
+  _extMediaItems.push({url,type,label});
+  renderExtMediaList();
+  document.getElementById('extMediaUrl').value='';
+  document.getElementById('extMediaLabel').value='';
+  showToast('External evidence added','success',2000);
+}
+
+function removeExtMedia(idx) {
+  _extMediaItems.splice(idx,1); renderExtMediaList();
+}
+
+function renderExtMediaList() {
+  const el = document.getElementById('extMediaList');
+  if (!el) return;
+  el.innerHTML = _extMediaItems.map((item,i)=>`
+    <div style="display:flex;align-items:center;gap:.5rem;background:var(--bg3);border:1px solid var(--border);padding:.35rem .6rem">
+      <span style="font-family:'Share Tech Mono',monospace;font-size:.6rem;color:var(--cyan2);text-transform:uppercase;flex-shrink:0">${item.type}</span>
+      <span style="font-size:.81rem;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${item.url}">${item.label}</span>
+      <button class="btn btn-secondary" style="font-size:.6rem;padding:2px 7px;flex-shrink:0" onclick="previewExtMedia(${i})">&#x25B6; Preview</button>
+      <button class="btn btn-secondary" style="font-size:.6rem;padding:2px 7px;color:#ff7060;flex-shrink:0" onclick="removeExtMedia(${i})">&#x2715;</button>
+    </div>`).join('');
+}
+
+function previewExtMedia(idx) {
+  const item = _extMediaItems[idx]; if(!item) return;
+  const modal = document.createElement('div');
+  modal.style.cssText='position:fixed;inset:0;z-index:9998;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;padding:1rem';
+  let inner = item.type==='video'
+    ? `<video src="${item.url}" controls style="max-width:90vw;max-height:80vh;display:block"></video>`
+    : item.type==='audio'
+    ? `<audio src="${item.url}" controls style="width:380px"></audio>`
+    : `<img src="${item.url}" style="max-width:90vw;max-height:80vh;display:block" alt="${item.label}">`;
+  modal.innerHTML=`<div style="position:relative;background:var(--panel);border:1px solid var(--border);padding:1rem;max-width:95vw">
+    <div style="font-family:'Share Tech Mono',monospace;font-size:.63rem;color:var(--text3);margin-bottom:.6rem">${item.label}</div>
+    ${inner}
+    <button onclick="this.closest('[style*=fixed]').remove()" style="position:absolute;top:.4rem;right:.4rem;background:rgba(200,57,43,.1);border:1px solid var(--accent);color:#ff8070;font-size:.65rem;padding:3px 8px;cursor:pointer;font-family:'Share Tech Mono',monospace">&#x2715; CLOSE</button>
+  </div>`;
+  modal.onclick=e=>{ if(e.target===modal) modal.remove(); };
+  document.body.appendChild(modal);
+}
+
+
+document.title = 'AUTOPSY SIM — Digital Forensics Bureau';
+let currentJobId = null;
+let selectedFile = null;
+let selectedDiskImage = null;
+let pollInterval = null;
+
+// ── FIELD PERSISTENCE ─────────────────────────────────────────
+// Save fields to localStorage so they never reset
+function saveFields() {
+  localStorage.setItem('dfr_caseName',    document.getElementById('caseName').value);
+  localStorage.setItem('dfr_caseNumber',  document.getElementById('caseNumber').value);
+  localStorage.setItem('dfr_analystName', document.getElementById('analystName').value);
+  localStorage.setItem('dfr_department',  document.getElementById('department').value);
+}
+
+function loadFields() {
+  document.getElementById('caseName').value    = localStorage.getItem('dfr_caseName')    || 'Operation Insider Threat';
+  document.getElementById('caseNumber').value  = localStorage.getItem('dfr_caseNumber')  || 'CY-2024-0089';
+  document.getElementById('analystName').value = localStorage.getItem('dfr_analystName') || 'Agent M. Rodriguez';
+  document.getElementById('department').value  = localStorage.getItem('dfr_department')  || 'Digital Forensics Lab';
+  // Always save immediately so values are never lost
+  saveFields();
+}
+
+// ── API STATUS CHECK ──────────────────────────────────────────
+async function checkAPI() {
+  try {
+    const res = await fetch(`${API}/`);
+    if (res.ok) {
+      document.getElementById('apiDot').className = 'dot dot-green';
+      document.getElementById('apiText').textContent = 'API Connected';
+      document.getElementById('apiText').style.color = '#10b981';
+      document.getElementById('apiBanner').classList.add('hidden');
+      return true;
+    }
+  } catch (e) {
+    document.getElementById('apiDot').className = 'dot dot-red';
+    document.getElementById('apiText').textContent = 'API Offline — Run START.bat';
+    document.getElementById('apiText').style.color = '#ef4444';
+    document.getElementById('apiBanner').classList.remove('hidden');
+    return false;
+  }
+}
+
+// ── TAB SWITCHING ─────────────────────────────────────────────
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach((t,i) => t.classList.toggle('active', ['upload','jobs','report','query','media','timeline'][i] === name));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  if (name === 'jobs') refreshJobs();
+  if (name === 'timeline') {
+    if (currentJobId) {
+      loadTimeline(currentJobId);
+    } else {
+      // Try to find the most recently completed job
+      fetch(`${API}/api/jobs`).then(r=>r.json()).then(jobs=>{
+        const done = jobs.filter(j=>j.status==='completed');
+        if (done.length) {
+          const latest = done.sort((a,b)=>new Date(b.created_at)-new Date(a.created_at))[0];
+          currentJobId = latest.id;
+          loadTimeline(latest.id);
+        }
+      }).catch(()=>{});
+    }
+  }
+  if (name === 'media') setTimeout(initMediaViewer, 50);
+}
+
+// ── FILE HANDLING ─────────────────────────────────────────────
+function onDrag(e) { e.preventDefault(); document.getElementById('dropZone').classList.add('drag-over'); }
+function offDrag(e) { document.getElementById('dropZone').classList.remove('drag-over'); }
+function onDrop(e) { e.preventDefault(); offDrag(e); const f = e.dataTransfer.files[0]; if (f) setFile(f); }
+function onFileSelect(e) { if (e.target.files[0]) setFile(e.target.files[0]); }
+function setFile(file) {
+  selectedFile = file;
+  document.getElementById('fileInfo').textContent = `📄 ${file.name} (${(file.size/1024).toFixed(1)} KB)`;
+  document.getElementById('filePreview').classList.remove('hidden');
+  document.getElementById('analyzeBtn').disabled = false;
+  // Do NOT touch the case fields when a file is selected
+}
+
+// ── DISK IMAGE UPLOAD ──────────────────────────────────────────
+function onDropDiskImage(e) { 
+  e.preventDefault(); 
+  document.getElementById('diskImageDropZone').classList.remove('drag-over'); 
+  const f = e.dataTransfer.files[0]; 
+  if (f) setDiskImageFile(f); 
+}
+function onDiskImageSelect(e) { if (e.target.files[0]) setDiskImageFile(e.target.files[0]); }
+function setDiskImageFile(file) {
+  selectedDiskImage = file;
+  const sizeMB = (file.size / (1024 * 1024)).toFixed(2);
+  document.getElementById('diskImageInfo').textContent = `💾 ${file.name} (${sizeMB} MB)`;
+  document.getElementById('diskImagePreview').classList.remove('hidden');
+  document.getElementById('analyzeDiskBtn').disabled = false;
+}
+
+// ── UPLOAD TYPE SWITCHER ───────────────────────────────────────
+function switchUploadType(type, btn) {
+  // Hide all panels and remove active from all tabs
+  document.querySelectorAll('.upload-type-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+  
+  // Show selected panel and activate tab
+  const panel = document.getElementById(`uploadType-${type}`);
+  if (panel) panel.classList.add('active');
+  
+  // Add active class to clicked button
+  if (btn) btn.classList.add('active');
+}
+
+// ── SAMPLE DATA ───────────────────────────────────────────────
+function loadSampleData() {
+  const role  = localStorage.getItem('dfr_role');
+  const user  = localStorage.getItem('dfr_user') || '';
+
+  // Determine which sample to load based on role/account
+  let caseKey = 'insider'; // default
+  if (user === 'patel') caseKey = 'darkweb';
+  else if (role === 'admin') {
+    // Admin: use whichever case is filled in the case field
+    const cn = (document.getElementById('caseName').value || '').toLowerCase();
+    const cnum = (document.getElementById('caseNumber').value || '').toLowerCase();
+    if (cn.includes('dark') || cnum.includes('0090')) caseKey = 'darkweb';
+    else caseKey = 'insider';
+  }
+
+  const INSIDER_CSV = `Artifact Type,Program Name,File Name,Path,Date/Time,Description,URL,User,Size
+TSK_WEB_HISTORY,,,\"https://mega.nz/upload\",2024-03-15 09:45:22,MEGA Cloud Upload,,john_doe,
+TSK_WEB_HISTORY,,,\"https://www.google.com/search?q=how+to+delete+forensic+evidence\",2024-03-15 10:02:33,Google Search - Delete Evidence,,john_doe,
+TSK_WEB_HISTORY,,,\"https://www.torproject.org/download/\",2024-03-15 10:15:44,Tor Browser Download,,john_doe,
+TSK_WEB_HISTORY,,,\"https://drive.google.com/drive/u/1/my-drive\",2024-03-15 09:23:11,Google Drive Upload,,john_doe,
+TSK_WEB_HISTORY,,,\"https://competitor-corp.com/careers/senior-engineer\",2024-03-12 14:22:10,Competitor Job Listing,,john_doe,
+TSK_EMAIL_MESSAGE,,,,2024-03-14 22:11:05,"From: john.doe@corp.com To: recruiter@competitor.com Subject: Strategy Docs",,john_doe,
+TSK_EMAIL_MESSAGE,,,,2024-03-15 08:30:44,"From: john.doe@corp.com To: j.doe@protonmail.com Subject: Backup Files",,john_doe,
+TSK_DEVICE_ATTACHED,,,F:,2024-03-15 08:55:00,"SanDisk Ultra USB 3.0 64GB - Serial: 4C530001200115119007",,john_doe,
+TSK_INSTALLED_PROG,CCleaner Professional,,C:\\Program Files\\CCleaner,2024-03-10 14:30:00,File Wiping Tool v6.19,,john_doe,
+TSK_INSTALLED_PROG,TrueCrypt 7.1a,,C:\\Program Files\\TrueCrypt,2024-03-01 09:00:00,Disk Encryption Software,,john_doe,
+TSK_OS_ACCOUNT,,,C:\\Users\\john_doe,2024-03-15 08:50:22,"Username: john_doe | Admin: No | Last Login: 2024-03-15",,john_doe,
+TSK_RECYCLE_BIN,,Q4_2024_Strategy_CONFIDENTIAL.docx,C:\\$Recycle.Bin\\,2024-03-15 10:30:00,Deleted Confidential Document,,john_doe,45632
+TSK_RECYCLE_BIN,,client_database_master.mdb,C:\\$Recycle.Bin\\,2024-03-15 10:32:44,Deleted Client Database,,john_doe,524288
+TSK_KEYWORD_HIT,,,Chrome History,2024-03-15 10:02:33,"Search: how to delete forensic evidence windows 10 [CRITICAL]",,john_doe,
+TSK_KEYWORD_HIT,,,Chrome History,2024-03-14 21:55:00,"Search: data exfiltration undetected [CRITICAL]",,john_doe,`;
+
+  const DARKWEB_CSV = `Artifact Type,Program Name,File Name,Path,Date/Time,Description,URL,User,Size
+TSK_WEB_HISTORY,,,"http://zqktlwi4fecvo6ri.onion/",2024-04-02 02:15:44,The Hidden Wiki - Dark Web,,alex_r,
+TSK_WEB_HISTORY,,,\"https://www.torproject.org/download/\",2024-04-01 23:58:01,Tor Browser Download,,alex_r,
+TSK_WEB_HISTORY,,,"http://darknetlive.com/",2024-04-02 01:30:22,Darknet Live Portal,,alex_r,
+TSK_WEB_HISTORY,,,\"https://bitcointalk.org/\",2024-04-01 22:44:10,Bitcoin Dark Web Forum,,alex_r,
+TSK_EMAIL_MESSAGE,,,,2024-04-02 03:05:18,"From: anon@protonmail.com To: buyer123@tutanota.com Subject: XMR payment received",,alex_r,
+TSK_EMAIL_MESSAGE,,,,2024-04-01 22:30:00,"From: vendor_elite@protonmail.com Subject: Shipment tracking WT7823DE",,alex_r,
+TSK_DEVICE_ATTACHED,,,E:,2024-04-02 01:00:00,"Kingston DataTraveler 32GB - Serial: 0018F3A92B11",,alex_r,
+TSK_INSTALLED_PROG,Tor Browser 13.0,,C:\\Users\\alex_r\\Desktop\\Tor,2024-03-28 20:00:00,Anonymous Browsing Tool,,alex_r,
+TSK_INSTALLED_PROG,VeraCrypt 1.25,,C:\\Program Files\\VeraCrypt,2024-03-20 11:00:00,Disk Encryption,,alex_r,
+TSK_INSTALLED_PROG,Electrum Wallet,,C:\\Users\\alex_r\\AppData\\Roaming\\Electrum,2024-03-15 09:00:00,Cryptocurrency Wallet,,alex_r,
+TSK_OS_ACCOUNT,,,C:\\Users\\alex_r,2024-04-02 00:50:00,"Username: alex_r | Last Login: 2024-04-02",,alex_r,
+TSK_RECYCLE_BIN,,transaction_history_xmr.csv,C:\\$Recycle.Bin\\,2024-04-02 03:30:00,Deleted Monero Transactions,,alex_r,102400
+TSK_RECYCLE_BIN,,vendor_contacts_darkweb.txt,C:\\$Recycle.Bin\\,2024-04-02 03:31:00,Deleted Vendor Contacts,,alex_r,8192
+TSK_KEYWORD_HIT,,,Browser History,2024-04-02 02:15:44,"Search: buy substances dark web [CRITICAL]",,alex_r,
+TSK_KEYWORD_HIT,,,Browser History,2024-04-01 23:00:00,"Search: monero untraceable cryptocurrency [HIGH]",,alex_r,`;
+
+  const csv    = caseKey === 'darkweb' ? DARKWEB_CSV : INSIDER_CSV;
+  const fname  = caseKey === 'darkweb'
+    ? 'operation_dark_web_sample.csv'
+    : 'operation_insider_threat_sample.csv';
+  const label  = caseKey === 'darkweb' ? 'Operation Dark Web' : 'Operation Insider Threat';
+
+  const blob = new Blob([csv], {type: 'text/csv'});
+  const file = new File([blob], fname, {type: 'text/csv'});
+  setFile(file);
+
+  // Auto-fill case fields to match sample
+  if (caseKey === 'darkweb') {
+    const cn   = document.getElementById('caseName');
+    const cnum = document.getElementById('caseNumber');
+    const an   = document.getElementById('analystName');
+    if (cn   && !cn.readOnly)   cn.value   = 'Operation Dark Web';
+    if (cnum && !cnum.readOnly) cnum.value = 'CY-2024-0090';
+    if (an   && !an.readOnly)   an.value   = 'Agent K. Patel';
+  } else {
+    const cn   = document.getElementById('caseName');
+    const cnum = document.getElementById('caseNumber');
+    const an   = document.getElementById('analystName');
+    if (cn   && !cn.readOnly)   cn.value   = 'Operation Insider Threat';
+    if (cnum && !cnum.readOnly) cnum.value = 'CY-2024-0089';
+    if (an   && !an.readOnly)   an.value   = 'Agent M. Rodriguez';
+  }
+
+  // Format selector popup
+  const formats = [
+    { label: '📊 CSV  — Autopsy artifact log',  type: 'text/csv',              ext: 'csv' },
+    { label: '🗂️  JSON — Structured artifact data', type: 'application/json',   ext: 'json' },
+    { label: '📋 XML  — Forensic report format', type: 'application/xml',       ext: 'xml' },
+    { label: '📄 LOG  — System event log',       type: 'text/plain',            ext: 'log' },
+  ];
+
+  // Build inline chooser below the button
+  const statusEl = document.getElementById('uploadStatus');
+  statusEl.innerHTML = formats.map((f, i) =>
+    `<button onclick="loadSampleFormat('${caseKey}','${f.ext}')"
+       style="margin:2px 4px 0 0;padding:3px 9px;font-size:.7rem;background:rgba(200,57,43,.1);
+              border:1px solid #c8392b;color:#ff8070;cursor:pointer;font-family:inherit">
+       ${f.label}
+     </button>`
+  ).join('') + `<span style="font-size:.65rem;color:#506070;margin-left:6px">← pick format</span>`;
+
+  showToast(`✅ ${label} — choose a format above`, 'success', 3000);
+}
+
+function loadSampleFormat(caseKey, ext) {
+  // Full sample content per format per case
+  const SAMPLES = {
+    insider: {
+      csv:  'operation_insider_threat_sample.csv',
+      json: 'operation_insider_threat_sample.json',
+      xml:  'operation_insider_threat_sample.xml',
+      log:  'operation_insider_threat_sample.log',
+    },
+    darkweb: {
+      csv:  'operation_dark_web_sample.csv',
+      json: 'operation_dark_web_sample.json',
+      xml:  'operation_dark_web_sample.xml',
+      log:  'operation_dark_web_sample.log',
+    }
+  };
+
+  const fname = SAMPLES[caseKey]?.[ext];
+  const label = caseKey === 'darkweb' ? 'Operation Dark Web' : 'Operation Insider Threat';
+  if (!fname) return;
+
+  const mimeMap = { csv:'text/csv', json:'application/json', xml:'application/xml', log:'text/plain' };
+
+  // Fetch the file from the backend sample-file endpoint
+  fetch(`${API}/api/sample-file/${fname}`)
+    .then(r => {
+      if (!r.ok) throw new Error(`${r.status}`);
+      return r.blob();
+    })
+    .then(blob => {
+      const file = new File([blob], fname, { type: mimeMap[ext] || 'text/plain' });
+      setFile(file);
+      document.getElementById('uploadStatus').textContent =
+        `✅ ${label} — ${ext.toUpperCase()} sample loaded — click Analyze to continue`;
+      showToast(`✅ ${label} ${ext.toUpperCase()} sample loaded`, 'success', 3000);
+    })
+    .catch(err => {
+      // Fallback: load CSV inline if server unreachable
+      showToast(`⚠️ Could not fetch sample file — loading CSV fallback`, 'warn', 3000);
+      loadSampleData();
+    });
+}
+
+function loadDiskImageSample() {
+  const role = localStorage.getItem('dfr_role');
+  const user = localStorage.getItem('dfr_user') || '';
+
+  let caseKey = 'insider';
+  if (user === 'patel') caseKey = 'darkweb';
+  else if (role === 'admin') {
+    const cn   = (document.getElementById('caseName').value   || '').toLowerCase();
+    const cnum = (document.getElementById('caseNumber').value || '').toLowerCase();
+    if (cn.includes('dark') || cnum.includes('0090')) caseKey = 'darkweb';
+  }
+
+  const label = caseKey === 'darkweb' ? 'Operation Dark Web' : 'Operation Insider Threat';
+
+  // Disk image format selector
+  const diskFormats = [
+    { ext: 'dd',  label: '💿 DD  — Raw sector dump (50-60 MB)' },
+    { ext: 'img', label: '💿 IMG — Generic disk image (50-60 MB)' },
+    { ext: 'raw', label: '💿 RAW — Raw binary image (50-60 MB)' },
+    { ext: 'e01', label: '💿 E01 — EnCase format (20-25 MB)' },
+  ];
+
+  const statusEl = document.getElementById('diskImageStatus');
+  statusEl.innerHTML = diskFormats.map(f =>
+    `<button onclick="loadDiskImageFormat('${caseKey}','${f.ext}')"
+       style="margin:2px 4px 0 0;padding:3px 9px;font-size:.7rem;background:rgba(16,168,188,.1);
+              border:1px solid #10a8bc;color:#10a8bc;cursor:pointer;font-family:inherit">
+       ${f.label}
+     </button>`
+  ).join('') + `<span style="font-size:.65rem;color:#506070;margin-left:6px">← pick format</span>`;
+
+  showToast(`✅ ${label} — choose a disk image format`, 'success', 3000);
+}
+
+function loadDiskImageFormat(caseKey, ext) {
+  const FILES = {
+    insider: {
+      dd:  'insider_threat_forensic_image.dd',
+      img: 'insider_threat_forensic_image.img',
+      raw: 'insider_threat_forensic_image.raw',
+      e01: 'insider_threat_forensic_image.E01',
+    },
+    darkweb: {
+      dd:  'dark_web_forensic_image.dd',
+      img: 'dark_web_forensic_image.img',
+      raw: 'dark_web_forensic_image.raw',
+      e01: 'dark_web_forensic_image.E01',
+    }
+  };
+
+  const fname = FILES[caseKey]?.[ext];
+  const label = caseKey === 'darkweb' ? 'Operation Dark Web' : 'Operation Insider Threat';
+  if (!fname) return;
+
+  const statusEl = document.getElementById('diskImageStatus');
+  statusEl.textContent = `⏳ Loading ${fname}...`;
+
+  fetch(`${API}/api/sample-file/${fname}`)
+    .then(r => {
+      if (!r.ok) throw new Error(`${r.status} — file not found on server`);
+      return r.blob();
+    })
+    .then(blob => {
+      const sizeMB = (blob.size / 1024 / 1024).toFixed(1);
+      const file = new File([blob], fname, { type: 'application/octet-stream' });
+      selectedDiskImage = file;
+
+      // Show preview
+      const preview = document.getElementById('diskImagePreview');
+      const info    = document.getElementById('diskImageInfo');
+      if (preview) preview.classList.remove('hidden');
+      if (info) info.textContent =
+        `💾 ${fname}  ·  ${sizeMB} MB  ·  ${ext.toUpperCase()} format`;
+
+      // Enable analyze button
+      const btn = document.getElementById('analyzeDiskBtn');
+      if (btn) btn.disabled = false;
+
+      // Auto-fill case fields
+      if (caseKey === 'darkweb') {
+        const cn   = document.getElementById('caseName');
+        const cnum = document.getElementById('caseNumber');
+        const an   = document.getElementById('analystName');
+        if (cn   && !cn.readOnly)   cn.value   = 'Operation Dark Web';
+        if (cnum && !cnum.readOnly) cnum.value = 'CY-2024-0090';
+        if (an   && !an.readOnly)   an.value   = 'Agent K. Patel';
+      } else {
+        const cn   = document.getElementById('caseName');
+        const cnum = document.getElementById('caseNumber');
+        const an   = document.getElementById('analystName');
+        if (cn   && !cn.readOnly)   cn.value   = 'Operation Insider Threat';
+        if (cnum && !cnum.readOnly) cnum.value = 'CY-2024-0089';
+        if (an   && !an.readOnly)   an.value   = 'Agent M. Rodriguez';
+      }
+
+      statusEl.textContent =
+        `✅ ${label} ${ext.toUpperCase()} loaded (${sizeMB} MB) — click Analyze to continue`;
+      showToast(`✅ ${fname} loaded (${sizeMB} MB)`, 'success', 3000);
+    })
+    .catch(err => {
+      statusEl.textContent = `❌ Could not load ${fname}: ${err.message}`;
+      showToast(`❌ Failed to load disk image: ${err.message}`, 'error', 5000);
+    });
+}
+
+
+// ── ANALYSIS ──────────────────────────────────────────────────
+async function startAnalysis() {
+  if (!selectedFile) return;
+
+  // Role check — viewer cannot upload
+  const _role = localStorage.getItem('dfr_role');
+  if (_role === 'viewer') {
+    showToast('❌ View-only account — uploads not permitted', 'error');
+    return;
+  }
+
+  // Analyst check — validate case fields match assignment
+  if (_role === 'analyst') {
+    let allowed = null;
+    try { allowed = JSON.parse(localStorage.getItem('dfr_allowedCases') || 'null'); } catch(e){}
+    if (allowed) {
+      const cn   = (document.getElementById('caseName').value || '').toLowerCase();
+      const cnum = (document.getElementById('caseNumber').value || '').toLowerCase();
+      const ok = allowed.some(k => cn.includes(k.toLowerCase()) || cnum === k.toLowerCase());
+      if (!ok) {
+        showToast('❌ You can only upload evidence for your assigned case', 'error');
+        document.getElementById('uploadStatus').textContent =
+          '❌ Access denied — case not in your assignment.';
+        return;
+      }
+    }
+  }
+
+  const apiOk = await checkAPI();
+  if (!apiOk) {
+    document.getElementById('uploadStatus').textContent = '❌ Backend not running. Open START.bat first.';
+    showToast('❌ Backend not running — open START.bat first', 'error');
+    return;
+  }
+
+  const btn = document.getElementById('analyzeBtn');
+  const spinner = document.getElementById('analyzeSpinner');
+  const btnText = document.getElementById('analyzeBtnText');
+
+  btn.disabled = true;
+  spinner.classList.remove('hidden');
+  const modeLabel = {quick:'Quick Scan',detailed:'Detailed Analysis',interactive:'Interactive Investigation'}[_analysisMode]||'Analysis';
+  btnText.textContent = '⏳ Uploading...';
+  showToast(`⏳ Starting ${modeLabel}...`, 'info');
+
+  try {
+    const formData = new FormData();
+    formData.append('file', selectedFile);
+    const caseName   = document.getElementById('caseName').value.trim()    || localStorage.getItem('dfr_caseName')    || 'Operation Insider Threat';
+    const caseNumber = document.getElementById('caseNumber').value.trim()  || localStorage.getItem('dfr_caseNumber')  || 'CY-2024-0089';
+    const analystName= document.getElementById('analystName').value.trim() || localStorage.getItem('dfr_analystName') || 'Agent M. Rodriguez';
+    const department = document.getElementById('department').value.trim()  || localStorage.getItem('dfr_department')  || 'Digital Forensics Lab';
+    formData.append('case_name',    caseName);
+    formData.append('analyst_name', analystName);
+    formData.append('case_number',  caseNumber);
+    formData.append('department',   department);
+    formData.append('session_token', _AKM.getToken() || '');
+    formData.append('analysis_mode', _analysisMode);
+
+    const uploadRes = await fetch(`${API}/api/upload`, { method: 'POST', body: formData });
+    if (!uploadRes.ok) {
+      const errData = await uploadRes.json().catch(()=>({detail:'Upload failed'}));
+      throw new Error(errData.detail || `Upload failed: ${uploadRes.status}`);
+    }
+    const uploadData = await uploadRes.json();
+    currentJobId = uploadData.job_id;
+
+    showToast('✅ File validated and uploaded', 'success', 3000);
+    btnText.textContent = '⏳ Analyzing...';
+    await fetch(`${API}/api/process/${currentJobId}`, { method: 'POST' });
+
+    btnText.textContent = '⏳ Generating report...';
+    document.getElementById('progressSection').classList.remove('hidden');
+    startPolling();
+
+  } catch (e) {
+    document.getElementById('uploadStatus').textContent = `❌ ${e.message}`;
+    showToast(`❌ ${e.message}`, 'error', 6000);
+    btn.disabled = false;
+    spinner.classList.add('hidden');
+    btnText.textContent = '⚡ Analyze & Generate Report';
+  }
+}
+
+async function startPolling() {
+  clearInterval(pollInterval);
+  pollInterval = setInterval(checkStatus, 2000);
+}
+
+// ── DISK IMAGE ANALYSIS ────────────────────────────────────────
+async function startDiskImageAnalysis() {
+  if (!selectedDiskImage) return;
+
+  // Role check — viewer cannot upload
+  const _role = localStorage.getItem('dfr_role');
+  if (_role === 'viewer') {
+    showToast('❌ View-only account — uploads not permitted', 'error');
+    return;
+  }
+
+  // Analyst check — validate case fields match assignment
+  if (_role === 'analyst') {
+    let allowed = null;
+    try { allowed = JSON.parse(localStorage.getItem('dfr_allowedCases') || 'null'); } catch(e){}
+    if (allowed) {
+      const cn   = (document.getElementById('caseName').value || '').toLowerCase();
+      const cnum = (document.getElementById('caseNumber').value || '').toLowerCase();
+      const ok = allowed.some(k => cn.includes(k.toLowerCase()) || cnum === k.toLowerCase());
+      if (!ok) {
+        showToast('❌ You can only upload evidence for your assigned case', 'error');
+        document.getElementById('diskImageStatus').textContent =
+          '❌ Access denied — case not in your assignment.';
+        return;
+      }
+    }
+  }
+
+  const apiOk = await checkAPI();
+  if (!apiOk) {
+    document.getElementById('diskImageStatus').textContent = '❌ Backend not running. Open START.bat first.';
+    showToast('❌ Backend not running — open START.bat first', 'error');
+    return;
+  }
+
+  const btn = document.getElementById('analyzeDiskBtn');
+  const spinner = document.getElementById('analyzeDiskSpinner');
+  const btnText = document.getElementById('analyzeDiskBtnText');
+
+  btn.disabled = true;
+  spinner.classList.remove('hidden');
+  btnText.textContent = '⏳ Uploading Disk Image...';
+  showToast('⏳ Uploading disk image and initiating forensic analysis...', 'info');
+
+  try {
+    const formData = new FormData();
+    formData.append('file', selectedDiskImage);
+    const caseName   = document.getElementById('caseName').value.trim()    || localStorage.getItem('dfr_caseName')    || 'Disk Image Analysis';
+    const caseNumber = document.getElementById('caseNumber').value.trim()  || localStorage.getItem('dfr_caseNumber')  || 'DI-2024-0001';
+    const analystName= document.getElementById('analystName').value.trim() || localStorage.getItem('dfr_analystName') || 'Forensic Analyst';
+    const department = document.getElementById('department').value.trim()  || localStorage.getItem('dfr_department')  || 'Digital Forensics Lab';
+    formData.append('case_name',    caseName);
+    formData.append('analyst_name', analystName);
+    formData.append('case_number',  caseNumber);
+    formData.append('department',   department);
+    formData.append('session_token', _AKM.getToken() || '');
+    formData.append('analysis_mode', 'detailed');
+
+    const uploadRes = await fetch(`${API}/api/upload`, { method: 'POST', body: formData });
+    if (!uploadRes.ok) {
+      const errData = await uploadRes.json().catch(()=>({detail:'Upload failed'}));
+      throw new Error(errData.detail || `Upload failed: ${uploadRes.status}`);
+    }
+    const uploadData = await uploadRes.json();
+    currentJobId = uploadData.job_id;
+
+    showToast('✅ Disk image uploaded and validated', 'success', 3000);
+    btnText.textContent = '⏳ Analyzing Disk Image...';
+    await fetch(`${API}/api/process/${currentJobId}`, { method: 'POST' });
+
+    btnText.textContent = '⏳ Extracting Files & Generating Report...';
+    document.getElementById('progressSection').classList.remove('hidden');
+    startPolling();
+
+  } catch (e) {
+    document.getElementById('diskImageStatus').textContent = `❌ ${e.message}`;
+    showToast(`❌ ${e.message}`, 'error', 6000);
+    btn.disabled = false;
+    spinner.classList.add('hidden');
+    btnText.textContent = '⚡ Analyze Disk Image';
+  }
+}
+
+const STEP_ORDER = ['parsing', 'indexing', 'generating', 'completed'];
+
+async function checkStatus() {
+  if (!currentJobId) return;
+  try {
+    const res = await fetch(`${API}/api/status/${currentJobId}`);
+    const job = await res.json();
+    updatePipeline(job.status);
+
+    if (job.status === 'completed' || job.status === 'failed') {
+      clearInterval(pollInterval);
+      document.getElementById('analyzeBtn').disabled = false;
+      document.getElementById('analyzeSpinner').classList.add('hidden');
+      document.getElementById('analyzeBtnText').textContent = '⚡ Analyze & Generate Report';
+
+      if (job.status === 'completed') {
+        document.getElementById('completionActions').classList.remove('hidden');
+        document.getElementById('noQueryCase').classList.add('hidden');
+        document.getElementById('querySection').classList.remove('hidden');
+        loadReportPreview();
+        showToast('✅ Analysis complete — report ready', 'success', 5000);
+        refreshDashboard();
+        loadTimeline(currentJobId);
+        // Show SHA-256 hash in upload status
+        try {
+          const sr = await fetch(`${API}/api/status/${currentJobId}`);
+          const sj = await sr.json();
+          if (sj.sha256) {
+            document.getElementById('uploadStatus').innerHTML =
+              `<div class="hash-box" style="margin-top:.5rem"><span class="hash-label">SHA-256 File Integrity</span>${sj.sha256}</div>`;
+          }
+        } catch(e) {}
+      } else {
+        const errMsg = job.error || 'Analysis failed';
+        document.getElementById('uploadStatus').textContent = `❌ Failed: ${errMsg}`;
+        showToast(`❌ ${errMsg}`, 'error', 7000);
+        refreshDashboard();
+      }
+    }
+  } catch (e) { /* keep polling */ }
+}
+
+function updatePipeline(status) {
+  const stepMap = { uploaded:-1, processing:-1, parsing:0, indexing:1, generating:2, completed:3, failed:3 };
+  const currentIdx = stepMap[status] ?? -1;
+
+  STEP_ORDER.forEach((step, idx) => {
+    const badge = document.getElementById(`badge-${step}`);
+    const icon  = document.getElementById(`icon-${step}`);
+    const prog  = document.getElementById(`prog-${step}`);
+    if (idx < currentIdx || (idx === 3 && status === 'completed')) {
+      badge.className = 'badge badge-green'; badge.textContent = 'Done ✓'; icon.textContent = '✅'; prog.style.width = '100%';
+    } else if (idx === currentIdx) {
+      const labels = ['⏳ Parsing...', '⏳ Indexing...', '⏳ Generating report...', '⏳ Completing...'];
+      badge.className = 'badge badge-blue'; badge.textContent = labels[idx] || 'Running...'; icon.textContent = '⚙️';
+      prog.style.width = [25,50,75,100][idx] + '%';
+    } else {
+      badge.className = 'badge badge-yellow'; badge.textContent = 'Pending'; icon.textContent = '⏳'; prog.style.width = '0%';
+    }
+  });
+
+  if (status === 'failed') {
+    STEP_ORDER.forEach(step => {
+      const badge = document.getElementById(`badge-${step}`);
+      if (badge.textContent === 'Running...') {
+        badge.className = 'badge badge-red'; badge.textContent = 'Failed';
+        document.getElementById(`icon-${step}`).textContent = '❌';
+      }
+    });
+  }
+}
+
+// ── REPORT VIEWER ─────────────────────────────────────────────
+async function loadReportPreview() {
+  if (!currentJobId) return;
+  try {
+    const res = await fetch(`${API}/api/report-preview/${currentJobId}`);
+    if (!res.ok) return;
+    const report = await res.json();
+    renderReport(report);
+  } catch (e) { console.error(e); }
+}
+
+function _esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+function renderReport(report) {
+  document.getElementById('noReport').classList.add('hidden');
+  const el = document.getElementById('reportContent');
+  el.classList.remove('hidden');
+  const stats    = report.statistics   || {};
+  const ci       = report.case_info    || {};
+  const findings = report.findings     || {};
+  const timeline = report.timeline     || [];
+  const ev_refs  = report.evidence_refs|| [];
+
+  function renderFinding(key) {
+    const f = findings[key];
+    if (!f || typeof f !== 'object') return '<div class="text-muted text-sm">No data</div>';
+    let h = `<p style="line-height:1.8;font-size:.88rem;margin-bottom:.6rem">${(f.narrative||'').replace(/\n/g,'<br>')}</p>`;
+    (f.sample_events||[]).forEach(ev => {
+      const row = ev.row != null ? ` (Row ${ev.row})` : '';
+      const cc  = (ev.confidence||'').toLowerCase();
+      const col = cc==='high'?'#ff7060':cc==='medium'?'var(--amber2)':'var(--text3)';
+      h += `<div style="background:var(--bg3);border:1px solid var(--border);border-left:3px solid var(--accent);padding:.45rem .7rem;margin-bottom:.35rem">
+        <div style="font-size:.87rem;font-weight:500;margin-bottom:3px">${_esc(ev.description||'')}</div>
+        <div style="font-family:'Share Tech Mono',monospace;font-size:.61rem;color:var(--text3)">
+          <span style="color:var(--amber2)">Time: ${_esc(ev.timestamp||'?')}</span>&nbsp;&nbsp;
+          <span style="color:var(--cyan2)">Source: ${_esc(ev.source||'')}${_esc(row)}</span>&nbsp;&nbsp;
+          <span>Artifact: ${_esc(ev.artifact_id||'?')}</span>&nbsp;&nbsp;
+          <span style="color:${col}">Confidence: ${_esc(ev.confidence||'?')}</span>
+        </div>
+      </div>`;
+    });
+    return h;
+  }
+
+  el.innerHTML = `
+    <div class="card" style="border-top:3px solid var(--accent)">
+      <div style="display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:.75rem">
+        <div>
+          <div style="font-family:'Orbitron',monospace;font-size:.95rem;font-weight:900;letter-spacing:.1em;color:#fff">DIGITAL FORENSICS EXAMINATION REPORT</div>
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.62rem;color:var(--text3);margin-top:4px">Generated: ${new Date(report.generated_at||Date.now()).toLocaleString()} | CONFIDENTIAL</div>
+        </div>
+        <button class="btn btn-primary" style="font-size:.7rem" onclick="downloadReport()">&#x2B07; DOWNLOAD PDF</button>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:.6rem;margin-top:.75rem;padding-top:.6rem;border-top:1px solid var(--border)">
+        <div><div style="font-family:'Share Tech Mono',monospace;font-size:.58rem;color:var(--text3);text-transform:uppercase">Case Name</div><div style="font-weight:600;margin-top:2px">${_esc(ci.case_name||'N/A')}</div></div>
+        <div><div style="font-family:'Share Tech Mono',monospace;font-size:.58rem;color:var(--text3);text-transform:uppercase">Case Number</div><div style="font-weight:600;margin-top:2px">${_esc(ci.case_number||'N/A')}</div></div>
+        <div><div style="font-family:'Share Tech Mono',monospace;font-size:.58rem;color:var(--text3);text-transform:uppercase">Analyst</div><div style="font-weight:600;margin-top:2px">${_esc(ci.analyst_name||'N/A')}</div></div>
+        <div><div style="font-family:'Share Tech Mono',monospace;font-size:.58rem;color:var(--text3);text-transform:uppercase">Department</div><div style="font-weight:600;margin-top:2px">${_esc(ci.department||'N/A')}</div></div>
+      </div>
+    </div>
+    <div class="dashboard-grid" style="margin-bottom:1rem">
+      ${[['Total Artifacts','total_artifacts'],['Web History','web_history_count'],
+         ['Emails','email_count'],['USB Devices','usb_devices_count'],
+         ['Deleted Files','deleted_files_count'],['High Confidence','high_confidence_events'],
+         ['Suspicious','suspicious_events'],['Timeline Events','timeline_events_count']
+        ].map(([lbl,key])=>`<div class="dash-stat"><span class="ds-num">${stats[key]||0}</span><span class="ds-label">${lbl}</span></div>`).join('')}
+    </div>
+    <div class="card">
+      <div class="findings-nav" id="reportNav">
+        ${['Executive Summary','Methodology','Findings','Timeline','Evidence Refs','Conclusions']
+          .map((t,i)=>`<div class="ftab ${i===0?'active':''}" onclick="showRSec(${i},this)">${t}</div>`).join('')}
+      </div>
+      <div class="report-section active" id="rs-0">
+        <p style="line-height:1.8;font-size:.9rem">${(report.executive_summary||'').replace(/\n/g,'<br>')}</p>
+      </div>
+      <div class="report-section" id="rs-1">
+        <pre style="white-space:pre-wrap;font-family:'Rajdhani',sans-serif;font-size:.87rem;line-height:1.7;color:var(--text);background:transparent;border:none;padding:0">${_esc(report.methodology||'')}</pre>
+      </div>
+      <div class="report-section" id="rs-2">
+        ${['web_activity','email_analysis','device_connections','deleted_files',
+           'user_accounts','search_queries','installed_programs'].map(key=>{
+            const f=findings[key]; if(!f||!f.count) return '';
+            return `<div style="margin-bottom:1.1rem"><div class="section-title">${_esc(f.title||key)}</div>${renderFinding(key)}</div>`;
+          }).join('')}
+      </div>
+      <div class="report-section" id="rs-3">
+        ${timeline.length===0?'<div class="text-muted text-sm">No timeline events.</div>':
+          timeline.slice(0,80).map(e=>{
+            const row=e.source_row!=null?` (Row ${e.source_row})`:'';
+            return `<div style="display:flex;gap:.5rem;padding:.32rem 0;border-bottom:1px solid var(--border);align-items:flex-start;flex-wrap:wrap">
+              <span style="font-family:'Share Tech Mono',monospace;font-size:.64rem;color:var(--amber2);flex-shrink:0;min-width:140px">${_esc(e.timestamp||'')}</span>
+              <span style="font-family:'Share Tech Mono',monospace;font-size:.61rem;color:var(--cyan2);flex-shrink:0;min-width:105px">${_esc((e.event_type||'').replace(/_/g,' '))}</span>
+              <span style="font-size:.83rem;flex:1">${_esc(e.description||'')}</span>
+              <span style="font-family:'Share Tech Mono',monospace;font-size:.58rem;color:var(--text3);flex-shrink:0">${_esc(e.source||'')}${_esc(row)}</span>
+            </div>`;
+          }).join('')}
+      </div>
+      <div class="report-section" id="rs-4">
+        ${ev_refs.length===0?'<div class="text-muted text-sm">No evidence references.</div>':`
+          <div style="font-family:'Share Tech Mono',monospace;font-size:.63rem;color:var(--text3);margin-bottom:.5rem">${ev_refs.length} artifact(s) cited in this report:</div>
+          ${ev_refs.slice(0,80).map((er,i)=>`
+            <div style="display:grid;grid-template-columns:1.5rem 1fr;gap:.35rem;padding:.32rem 0;border-bottom:1px solid var(--border)">
+              <span style="font-family:'Share Tech Mono',monospace;font-size:.61rem;color:var(--text3)">${i+1}.</span>
+              <div>
+                <div style="font-size:.83rem;font-weight:500">${_esc(er.description||er.artifact_id||'?')}</div>
+                <div style="font-family:'Share Tech Mono',monospace;font-size:.6rem;color:var(--text3);margin-top:2px">
+                  <span style="color:var(--cyan2)">Source: ${_esc(er.record_ref||er.source||'?')}</span>&nbsp;&nbsp;
+                  <span style="color:var(--amber2)">Time: ${_esc(er.timestamp||'?')}</span>&nbsp;&nbsp;
+                  <span>Artifact: ${_esc(er.artifact_id||'?')}</span>
+                </div>
+              </div>
+            </div>`).join('')}`}
+      </div>
+      <div class="report-section" id="rs-5">
+        <p style="line-height:1.8;font-size:.9rem">${(report.conclusions||'').replace(/\n/g,'<br>')}</p>
+        <div style="margin-top:1rem"><div class="section-title">Recommendations</div>
+          ${(report.recommendations||[]).map((r,i)=>`<div style="display:flex;gap:.55rem;padding:.4rem 0;border-bottom:1px solid var(--border)"><span style="color:var(--accent);font-weight:700;min-width:1.2rem">${i+1}.</span><span style="font-size:.87rem;line-height:1.6">${_esc(r)}</span></div>`).join('')}
+        </div>
+      </div>
+    </div>`;
+}
+
+function showRSec(idx,btn){
+  document.querySelectorAll('.report-section').forEach((e,i)=>e.classList.toggle('active',i===idx));
+  document.querySelectorAll('#reportNav .ftab').forEach((b,i)=>b.classList.toggle('active',i===idx));
+}
+
+function showFinding(idx, el) {
+  document.querySelectorAll('.finding-section').forEach((s,i) => s.classList.toggle('active', i===idx));
+  document.querySelectorAll('.ftab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+}
+
+// ── DOWNLOAD ──────────────────────────────────────────────────
+async function downloadReport() {
+  if (!currentJobId) { alert('No report available yet.'); return; }
+  const link = document.createElement('a');
+  link.href = `${API}/api/report/${currentJobId}`;
+  link.download = `forensics_report_${currentJobId.slice(0,8)}.pdf`;
+  link.click();
+}
+
+async function viewReport() {
+  switchTab('report');
+  if (!document.getElementById('reportContent').classList.contains('hidden')) return;
+  loadReportPreview();
+}
+
+// ── JOBS ──────────────────────────────────────────────────────
+async function refreshJobs() {
+  const el = document.getElementById('jobsList');
+  try {
+    const res = await fetch(`${API}/api/jobs`);
+    const jobs = await res.json();
+    // Filter jobs by role-based case assignment
+    const filteredJobs = jobs.filter(j => _jobAllowed(j));
+    if (!filteredJobs.length) {
+      const role2 = localStorage.getItem('dfr_role');
+      const emsg = role2 === 'viewer' ? 'No completed cases available to view.'
+                 : role2 === 'analyst' ? 'No cases for your assignment yet. Upload a forensic log to get started.'
+                 : 'No cases in queue.';
+      el.innerHTML = `<div class="text-muted text-sm">${emsg}</div>`;
+      return;
+    }
+    const displayJobs = filteredJobs;
+
+    const statusBadge = s => {
+      const m = {completed:'badge-green',failed:'badge-red',processing:'badge-blue',parsing:'badge-blue',indexing:'badge-blue',generating:'badge-blue',uploaded:'badge-yellow'};
+      return `<span class="badge ${m[s]||'badge-yellow'}">${s}</span>`;
+    };
+
+    el.innerHTML = displayJobs.slice().reverse().map(job => `
+      <div class="job-card ${currentJobId===job.id?'selected':''}">
+        <div class="job-status-dot ${job.status==='completed'?'status-done':job.status==='error'||job.status==='failed'?'status-error':'status-running'}"></div>
+        <div style="flex:1;min-width:0">
+          <div class="job-name">${_esc(job.case_name)} <span style="color:var(--muted);font-weight:400">#${_esc(job.case_number)}</span></div>
+          <div class="job-meta">
+            ${_esc(job.filename||'')} · ${new Date(job.created_at).toLocaleString()} · ${statusBadge(job.status)}
+            ${job.sha256?`<span style="color:var(--green2);font-size:.58rem"> ✓ SHA-256 verified</span>`:''}
+          </div>
+        </div>
+        <div class="job-actions">
+          <button class="btn btn-secondary" style="font-size:.65rem;padding:3px 9px" onclick="openInvestigation('${job.id}');switchTab('jobs')">🔍 Investigate</button>
+          ${job.status==='completed'?`
+            <button class="btn btn-primary" style="font-size:.65rem;padding:3px 9px" onclick="loadJob('${job.id}')">📊 Report</button>
+            <button class="btn btn-secondary" style="font-size:.65rem;padding:3px 9px" onclick="currentJobId='${job.id}';downloadReport()">⬇ PDF</button>`:''}
+        </div>
+      </div>`).join('');
+  } catch (e) {
+    el.innerHTML = `<div class="alert alert-error">⚠️ Cannot connect to API — make sure START.bat is running.</div>`;
+  }
+}
+
+async function loadJob(jobId) {
+  currentJobId = jobId;
+  document.getElementById('noQueryCase').classList.add('hidden');
+  document.getElementById('querySection').classList.remove('hidden');
+  await loadReportPreview();
+  switchTab('report');
+}
+
+// ── AI QUERY ──────────────────────────────────────────────────
+async function sendQuery() {
+  if (localStorage.getItem('dfr_role') === 'viewer') {
+    showToast('❌ View-only account — AI queries not permitted', 'error'); return;
+  }
+  const input = document.getElementById('queryInput');
+  const question = input.value.trim();
+  if (!question || !currentJobId) return;
+
+  addMessage(question, 'user');
+  input.value = '';
+
+  const btn = document.getElementById('queryBtn');
+  btn.disabled = true; btn.textContent = '...';
+
+  try {
+    const res = await fetch(`${API}/api/query/${currentJobId}`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ question, session_token: _AKM.getToken() || '' })
+    });
+    const data = await res.json();
+    addMessage(data.answer || 'No answer found.', 'ai');
+    showToast('✅ AI response received', 'success', 2000);
+  } catch (e) { addMessage(`Error: ${e.message}`, 'ai'); showToast(`❌ Query failed: ${e.message}`, 'error'); }
+
+  btn.disabled = false; btn.textContent = 'Send';
+}
+
+function quickQuery(q) { document.getElementById('queryInput').value = q; sendQuery(); }
+
+function addMessage(text, role) {
+  const container = document.getElementById('chatMessages');
+  const div = document.createElement('div');
+  div.className = `msg msg-${role}`;
+  if (role === 'ai') {
+    // Format AI responses: highlight confidence, source citations, evidence refs
+    let formatted = _esc(text)
+      // Confidence badges
+      .replace(/Confidence:\s*(High)/gi, 'Confidence: <span class="conf-badge conf-high">High</span>')
+      .replace(/Confidence:\s*(Medium)/gi, 'Confidence: <span class="conf-badge conf-medium">Medium</span>')
+      .replace(/Confidence:\s*(Low)/gi, 'Confidence: <span class="conf-badge conf-low">Low</span>')
+      // FINDING: lines
+      .replace(/^(FINDING:)/gm, '<strong style="color:var(--accent2)">$1</strong>')
+      // SOURCE: lines
+      .replace(/^(SOURCE:|ARTIFACT ID:|EVIDENCE:)/gm, '<strong style="color:var(--cyan2)">$1</strong>')
+      // Row references
+      .replace(/Row\s+(\d+)/gi, '<span style="color:var(--cyan2)">Row $1</span>')
+      // Timestamps in brackets
+      .replace(/\|?\s*timestamp=([^\s|]+)/gi, ' | <span style="color:var(--amber2)">$1</span>')
+      // Newlines
+      .replace(/\n/g, '<br>');
+    div.innerHTML = formatted;
+  } else {
+    div.textContent = text;
+  }
+  container.appendChild(div);
+  container.scrollTop = container.scrollHeight;
+}
+
+// ── INIT ──────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════════════
+// API KEY MANAGEMENT — SECURE IN-MEMORY ONLY
+// Key is XOR-obfuscated in memory so it never appears
+// in plaintext in DevTools memory snapshots or console
+// ═══════════════════════════════════════════════════════
+const _AKM = (function() {
+  let _tok = null;       // session token (random, per page load)
+  let _enc = null;       // XOR-encoded key bytes
+  let _mask = null;      // random XOR mask
+  let _type = null;      // groq or openai
+  let _keyValid = null;  // null=validating, true=valid, false=invalid
+  let _expTimer = null;  // inactivity timer
+  let _countTimer = null;// countdown display timer
+  let _exp = 0;          // expiry timestamp
+  const TIMEOUT = 1800;  // 30 min
+
+  function _xor(bytes, mask) {
+    return bytes.map((b,i) => b ^ mask[i % mask.length]);
+  }
+
+  function _encode(str) {
+    const bytes = Array.from(new TextEncoder().encode(str));
+    const mask = Array.from(crypto.getRandomValues(new Uint8Array(32)));
+    return { enc: _xor(bytes, mask), mask };
+  }
+
+  function _decode() {
+    if (!_enc || !_mask) return null;
+    try {
+      const bytes = _xor(_enc, _mask);
+      return new TextDecoder().decode(new Uint8Array(bytes));
+    } catch(e) { return null; }
+  }
+
+  function _resetTimer() {
+    clearTimeout(_expTimer);
+    clearInterval(_countTimer);
+    _exp = Date.now() + TIMEOUT * 1000;
+    _expTimer = setTimeout(() => {
+      clearKey();
+      _updateStatus();
+    }, TIMEOUT * 1000);
+    _countTimer = setInterval(_updateTimer, 1000);
+  }
+
+  function _updateTimer() {
+    const rem = Math.max(0, Math.floor((_exp - Date.now()) / 1000));
+    const el = document.getElementById('apiKeyTimer');
+    if (el && _enc) {
+      const m = String(Math.floor(rem/60)).padStart(2,'0');
+      const s = String(rem%60).padStart(2,'0');
+      el.style.display = 'block';
+      el.textContent = 'Auto-clears in: ' + m + ':' + s;
+    }
+    if (rem <= 0) clearInterval(_countTimer);
+  }
+
+  function _setIndicator(dot, text, color) {
+    const d = document.getElementById('apiKeyDot');
+    const t = document.getElementById('apiKeyIndicatorText');
+    const b = document.getElementById('apiKeyBtn');
+    if (d) d.textContent = dot;
+    if (t) { t.textContent = text; t.style.color = color; }
+    if (b) {
+      if (dot === '🟢') { b.style.borderColor='rgba(34,160,80,0.6)'; b.style.color='#50dd80'; }
+      else if (dot === '🟡') { b.style.borderColor='rgba(212,137,10,0.5)'; b.style.color='#f0a020'; }
+      else { b.style.borderColor='rgba(200,57,43,0.35)'; b.style.color='#ff8070'; }
+    }
+  }
+
+  function _setFeedback(icon, text, color, borderColor) {
+    const el = document.getElementById('apiKeyFeedback');
+    if (!el) return;
+    el.style.display = 'block';
+    el.textContent = icon + ' ' + text;
+    el.style.color = color;
+    el.style.borderColor = borderColor;
+    el.style.background = color.replace(')', ',0.08)').replace('rgb','rgba');
+  }
+
+  function _clearFeedback() {
+    const el = document.getElementById('apiKeyFeedback');
+    if (el) el.style.display = 'none';
+  }
+
+  function _updateStatus() {
+    if (_enc && _keyValid === true) {
+      _setIndicator('🟢', 'Active — ' + (_type||'').toUpperCase() + ' key verified', '#50dd80');
+    } else if (_enc && _keyValid === null) {
+      _setIndicator('🟡', 'Validating...', '#f0a020');
+    } else if (_enc && _keyValid === false) {
+      _setIndicator('🟡', 'Invalid key set', '#f0a020');
+    } else {
+      _setIndicator('🔴', 'Not Set — AI features disabled (no API key)', 'var(--text3)');
+      const timerEl = document.getElementById('apiKeyTimer');
+      if (timerEl) timerEl.style.display = 'none';
+    }
+  }
+
+  function setKey(key, keyType, onResult) {
+    if (!key) return;
+    const {enc, mask} = _encode(key);
+    _enc = enc; _mask = mask; _type = keyType; _keyValid = null;
+    if (!_tok) _tok = Array.from(crypto.getRandomValues(new Uint8Array(16))).map(b=>b.toString(16).padStart(2,'0')).join('');
+    _resetTimer();
+    _updateStatus();
+    // Clear the input field immediately
+    const inp = document.getElementById('apiKeyInput');
+    if (inp) inp.value = '';
+    // Validate key against real API (backend validates + stores if valid)
+    fetch(API + '/api/validate-key', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({session_token:_tok, api_key:key, key_type:keyType})
+    })
+    .then(r => r.json())
+    .then(data => {
+      _keyValid = data.valid === true;
+      _updateStatus();
+      if (onResult) onResult(_keyValid, data.error || '');
+    })
+    .catch(() => {
+      // Network error - keep key but mark status unknown, still store via set-key
+      _keyValid = true;
+      fetch(API + '/api/set-key', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({session_token:_tok, api_key:key, key_type:keyType})
+      }).catch(()=>{});
+      _updateStatus();
+      if (onResult) onResult(true, '');
+    });
+  }
+
+  function clearKey() {
+    if (_tok) {
+      fetch(API + '/api/clear-key', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({session_token:_tok})
+      }).catch(()=>{});
+    }
+    _enc = null; _mask = null; _type = null; _keyValid = null;
+    clearTimeout(_expTimer); clearInterval(_countTimer);
+    _clearFeedback();
+    _updateStatus();
+  }
+
+  function getToken() { return _tok; }
+
+  function ping() {
+    // Ping backend to refresh API key session on user activity
+    if (_enc && _tok) {
+      _resetTimer();
+      fetch(API + '/api/refresh-session', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({session_token:_tok})
+      }).catch(()=>{});
+    }
+    // Also ping auth session to keep it alive
+    fetch(API + '/api/auth/ping', { method:'POST', credentials:'include', headers:_csrfHeaders() }).catch(()=>{});
+  }
+
+  function init() {
+    _tok = Array.from(crypto.getRandomValues(new Uint8Array(16))).map(b=>b.toString(16).padStart(2,'0')).join('');
+    // Activity listeners to reset inactivity timer
+    ['click','keydown','mousemove','scroll'].forEach(ev =>
+      document.addEventListener(ev, () => { if(_enc) ping(); }, {passive:true})
+    );
+  }
+
+  return { setKey, clearKey, getToken, init, updateStatus: _updateStatus, _setFeedback, _clearFeedback, _setIndicator };
+})();
+
+function toggleApiKeyPanel() {
+  const p = document.getElementById('apiKeyPanel');
+  p.classList.toggle('open');
+  _AKM.updateStatus();
+  _AKM._clearFeedback();
+}
+
+function submitApiKey() {
+  const key = document.getElementById('apiKeyInput').value.trim();
+  const type = document.getElementById('apiKeyType').value;
+  const btn = document.getElementById('apiSetBtn');
+  if (!key) {
+    _AKM._setFeedback('❌', 'Please paste an API key first', '#ff7060', 'var(--accent)');
+    return;
+  }
+  // Show validating state
+  _AKM._setFeedback('⏳', 'Validating key...', '#f0a020', 'var(--amber)');
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ Validating...'; }
+
+  _AKM.setKey(key, type, function(valid, err) {
+    if (btn) { btn.disabled = false; btn.textContent = '▶ SET KEY'; }
+    if (valid) {
+      _AKM._setFeedback('✅', 'Key verified — AI features enabled', '#50dd80', 'var(--green2)');
+      setTimeout(() => _AKM._clearFeedback(), 4000);
+    } else {
+      _AKM._setFeedback('❌', 'Invalid key' + (err ? ' — ' + err : ''), '#ff7060', 'var(--accent)');
+      _AKM.clearKey();
+    }
+  });
+}
+
+function clearApiKey() {
+  _AKM.clearKey();
+  _AKM._setFeedback('', '', 'var(--text3)', 'var(--border)');
+  _AKM._clearFeedback();
+}
+
+// ═══════════════════════════════════════════════════════
+// TOAST NOTIFICATIONS
+// ═══════════════════════════════════════════════════════
+function showToast(msg, type='info', duration=4000) {
+  const container = document.getElementById('toastContainer');
+  if (!container) return;
+  const t = document.createElement('div');
+  t.className = `toast toast-${type}`;
+  t.textContent = msg;
+  container.appendChild(t);
+  setTimeout(() => { t.style.opacity='0'; t.style.transition='opacity .3s'; setTimeout(()=>t.remove(),300); }, duration);
+}
+
+// ═══════════════════════════════════════════════════════
+// ANALYSIS MODE
+// ═══════════════════════════════════════════════════════
+let _analysisMode = 'detailed';
+function selectMode(mode) {
+  _analysisMode = mode;
+  ['quick','detailed','interactive'].forEach(m => {
+    const el = document.getElementById('mode-' + m);
+    if (el) el.classList.toggle('selected', m === mode);
+  });
+}
+
+// ═══════════════════════════════════════════════════════
+// DASHBOARD
+// ═══════════════════════════════════════════════════════
+async function refreshDashboard() {
+  try {
+    const r = await fetch(`${API}/api/dashboard`);
+    if (!r.ok) return;
+    const d = await r.json();
+    const set = (id, val) => { const el=document.getElementById(id); if(el) el.textContent=val; };
+    set('ds-jobs',       d.total_jobs       || 0);
+    set('ds-artifacts',  d.total_artifacts  || 0);
+    set('ds-suspicious', d.suspicious_events|| 0);
+    set('ds-media',      d.media_count      || 0);
+    set('ds-completed',  d.completed_jobs   || 0);
+    set('ds-failed',     d.failed_jobs      || 0);
+  } catch(e) {}
+}
+
+// ═══════════════════════════════════════════════════════
+// FORENSIC TIMELINE
+// ═══════════════════════════════════════════════════════
+let _tlEvents = [];        // all events loaded
+let _tlFilter = 'all';     // current filter
+
+const CATEGORY_ICONS = {
+  web_history:  '🌐', email: '📧', usb: '🔌',
+  deleted:      '🗑️', registry: '🗃️', program: '💿',
+  user_account: '👤', search_query: '🔍', recent_doc: '📄',
+  timeline:     '📋', raw_log: '📝', media: '🎬',
+};
+const CATEGORY_COLORS = {
+  web_history:  'var(--cyan2)',  email: 'var(--cyan2)',
+  usb:          'var(--amber2)', deleted: '#ff7060',
+  registry:     'var(--amber2)', program: 'var(--text2)',
+  user_account: 'var(--text2)', search_query: 'var(--cyan2)',
+  media:        'var(--cyan2)',  raw_log: 'var(--text3)',
+};
+
+async function loadTimeline(jobId) {
+  if (!jobId) return;
+  try {
+    const r = await fetch(`${API}/api/timeline/${jobId}`);
+    if (!r.ok) return;
+    const data = await r.json();
+    _tlEvents = data.events || [];
+    renderTimeline();
+    document.getElementById('timelineNoCase').style.display = 'none';
+    document.getElementById('timelineContent').style.display = 'block';
+  } catch(e) { console.error('[Timeline]', e); }
+}
+
+function filterTimeline(cat, btn) {
+  _tlFilter = cat;
+  document.querySelectorAll('[id^="tlf-"]').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderTimeline();
+}
+
+function renderTimeline() {
+  const list = document.getElementById('timelineList');
+  if (!list) return;
+
+  let events = _tlEvents;
+  if (_tlFilter !== 'all') {
+    if (_tlFilter === 'high') {
+      events = events.filter(e => e.confidence === 'High');
+    } else {
+      events = events.filter(e => e.category === _tlFilter);
+    }
+  }
+
+  const countEl = document.getElementById('tlCount');
+  if (countEl) countEl.textContent = `${events.length} event${events.length!==1?'s':''}`;
+
+  if (events.length === 0) {
+    list.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--text3);font-family:\'Share Tech Mono\',monospace;font-size:.72rem">No events match the selected filter.</div>';
+    return;
+  }
+
+  list.innerHTML = '';
+  events.forEach((ev, idx) => {
+    const conf  = (ev.confidence || 'low').toLowerCase();
+    const cat   = ev.category || 'raw_log';
+    const icon  = CATEGORY_ICONS[cat] || '📋';
+    const color = CATEGORY_COLORS[cat] || 'var(--text3)';
+    const isMedia = cat === 'media';
+
+    // Outer wrapper
+    const wrapper = document.createElement('div');
+    wrapper.style.cssText = 'position:relative';
+
+    // Event row
+    const row = document.createElement('div');
+    row.className = 'tl-event';
+    row.innerHTML = `
+      <div class="tl-line-col">
+        <div class="tl-dot ${isMedia ? 'media' : conf}"></div>
+        <div class="tl-stem"></div>
+      </div>
+      <div class="tl-card">
+        <div class="tl-event-type" style="color:${color}">
+          ${icon} ${(ev.event_type||'').replace(/_/g,' ')}
+          <span class="risk-pill ${conf==='High'?'risk-critical':conf==='Medium'?'risk-high':'risk-medium'}">${ev.confidence||'?'}</span>
+        </div>
+        <div class="tl-desc">${_esc(ev.description||'')}</div>
+        <div class="tl-meta">
+          <span class="tl-ts">🕐 ${_esc(ev.timestamp||'Unknown')}</span>
+          <span class="tl-src">📂 ${_esc(ev.source||'')}</span>
+          ${ev.source_row != null ? `<span class="tl-ref">↳ Row ${ev.source_row}</span>` : ''}
+          <span style="color:var(--text3)">🔖 ${_esc(ev.artifact_id||'')}</span>
+        </div>
+      </div>`;
+    row.onclick = () => toggleTlDetail(detailEl, ev);
+    wrapper.appendChild(row);
+
+    // Detail pane (hidden by default)
+    const detailEl = document.createElement('div');
+    detailEl.className = 'tl-detail';
+    wrapper.appendChild(detailEl);
+
+    list.appendChild(wrapper);
+  });
+}
+
+function toggleTlDetail(detailEl, ev) {
+  if (detailEl.classList.contains('open')) {
+    detailEl.classList.remove('open');
+    return;
+  }
+  detailEl.classList.add('open');
+  if (detailEl.innerHTML) return; // already built
+
+  const cat = ev.category || '';
+  let html = `
+    <div class="tl-evidence-box">
+      <strong>📍 EVIDENCE RECORD</strong>
+      <div class="detail-row"><span class="detail-key">Source File:</span><span class="detail-val">${_esc(ev.source||'Unknown')}</span></div>
+      ${ev.source_row != null ? `<div class="detail-row"><span class="detail-key">Row / Line:</span><span class="detail-val">${ev.source_row}</span></div>` : ''}
+      <div class="detail-row"><span class="detail-key">Timestamp:</span><span class="detail-val">${_esc(ev.timestamp||'Unknown')}</span></div>
+      <div class="detail-row"><span class="detail-key">Artifact ID:</span><span class="detail-val">${_esc(ev.artifact_id||'?')}</span></div>
+      <div class="detail-row"><span class="detail-key">Confidence:</span><span class="detail-val">${_esc(ev.confidence||'?')} — ${_esc(ev.conf_reason||'')}</span></div>
+      <div class="detail-row"><span class="detail-key">Category:</span><span class="detail-val">${_esc(ev.event_type||'?')}</span></div>
+    </div>`;
+
+  // Media inline preview
+  if (cat === 'media' && ev.media_url) {
+    const type = ev.event_type || '';
+    if (type.includes('IMAGE')) {
+      html += `<img src="${API}${ev.media_url}" class="tl-media-thumb" alt="Evidence media">`;
+    } else if (type.includes('AUDIO')) {
+      html += `<audio src="${API}${ev.media_url}" controls class="tl-audio"></audio>`;
+    } else if (type.includes('VIDEO')) {
+      html += `<video src="${API}${ev.media_url}" controls class="tl-video"></video>`;
+    }
+  }
+
+  // Raw attributes
+  const attrs = ev.raw_attrs || {};
+  const keys = Object.keys(attrs).filter(k => k !== '_row' && attrs[k]);
+  if (keys.length) {
+    html += '<div style="margin-top:.75rem;border-top:1px solid var(--border);padding-top:.5rem">';
+    keys.slice(0,12).forEach(k => {
+      html += `<div class="detail-row"><span class="detail-key">${_esc(k)}:</span><span class="detail-val">${_esc(String(attrs[k]).slice(0,200))}</span></div>`;
+    });
+    html += '</div>';
+  }
+
+  detailEl.innerHTML = html;
+}
+
+function _esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ═══════════════════════════════════════════════════════
+// ROLE-BASED ACCESS CONTROL
+// ═══════════════════════════════════════════════════════
+
+function applyRoleUI(role, canUpload, canQuery, allowedCases) {
+
+  // ── VIEWER: hide all write controls ──────────────────
+  if (role === 'viewer') {
+    // Hide upload tab entirely
+    const uploadTab = document.querySelector('.tab[onclick*="upload"]');
+    if (uploadTab) uploadTab.style.display = 'none';
+    // Hide AI query input
+    const queryInput = document.getElementById('queryInput');
+    if (queryInput) queryInput.disabled = true;
+    const queryBtn = document.getElementById('queryBtn');
+    if (queryBtn) queryBtn.style.display = 'none';
+    // Hide analyse button
+    const analyzeBtn = document.getElementById('analyzeBtn');
+    if (analyzeBtn) analyzeBtn.style.display = 'none';
+    // Show viewer notice banner
+    _showRoleBanner('viewer',
+      '👁  VIEW-ONLY MODE — You can browse reports and timelines but cannot upload or run queries.');
+    // Land on Report tab instead of upload
+    setTimeout(() => switchTab('report'), 50);
+    return;
+  }
+
+  // ── ANALYST: lock case fields + filter jobs ───────────
+  if (role === 'analyst') {
+    _showRoleBanner('analyst',
+      '🔬  ANALYST MODE — You are locked to your assigned case. Other cases are hidden.');
+    // Lock case name / number fields to assigned values
+    const cn = localStorage.getItem('dfr_caseName');
+    const cnum = localStorage.getItem('dfr_caseNumber');
+    ['caseName','caseNumber','analystName','department'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) { el.readOnly = true; el.style.opacity = '.65'; el.style.cursor = 'not-allowed'; }
+    });
+  }
+
+  // ── ADMIN: full access, no restrictions ──────────────
+  if (role === 'admin') {
+    _showRoleBanner('admin',
+      '⚡  ADMINISTRATOR — Full access to all cases and features.');
+  }
+}
+
+function _showRoleBanner(role, msg) {
+  const colors = {
+    admin:   { bg:'rgba(200,57,43,.07)',  border:'rgba(200,57,43,.35)',  text:'#ff8070' },
+    analyst: { bg:'rgba(16,168,188,.07)', border:'rgba(16,168,188,.35)', text:'#10a8bc' },
+    viewer:  { bg:'rgba(80,96,112,.07)',  border:'rgba(80,96,112,.35)',  text:'#7090a0' },
+  };
+  const col = colors[role] || colors.viewer;
+  const banner = document.createElement('div');
+  banner.id = 'roleBanner';
+  banner.style.cssText = `
+    position:fixed;bottom:0;left:0;right:0;z-index:400;
+    background:${col.bg};border-top:1px solid ${col.border};
+    color:${col.text};font-family:'Share Tech Mono',monospace;
+    font-size:.68rem;letter-spacing:.06em;padding:.45rem 1.25rem;
+    display:flex;align-items:center;justify-content:space-between`;
+  banner.innerHTML = `<span>${msg}</span>
+    <button onclick="this.parentElement.style.display='none'"
+      style="background:none;border:none;color:${col.text};cursor:pointer;font-size:.75rem;opacity:.6">✕</button>`;
+  document.body.appendChild(banner);
+}
+
+// Role-aware job list — analysts only see their assigned cases
+function _jobAllowed(job) {
+  const role = localStorage.getItem('dfr_role');
+  if (role === 'admin' || role === 'viewer') return true;
+  let allowed = null;
+  try { allowed = JSON.parse(localStorage.getItem('dfr_allowedCases') || 'null'); } catch(e){}
+  if (!allowed) return true;
+  const cn   = (job.case_name   || '').toLowerCase();
+  const cnum = (job.case_number || '').toLowerCase();
+  return allowed.some(k => cn.includes(k.toLowerCase()) || cnum.toLowerCase() === k.toLowerCase());
+}
+
+// Override startAnalysis to block analysts from wrong cases
+const _origStartAnalysis = typeof startAnalysis === 'function' ? startAnalysis : null;
+
+window.onload = async function() {
+
+
+
+  // Lock tab title — prevent browser from overriding it
+  // title locked in <head> IIFE
+  _AKM.init();
+  // Auth check
+  // ── Verify server-side session via backend (HttpOnly cookie) ──
+  let _sessionValid = false;
+  try {
+    const meRes = await fetch(`${API}/api/auth/me`, { credentials: 'include' });
+    if (meRes.ok) {
+      const meData = await meRes.json();
+      if (meData.authenticated) {
+        _sessionValid = true;
+        // Refresh localStorage profile from server (source of truth)
+        localStorage.setItem('dfr_user',         meData.username);
+        localStorage.setItem('dfr_role',         meData.role);
+        localStorage.setItem('dfr_label',        meData.label);
+        localStorage.setItem('dfr_canUpload',    meData.canUpload  ? '1' : '0');
+        localStorage.setItem('dfr_canQuery',     meData.canQuery   ? '1' : '0');
+        localStorage.setItem('dfr_canReport',    meData.canReport  ? '1' : '0');
+        localStorage.setItem('dfr_allowedCases', JSON.stringify(meData.allowedCases || null));
+      }
+    }
+  } catch(e) {
+    // Backend unreachable — fall through to localStorage check below
+  }
+
+  const user  = localStorage.getItem('dfr_user');
+  const role  = localStorage.getItem('dfr_role');
+  const label = localStorage.getItem('dfr_label') || user;
+
+  if (!user || !role || (!_sessionValid && !user)) {
+    window.location.replace('http://127.0.0.1:8000/login.html');
+    return;
+  }
+
+  // ── Role flags ────────────────────────────────────────
+  const canUpload  = localStorage.getItem('dfr_canUpload')  !== '0';
+  const canQuery   = localStorage.getItem('dfr_canQuery')   !== '0';
+  const canReport  = localStorage.getItem('dfr_canReport')  !== '0';
+  let   allowedCases = null;
+  try { allowedCases = JSON.parse(localStorage.getItem('dfr_allowedCases') || 'null'); } catch(e){}
+
+  // Badge — colour by role
+  const roleColors = { admin:'#ff7060', analyst:'#10a8bc', viewer:'#506070' };
+  const badge = document.getElementById('userBadge');
+  if (badge) {
+    badge.textContent = '👤 ' + label + ' [' + role.toUpperCase() + ']';
+    badge.style.color = roleColors[role] || '#c8d4e0';
+  }
+
+  // ── Apply UI restrictions ─────────────────────────────
+  applyRoleUI(role, canUpload, canQuery, allowedCases);
+
+  loadFields();
+  checkAPI();
+  setInterval(checkAPI, 10000);
+  refreshDashboard();
+  setInterval(refreshDashboard, 15000);
+  // Fetch CSRF token for state-changing requests
+  await _fetchCsrf();
+};
+
+// Clear API key when tab/window closes
+window.addEventListener('beforeunload', function() { _AKM.clearKey(); });
+window.addEventListener('pagehide', function() { _AKM.clearKey(); });
+
+function logout() {
+  _AKM.clearKey();
+  // Destroy backend session (invalidates HttpOnly cookie)
+  fetch(`${API}/api/auth/logout`, { method:'POST', credentials:'include', headers:_csrfHeaders() }).catch(()=>{});
+  ['dfr_user','dfr_role','dfr_label','dfr_canUpload','dfr_canQuery',
+   'dfr_canReport','dfr_allowedCases'].forEach(k => localStorage.removeItem(k));
+  window.location.replace('http://127.0.0.1:8000/login.html');
+}
+
+
+// ═══════════════════════════════════════════
+// MEDIA EVIDENCE — CASE-AWARE VIEWER
+// ═══════════════════════════════════════════
+
+// Sample data file mappings per case
+// Keys match substrings of case_name from uploaded jobs
+const CASE_MEDIA = {
+  insider: {
+    label: 'Operation Insider Threat',
+    caseNumber: 'CY-2024-0089',
+    analyst: 'Agent M. Rodriguez',
+    keywords: ['insider', 'insider threat', 'cy-2024-0089'],
+    images: [
+      { file: 'insider_threat_usb_transfer.png',    title: 'USB Transfer Screenshot', risk: 'CRITICAL', desc: '47 files copied to SanDisk USB 64GB. Screenshot deleted and recovered.' },
+      { file: 'insider_threat_mega_upload.png',     title: 'MEGA Cloud Upload',       risk: 'CRITICAL', desc: 'client_database.zip and Q4_strategy.docx uploaded to MEGA cloud.' },
+      { file: 'insider_threat_recruiter_email.png', title: 'Recruiter Email',          risk: 'CRITICAL', desc: 'Email to competitor recruiter with confidential attachments. Deleted & recovered.' },
+    ],
+    videos: [
+      { file: 'insider_threat_screen_recording.mp4', title: 'Screen Recording — MEGA Upload', risk: 'CRITICAL', desc: 'Screen capture showing MEGA upload of 3 confidential files — 685 MB total. Public share links created with no expiry.' },
+      { file: 'insider_threat_usb_recording.mp4',    title: 'Screen Recording — USB Copy',    risk: 'CRITICAL', desc: 'Screen capture of 47 confidential files copied to SanDisk USB 3.0 — 4.1 GB total. DLP alert triggered.' },
+    ],
+    audio: [
+      { file: 'insider_threat_phone_call.wav',    title: 'Phone Call — Competitor HR',       risk: 'CRITICAL', desc: 'Recorded call discussing job offer and data sharing with competitor.' },
+      { file: 'insider_threat_voice_memo.wav',    title: 'Voice Memo — DLP Bypass',          risk: 'CRITICAL', desc: 'Self-recorded instructions for bypassing DLP controls. Deleted & recovered.' },
+      { file: 'insider_threat_meeting_audio.wav', title: 'Meeting Recording — Confidential', risk: 'CRITICAL', desc: 'Unauthorized audio export of executive Q4 product roadmap meeting.' },
+    ]
+  },
+  darkweb: {
+    label: 'Operation Dark Web',
+    caseNumber: 'CY-2024-0090',
+    analyst: 'Agent K. Patel',
+    keywords: ['dark web', 'darkweb', 'cy-2024-0112', 'cy-2024-0090'],
+    images: [
+      { file: 'dark_web_tor_marketplace.png',    title: 'Tor Marketplace Screenshot', risk: 'CRITICAL', desc: 'Dark web marketplace accessed via Tor at 02:20 AM. Order #4471 placed.' },
+      { file: 'dark_web_monero_wallet.png',      title: 'Monero Wallet Balance',      risk: 'CRITICAL', desc: '47.3 XMR (~$6,800 USD) in untraceable Monero wallet.' },
+      { file: 'dark_web_dead_drop_location.png', title: 'Dead Drop Location Photo',   risk: 'CRITICAL', desc: 'GPS confirms physical handoff location. Matches supplier email coordinates.' },
+    ],
+    videos: [
+      { file: 'dark_web_tor_session.mp4',       title: 'Tor Browsing Session',        risk: 'CRITICAL', desc: 'Recording of Tor browser session on dark web marketplace — Order #4471 confirmed. 8.2 XMR payment processed.' },
+      { file: 'dark_web_evidence_deletion.mp4', title: 'Evidence Deletion Recording', risk: 'CRITICAL', desc: 'PowerShell evidence destruction — Monero wallet deleted, event logs cleared, Tor Browser wiped. Recovered via VSS.' },
+    ],
+    audio: [
+      { file: 'dark_web_supplier_call.wav',      title: 'Supplier Negotiation Call', risk: 'CRITICAL', desc: 'VOIP call via Tor with dark web supplier — pricing, quantities, dead drop.' },
+      { file: 'dark_web_telegram_voice.wav',     title: 'Telegram Voice Message',    risk: 'CRITICAL', desc: 'Supplier confirms dead drop location and time using code words.' },
+      { file: 'dark_web_customer_payment.wav',   title: 'Payment Confirmation Memo', risk: 'CRITICAL', desc: 'Voice memo confirming Monero payment received from customer. Deleted & recovered.' },
+    ]
+  }
+};
+
+let currentMediaType = 'images';
+let activeCaseKey = null;
+
+function detectCase(caseName) {
+  if (!caseName) return null;
+  const lower = caseName.toLowerCase();
+  for (const [key, data] of Object.entries(CASE_MEDIA)) {
+    if (data.keywords.some(k => lower.includes(k))) return key;
+  }
+  // Fuzzy: if it has "insider" anywhere → insider, "dark" anywhere → darkweb
+  if (lower.includes('insider')) return 'insider';
+  if (lower.includes('dark')) return 'darkweb';
+  return null;
+}
+
+function initMediaViewer() {
+  loadCaseMedia();
+}
+
+async function loadCaseMedia() {
+  const role  = localStorage.getItem('dfr_role');
+  const user  = localStorage.getItem('dfr_user') || '';
+  let allowedCases = null;
+  try { allowedCases = JSON.parse(localStorage.getItem('dfr_allowedCases') || 'null'); } catch(e){}
+
+  const caseButtons = document.getElementById('mediaCaseBtns');
+  caseButtons.innerHTML = '';
+
+  // Determine which cases this role can see
+  const ALL_KEYS = Object.keys(CASE_MEDIA);  // ['insider','darkweb']
+
+  let visibleKeys;
+  if (role === 'admin' || role === 'viewer') {
+    // Admin and viewer see all known cases
+    visibleKeys = ALL_KEYS;
+  } else {
+    // Analyst: only their assigned case(s)
+    if (allowedCases) {
+      visibleKeys = ALL_KEYS.filter(k =>
+        allowedCases.some(a => k.toLowerCase().includes(a.toLowerCase()) ||
+                               CASE_MEDIA[k].caseNumber.toLowerCase().includes(a.toLowerCase())));
+    } else {
+      visibleKeys = ALL_KEYS;
+    }
+  }
+
+  if (!visibleKeys.length) visibleKeys = ['insider'];
+
+  // Show the first visible case by default; analyst locked to their case
+  let activeKey = visibleKeys[0];
+  if (user === 'patel') activeKey = 'darkweb';
+  else if (user === 'rodriguez') activeKey = 'insider';
+
+  // Build selector buttons (admin/viewer get multiple; analyst gets one)
+  if (visibleKeys.length > 1) {
+    visibleKeys.forEach(key => {
+      const btn = document.createElement('button');
+      btn.className = 'btn ' + (key === activeKey ? 'btn-primary' : 'btn-secondary');
+      btn.style.cssText = 'font-size:.7rem;padding:4px 10px';
+      btn.textContent = CASE_MEDIA[key].label;
+      btn.onclick = () => {
+        caseButtons.querySelectorAll('.btn').forEach(b => b.className = b.className.replace('btn-primary','btn-secondary'));
+        btn.className = btn.className.replace('btn-secondary','btn-primary');
+        showCase(key, null);
+      };
+      caseButtons.appendChild(btn);
+    });
+  }
+
+  // Show active case
+  showCase(activeKey, null);
+
+  // Also show mediaCaseViewer
+  document.getElementById('mediaNoCase').style.display = 'none';
+  document.getElementById('mediaCaseViewer').style.display = 'block';
+}
+
+function showNoCase() {
+  document.getElementById('mediaNoCase').style.display = 'block';
+  document.getElementById('mediaCaseViewer').style.display = 'none';
+}
+
+function showCase(key, job) {
+  activeCaseKey = key;
+  const caseData = CASE_MEDIA[key];
+
+  document.getElementById('mediaNoCase').style.display = 'none';
+  document.getElementById('mediaCaseViewer').style.display = 'block';
+  document.getElementById('mediaCaseTitle').textContent = '🎬 ' + caseData.label;
+  document.getElementById('mediaCaseSubtitle').textContent =
+    'Case: ' + (CASE_MEDIA[key].caseNumber || job?.case_number || '') + '  |  Analyst: ' + (CASE_MEDIA[key].analyst || job?.analyst_name || '') + '  |  Uploaded: ' + (job ? (job.created_at || '').split('T')[0] : '');
+
+  // Update tab counts
+  document.getElementById('mtab-images').textContent = '🖼️ Images (' + caseData.images.length + ')';
+  document.getElementById('mtab-videos').textContent = '🎬 Videos (' + caseData.videos.length + ')';
+  document.getElementById('mtab-audio').textContent  = '🔊 Audio ('  + caseData.audio.length  + ')';
+
+  // Update case buttons highlight
+  document.querySelectorAll('#mediaCaseBtns button').forEach(btn => {
+    btn.className = 'btn ' + (btn.textContent === caseData.label ? 'btn-primary' : 'btn-secondary');
+  });
+
+  currentMediaType = 'images';
+  document.querySelectorAll('#mediaTypeTabs .ftab').forEach((t,i) => t.classList.toggle('active', i===0));
+  document.getElementById('media-images').style.display = 'block';
+  document.getElementById('media-videos').style.display = 'none';
+  document.getElementById('media-audio').style.display  = 'none';
+
+  renderMediaForCase(key);
+}
+
+function selectMediaType(type, el) {
+  currentMediaType = type;
+  document.querySelectorAll('#mediaTypeTabs .ftab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('media-images').style.display = type === 'images' ? 'block' : 'none';
+  document.getElementById('media-videos').style.display = type === 'videos' ? 'block' : 'none';
+  document.getElementById('media-audio').style.display  = type === 'audio'  ? 'block' : 'none';
+  renderMediaForCase(activeCaseKey);
+}
+
+function renderMediaForCase(key) {
+  if (!key) return;
+  if (currentMediaType === 'images') renderCaseImages(key);
+  else if (currentMediaType === 'videos') renderCaseVideos(key);
+  else renderCaseAudio(key);
+}
+
+function riskPill(risk) {
+  const cls = risk==='CRITICAL'?'risk-critical':risk==='HIGH'?'risk-high':'risk-medium';
+  return `<span class="risk-pill ${cls}">${risk}</span>`;
+}
+
+function sampleFileUrl(filename) {
+  return `${API}/api/sample-file/${encodeURIComponent(filename)}?v=1773397745`;
+}
+
+function renderCaseImages(key) {
+  const grid = document.getElementById('imageGrid');
+  grid.innerHTML = '';
+  CASE_MEDIA[key].images.forEach(item => {
+    const url = sampleFileUrl(item.file);
+    const d = document.createElement('div');
+    d.style.cssText = 'background:#1a2235;border:1px solid #2d3748;border-radius:10px;overflow:hidden';
+    d.innerHTML = `
+      <div style="width:100%;height:200px;background:#050810;display:flex;align-items:center;justify-content:center;overflow:hidden">
+        <img src="${url}" style="max-width:100%;max-height:200px;object-fit:contain"
+          onerror="this.parentNode.innerHTML='<div style=padding:2rem;text-align:center;color:#64748b;font-size:.8rem>🖼️<br><br>${item.file}<br><br>Place file in sample_data\\ folder</div>'">
+      </div>
+      <div style="padding:.85rem">
+        <div style="font-size:.85rem;font-weight:600;margin-bottom:.3rem">${item.title} ${riskPill(item.risk)}</div>
+        <div style="font-size:.75rem;color:#94a3b8;line-height:1.5;margin-bottom:.4rem">${item.desc}</div>
+        <div style="font-size:.7rem;color:#64748b">📁 ${item.file}</div>
+        <a href="${url}" download="${item.file}" style="font-size:.72rem;color:#3b82f6;text-decoration:none">⬇ Download</a>
+      </div>`;
+    grid.appendChild(d);
+  });
+}
+
+function renderCaseVideos(key) {
+  const list = document.getElementById('videoList');
+  list.innerHTML = '';
+  CASE_MEDIA[key].videos.forEach(item => {
+    const url = sampleFileUrl(item.file);
+    const d = document.createElement('div');
+    d.style.cssText = 'background:#1a2235;border:1px solid #2d3748;border-radius:10px;overflow:hidden';
+    d.innerHTML = `
+      <div style="background:#050810">
+        <video controls style="width:100%;max-height:300px;display:block;background:#050810" preload="auto" src="${url}"></video>
+      </div>
+      <div style="padding:.85rem">
+        <div style="font-size:.88rem;font-weight:700;margin-bottom:.3rem">${item.title} ${riskPill(item.risk)}</div>
+        <div style="font-size:.78rem;color:#94a3b8;line-height:1.5;margin-bottom:.4rem">${item.desc}</div>
+        <div style="font-size:.7rem;color:#64748b">📁 ${item.file}</div>
+        <a href="${url}" download="${item.file}" style="font-size:.72rem;color:#3b82f6;text-decoration:none">⬇ Download</a>
+      </div>`;
+    list.appendChild(d);
+  });
+}
+
+function renderCaseAudio(key) {
+  const list = document.getElementById('audioList');
+  list.innerHTML = '';
+  CASE_MEDIA[key].audio.forEach(item => {
+    const url = sampleFileUrl(item.file);
+    const d = document.createElement('div');
+    d.style.cssText = 'background:#1a2235;border:1px solid #2d3748;border-radius:10px;padding:1rem';
+    d.innerHTML = `
+      <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem">
+        <div style="font-size:2rem">🔊</div>
+        <div>
+          <div style="font-weight:700;font-size:.88rem">${item.title} ${riskPill(item.risk)}</div>
+          <div style="font-size:.75rem;color:#94a3b8;margin-top:2px">📁 ${item.file}</div>
+        </div>
+      </div>
+      <audio controls style="width:100%;margin-bottom:.6rem" preload="auto" src="${url}"></audio>
+      <div style="font-size:.78rem;color:#94a3b8;line-height:1.5;margin-bottom:.3rem">${item.desc}</div>
+      <a href="${url}" download="${item.file}" style="font-size:.72rem;color:#3b82f6;text-decoration:none">⬇ Download</a>`;
+    list.appendChild(d);
+  });
+}
+
+
+</script>
+</html>

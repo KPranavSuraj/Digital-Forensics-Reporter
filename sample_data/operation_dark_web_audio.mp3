@@ -1,0 +1,155 @@
+================================================================================
+FORENSIC AUDIO EVIDENCE MANIFEST
+Case: Operation Dark Web | Number: CY-2024-0112
+Examiner: Agent K. Patel | Department: Cyber Crime Division
+Generated: 2024-06-10 15:00:00
+================================================================================
+Total Audio Files Recovered: 5
+Source Device: HP Pavilion Laptop + Samsung Galaxy S23 (Sarah Malik)
+================================================================================
+
+================================================================================
+ENTRY 1 - CRITICAL EVIDENCE
+================================================================================
+File Name         : supplier_negotiation_call.mp3
+File Path         : C:\Users\smalik\Documents\Recordings\supplier_negotiation_call.mp3
+File Size         : 9437184 bytes (9.0 MB)
+MD5 Hash          : a1b2c3d4e5f6bbb111000001abcdef01
+SHA256            : 1a2b3c4d5e6fbbb1110000001abcdef1234567890abcdef1234567890abcdef12345
+Duration          : 00:16:28
+Bit Rate          : 128 kbps
+Sample Rate       : 44100 Hz
+Channels          : Stereo
+Codec             : MP3
+Date Created      : 2024-05-28 21:00:00
+Date Modified     : 2024-05-28 21:17:00
+Date Accessed     : 2024-06-05 03:00:00
+Software          : Automatic Call Recorder Pro
+Author            : smalik
+Phone Number      : Unknown (VOIP - Tor-routed call)
+Description       : Recorded call with dark web supplier discussing product availability, pricing, and delivery methods
+Risk Level        : CRITICAL - Audio evidence of illegal supply chain negotiation
+Notes             : 16-minute VOIP call recorded through Tor. Discusses order quantities, dead drop locations, and XMR payment process. Supplier voice pattern captured for analysis.
+Deleted           : No
+Transcript        : Partial - keywords: dead drop, Monero payment, order quantity, stealth packaging, next delivery
+
+================================================================================
+ENTRY 2 - DELETED AUDIO RECOVERED
+================================================================================
+File Name         : customer_payment_confirmation.m4a
+File Path         : C:\$Recycle.Bin\S-1-5-21-xxx\customer_payment_confirmation.m4a
+File Size         : 1572864 bytes (1.5 MB)
+MD5 Hash          : b2c3d4e5f678ccc222000002bcdef0234
+SHA256            : 2b3c4d5e6f78ccc2220000002bcdef1234567890abcdef1234567890abcdef12345678
+Duration          : 00:02:44
+Bit Rate          : 64 kbps
+Sample Rate       : 22050 Hz
+Channels          : Mono
+Codec             : AAC (M4A)
+Date Created      : 2024-06-06 12:00:00
+Date Modified     : 2024-06-06 12:02:00
+Date Deleted      : 2024-06-07 09:15:00
+Software          : iPhone Voice Memos
+Author            : smalik
+GPS Coordinates   : 17.3619° N, 78.4760° E
+GPS Location      : Hyderabad, Telangana, India - Home address
+Description       : Voice memo confirming Monero payment received from customer_447 and order fulfillment
+Risk Level        : CRITICAL - Self-recorded evidence of illegal transaction completion, deliberately deleted
+Notes             : GPS places recording at home address. Confirms receipt of 4.7 XMR from customer. Deleted next morning to destroy evidence.
+Deleted           : YES - Recovered from Recycle Bin
+Transcript        : Partial - keywords: payment received, 4.7 XMR, order complete, customer confirmed, delete this
+
+================================================================================
+ENTRY 3 - SUSPICIOUS AUDIO
+================================================================================
+File Name         : telegram_voice_message_supplier.ogg
+File Path         : C:\Users\smalik\AppData\Roaming\Telegram Desktop\tdata\voice_messages\telegram_voice_message_supplier.ogg
+File Size         : 786432 bytes (768 KB)
+MD5 Hash          : c3d4e5f6789ddd333000003cdef034567
+SHA256            : 3c4d5e6f789ddd3330000000003cdef12345678901abcdef1234567890abcdef1234
+Duration          : 00:01:52
+Bit Rate          : 32 kbps
+Sample Rate       : 48000 Hz
+Channels          : Mono
+Codec             : Opus (OGG)
+Date Created      : 2024-06-05 05:00:00
+Date Modified     : 2024-06-05 05:00:00
+Date Accessed     : 2024-06-05 05:02:00
+Software          : Telegram Desktop
+Author            : smalik
+Telegram Username : @darkvendor_x (Supplier)
+Description       : Incoming Telegram voice message from dark web supplier confirming dead drop location and time
+Risk Level        : CRITICAL - Evidence of covert communication channel with supplier
+Notes             : Voice message from anonymous Telegram account used by supplier. Confirms dead drop location matching GPS in package photo. Uses code words.
+Deleted           : No (Recovered from Telegram cache)
+Transcript        : Partial - keywords: location confirmed, 6PM, usual spot, package secured, no contact
+
+================================================================================
+ENTRY 4 - SUSPICIOUS AUDIO
+================================================================================
+File Name         : monero_tutorial_audio.mp3
+File Path         : C:\Users\smalik\Downloads\monero_tutorial_audio.mp3
+File Size         : 18874368 bytes (18 MB)
+MD5 Hash          : d4e5f67890123eee444000004def04567
+SHA256            : 4d5e6f789012eee4440000004def12345678901abcdef1234567890abcdef1234567
+Duration          : 00:31:15
+Bit Rate          : 128 kbps
+Sample Rate       : 44100 Hz
+Channels          : Stereo
+Codec             : MP3
+Date Created      : 2024-05-20 10:00:00
+Date Modified     : 2024-05-20 10:00:00
+Date Accessed     : 2024-06-03 20:00:00
+Software          : Podcast/Audio Download (yt-dlp)
+Author            : Unknown (Podcast)
+GPS Coordinates   : N/A
+Description       : Downloaded podcast episode on using Monero cryptocurrency for private transactions
+Risk Level        : HIGH - Premeditated research into untraceable financial methods
+Notes             : Downloaded the same day Monero wallet installed. Accessed again 2 days before transactions. Demonstrates intent and preparation for untraceable payments.
+Deleted           : No
+Transcript        : N/A (Full audio available for analysis)
+
+================================================================================
+ENTRY 5 - EVIDENCE AUDIO
+================================================================================
+File Name         : whatsapp_audio_dead_drop_instructions.opus
+File Path         : C:\Users\smalik\AppData\Roaming\WhatsApp\Media\WhatsApp Voice Notes\whatsapp_audio_dead_drop_instructions.opus
+File Size         : 655360 bytes (640 KB)
+MD5 Hash          : e5f6789012345fff555000005ef056789
+SHA256            : 5e6f789012345fff5550000005ef1234567890123abcdef1234567890abcdef12345
+Duration          : 00:01:22
+Bit Rate          : 32 kbps
+Sample Rate       : 16000 Hz
+Channels          : Mono
+Codec             : Opus (WhatsApp)
+Date Created      : 2024-06-05 15:00:00
+Date Modified     : 2024-06-05 15:00:00
+Date Accessed     : 2024-06-05 15:05:00
+Software          : WhatsApp Desktop
+Author            : smalik
+Phone Number      : +91-XXXXXXXXXX (Stored as "Customer A")
+Description       : WhatsApp voice note sent to customer with dead drop location and pickup instructions
+Risk Level        : CRITICAL - Evidence of coordinating illegal goods physical handoff
+Notes             : 82-second voice message with specific instructions for package pickup at dead drop location. GPS in package photo matches location described. Sent 1 hour before photo of dead drop was taken.
+Deleted           : No
+Transcript        : Partial - keywords: location, park entrance, left side bench, 6PM, brown bag, no contact
+
+================================================================================
+AUDIO ANALYSIS SUMMARY
+================================================================================
+Total Audio Files    : 5
+Critical Risk        : 4
+High Risk            : 1
+Deleted & Recovered  : 1
+Total Duration       : ~54 minutes
+Supplier Calls       : 1
+Customer Communications: 2
+Tutorial Downloads   : 1
+Telegram Voice       : 1
+Dead Drop Evidence   : YES (audio + GPS coordinates corroborated)
+Money Laundering     : YES (Monero payment confirmation audio)
+Evidence Destruction : YES (customer payment confirmation deleted)
+GPS Metadata Found   : 1 file (home address confirmed)
+================================================================================
+END OF AUDIO MANIFEST
+================================================================================
